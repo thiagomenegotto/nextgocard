@@ -1,4 +1,4 @@
-$(window).on("load", function(){
+window.onload = function () {
     document.querySelector('.extra_large').style.backgroundSize='contain';
     var buttonlarge = document.querySelectorAll('.large');
 
@@ -32,4 +32,4 @@ $(window).on("load", function(){
 
     newQuery(query)
     query.addListener(newQuery)
-})
+}
