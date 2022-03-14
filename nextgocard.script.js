@@ -7,7 +7,7 @@ window.onload = function () {
     buttonextralarge.style.padding="0";
 
     for(i=0;i<buttonlarge.length;i++) {
-        buttonlarge[i].style.backgroundSize='cover';
+        buttonlarge[i].style.backgroundSize='contain';
         buttonlarge[i].style.width="46.6667%";
         buttonlarge[i].style.padding="0";
     }
@@ -31,6 +31,9 @@ window.onload = function () {
 
         if (window.innerWidth < 321) {
            photo.style.height="150px";
+           for(i=0;i<buttonlarge.length;i++) {
+                buttonlarge[i].style.height="70px";
+           }
         }
         else if (window.innerWidth < 376){
            photo.style.height="180px";
