@@ -20,12 +20,13 @@ window.onload = function () {
     buttonproduct.style.maxWidth="73%";
 
 
-    window.resize(function() {
-        if (window.matchMedia( " (max-width: 375px) ").matches) {
-            photo.style.height="190px";
-        }
-        else {
-            photo.style.height="294px";
-        }
-    }).resize()
+    let currentWidth = window.innerWidth;
+
+    window.addEventListener('resize', () => {
+        currentWidth = window.innerWidth;
+    });
+
+    if (currentWidth > 375) {
+        console.log(true); 
+    }
 }
