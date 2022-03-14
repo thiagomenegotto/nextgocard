@@ -1,4 +1,4 @@
-$(document).ready(function(){
+window.onload = function () {
     console.log('Script is Matched!');
     document.querySelector('.extra_large').style.backgroundSize='contain';
     var buttonlarge = document.querySelectorAll('.large');
