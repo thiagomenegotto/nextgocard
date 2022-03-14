@@ -20,7 +20,7 @@ window.onload = function () {
     buttonproduct.style.maxWidth="73%";
 
 
-    $(window).resize(function() {
+    window.resize(function() {
         if (window.matchMedia( " (max-width: 375px) ").matches) {
             photo.style.height="190px";
         }
