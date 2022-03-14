@@ -20,17 +20,12 @@ window.onload = function () {
     buttonproduct.style.maxWidth="73%";
 
 
-    function newQuery(query) {
-        if( query.matches ) {
+    $(window).resize(function() {
+        if (window.matchMedia( " (max-width: 375px) ").matches) {
             photo.style.height="190px";
         }
         else {
             photo.style.height="294px";
         }
-    }
-
-    var query = window.matchMedia( " (max-width: 375px) " )
-
-    newQuery(query)
-    query.addListener(newQuery)
+    }).resize()
 }
