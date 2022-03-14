@@ -23,10 +23,10 @@ window.onload = function () {
     function checkForWindowResize() {
     console.log(`Screen width: ${window.innerWidth}`);
 
-    if (window.innerWidth < 320) {
+    if (window.innerWidth < 321) {
        photo.style.height="150px";
     }
-    else if (window.innerWidth < 375){
+    else if (window.innerWidth < 376){
        photo.style.height="180px";
     }
     else {
