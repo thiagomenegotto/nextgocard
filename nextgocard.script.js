@@ -20,13 +20,16 @@ window.onload = function () {
     buttonproduct.style.maxWidth="73%";
 
 
-    let currentWidth = window.innerWidth;
+    function checkForWindowResize() {
+    console.log(`Screen width: ${window.innerWidth}`);
 
-    window.addEventListener('resize', () => {
-        currentWidth = window.innerWidth;
-    });
-
-    if (currentWidth > 375) {
-        console.log(true); 
+    if (window.innerWidth < 600) {
+       console.log('Tela menor que 600px');
     }
+    else {
+       console.log('Tela maior que 600px');
+    }
+}
+
+window.addEventListener('resize', checkForWindowResize);
 }
