@@ -1,11 +1,15 @@
 window.onload = function () {
     console.log('Script is Matched!');
-    document.querySelector('.extra_large').style.backgroundSize='contain';
+    var buttonextralarge = document.querySelector('.extra_large');
     var buttonlarge = document.querySelectorAll('.large');
+    
+    buttonextralarge.style.backgroundSize='contain';
+    buttonextralarge.style.padding="0";
 
     for(i=0;i<buttonlarge.length;i++) {
         buttonlarge[i].style.backgroundSize='cover';
         buttonlarge[i].style.width="46.6667%";
+        buttonlarge[i].style.padding="0";
     }
 
     var product = document.querySelector('.product');
