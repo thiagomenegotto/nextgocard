@@ -22,7 +22,7 @@ window.onload = function () {
     buttonproduct.style.backgroundSize='contain';
     buttonproduct.style.padding="0";
     buttonproduct.style.marginTop="0";
-    buttonproduct.style.maxWidth="73%";
+    buttonproduct.style.maxWidth="79%";
     checkForWindowResize();
 
 
