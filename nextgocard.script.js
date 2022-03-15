@@ -22,7 +22,7 @@ window.onload = function () {
     var footerp = footer.querySelector('p');
     var footera = footerp.querySelector('a');
     
-    footer.style.width="auto";
+    footer.style.width="100%";
     footer.style.maxWidth="100%";
     
     footera.style.fontWeight="700";
