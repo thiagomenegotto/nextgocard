@@ -18,7 +18,7 @@ window.onload = function () {
     var buttonproduct = product.querySelector('a');
     var photo = document.querySelector('.photo');
     
-    var footer = document.querySelector('.footer-text');
+    var footer = document.querySelector('.footer-text-box');
     var footerp = footer.querySelector('p');
     
     footerp.style.width="auto";
