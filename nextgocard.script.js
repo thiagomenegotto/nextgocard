@@ -31,18 +31,24 @@ window.onload = function () {
 
         if (window.innerWidth < 321) {
            photo.style.height="150px";
+           buttonextralarge.style.height="70px";
            for(i=0;i<buttonlarge.length;i++) {
                 buttonlarge[i].style.height="70px";
            }
         }
         else if (window.innerWidth < 376){
            photo.style.height="180px";
+           buttonextralarge.style.height="70px";
            for(i=0;i<buttonlarge.length;i++) {
                 buttonlarge[i].style.height="70px";
            }
         }
         else {
             photo.style.height="235px";
+            buttonextralarge.style.height="97px";
+            for(i=0;i<buttonlarge.length;i++) {
+                buttonlarge[i].style.height="97px";
+           }
         }
     }
 
