@@ -20,9 +20,16 @@ window.onload = function () {
     
     var footer = document.querySelector('.footer-text-box');
     var footerp = footer.querySelector('p');
+    var footera = footerp.querySelector('a');
     
     footer.style.width="auto";
     footer.style.maxWidth="79%";
+    
+    footera.style.fontWeight="700";
+    footera.onmouseover = function() 
+    {
+        footera.style.backgroundColor = "white";
+    }
 
     buttonproduct.style.width='auto';
     buttonproduct.style.backgroundSize='contain';
