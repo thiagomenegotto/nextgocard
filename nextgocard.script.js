@@ -28,7 +28,12 @@ window.onload = function () {
     footera.style.fontWeight="700";
     footera.onmouseover = function() 
     {
-        footera.style.backgroundColor = "white";
+        footera.style.color = "white";
+    }
+
+    footera.onmouseout = function() 
+    {
+        footera.style.color = "black";
     }
 
     buttonproduct.style.width='auto';
