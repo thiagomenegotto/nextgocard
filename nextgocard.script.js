@@ -21,8 +21,8 @@ window.onload = function () {
     var footer = document.querySelector('.footer-text-box');
     var footerp = footer.querySelector('p');
     
-    footerp.style.width="auto";
-    footerp.style.maxWidth="79%";
+    footer.style.width="auto";
+    footer.style.maxWidth="79%";
 
     buttonproduct.style.width='auto';
     buttonproduct.style.backgroundSize='contain';
