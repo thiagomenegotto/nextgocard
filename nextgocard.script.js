@@ -31,7 +31,7 @@ window.onload = function () {
 
         if (window.innerWidth < 321) {
            photo.style.height="150px";
-           buttonextralarge.style.height="70px";
+           buttonextralarge.style.height="60px";
            for(i=0;i<buttonlarge.length;i++) {
                 buttonlarge[i].style.height="70px";
            }
