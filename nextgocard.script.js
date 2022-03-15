@@ -47,13 +47,14 @@ window.onload = function () {
            buttonextralarge.style.height="80px";
            for(i=0;i<buttonlarge.length;i++) {
                 buttonlarge[i].style.height="80px";
+           }
         }
         else {
             photo.style.height="235px";
             buttonextralarge.style.height="97px";
             for(i=0;i<buttonlarge.length;i++) {
                 buttonlarge[i].style.height="97px";
-           }
+            }
         }
     }
 
