@@ -37,11 +37,16 @@ window.onload = function () {
            }
         }
         else if (window.innerWidth < 376){
-           photo.style.height="180px";
+           photo.style.height="190px";
            buttonextralarge.style.height="70px";
            for(i=0;i<buttonlarge.length;i++) {
                 buttonlarge[i].style.height="70px";
            }
+        }
+        else if (window.innerWidth < 426){
+           buttonextralarge.style.height="80px";
+           for(i=0;i<buttonlarge.length;i++) {
+                buttonlarge[i].style.height="80px";
         }
         else {
             photo.style.height="235px";
