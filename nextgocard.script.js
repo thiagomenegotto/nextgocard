@@ -17,6 +17,12 @@ window.onload = function () {
 
     var buttonproduct = product.querySelector('a');
     var photo = document.querySelector('.photo');
+    
+    var footer = document.querySelector('.footer-text');
+    var footerp = footer.querySelector('p');
+    
+    footerp.style.width="auto";
+    footerp.style.maxWidth="79%";
 
     buttonproduct.style.width='auto';
     buttonproduct.style.backgroundSize='contain';
