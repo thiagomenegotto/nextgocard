@@ -34,7 +34,7 @@ window.onload = function () {
 
     footera.onmouseout = function() 
     {
-        footera.style.color = "gray";
+        footera.style.color = "#dc7316";
     }
 
     buttonproduct.style.width='auto';
