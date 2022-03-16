@@ -23,7 +23,7 @@ window.onload = function () {
     var footera = footerp.querySelector('a');
     
     footer.style.width="auto";
-    footer.style.maxWidth="79%";
+    footer.style.maxWidth="233px";
     
     footera.style.fontWeight="700";
     footerp.style.fontWeight="700";
