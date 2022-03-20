@@ -31,6 +31,7 @@ window.onload = function () {
     photo.style.maxHeight="346px";
     
     lead.style.height="200px";
+    lead.style.padding="0";
     
     footer.style.width="auto";
     footer.style.maxWidth="233px";
