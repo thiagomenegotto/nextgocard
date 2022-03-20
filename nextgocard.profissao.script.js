@@ -27,6 +27,7 @@ window.onload = function () {
     profile.style.padding="0";
     photo.style.margin="0";
     photo.style.padding="0";
+    photo.style.maxHeight="346px";
     
     footer.style.width="auto";
     footer.style.maxWidth="233px";
