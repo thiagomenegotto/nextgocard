@@ -25,8 +25,6 @@ window.onload = function () {
     
     profile.style.margin="0";
     profile.style.padding="0";
-    profile.style.maxHeight="346px";
-    profile.style.height="auto";
     photo.style.margin="0";
     photo.style.padding="0";
     photo.style.maxHeight="346px";
@@ -78,7 +76,7 @@ window.onload = function () {
            }
         }
         else {
-            photo.style.height="100%";
+            photo.style.height="346px";
             buttonextralarge.style.height="97px";
             for(i=0;i<buttonlarge.length;i++) {
                 buttonlarge[i].style.height="97px";
