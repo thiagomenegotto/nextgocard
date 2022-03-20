@@ -69,7 +69,7 @@ window.onload = function () {
            }
         }
         else {
-            photo.style.height="235px";
+            photo.style.height="100%";
             buttonextralarge.style.height="97px";
             for(i=0;i<buttonlarge.length;i++) {
                 buttonlarge[i].style.height="97px";
