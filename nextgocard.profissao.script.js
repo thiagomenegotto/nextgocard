@@ -23,6 +23,11 @@ window.onload = function () {
     var footerp = footer.querySelector('p');
     var footera = footerp.querySelector('a');
     
+    profile.style.margin="0";
+    profile.style.padding="0";
+    photo.style.margin="0";
+    photo.style.padding="0";
+    
     footer.style.width="auto";
     footer.style.maxWidth="233px";
     
