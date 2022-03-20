@@ -12,7 +12,10 @@ window.onload = function () {
         buttonlarge[i].style.padding="0";
     }
 
+    var products = document.querySelector('.products');
     var product = document.querySelector('.product');
+    
+    products.style.marginTop="280px";
     product.style.padding="0";
 
     var buttonproduct = product.querySelector('a');
