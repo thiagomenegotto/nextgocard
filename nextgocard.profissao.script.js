@@ -18,6 +18,7 @@ window.onload = function () {
     var buttonproduct = product.querySelector('a');
     var profile = document.querySelector('.profile'); 
     var photo = document.querySelector('.photo');
+    var lead = document.querySelector('.lead');
     
     var footer = document.querySelector('.footer-text-box');
     var footerp = footer.querySelector('p');
@@ -28,6 +29,8 @@ window.onload = function () {
     photo.style.margin="0";
     photo.style.padding="0";
     photo.style.maxHeight="346px";
+    
+    lead.style.height="200px";
     
     footer.style.width="auto";
     footer.style.maxWidth="233px";
