@@ -13,7 +13,7 @@ window.onload = function () {
     }
 
     var products = document.querySelector('.products');
-    var product = document.querySelector('.product');
+    var product = products.querySelector('.product');
     var banner = document.querySelector('.banner');
     var imgbanner = banner.querySelector('img');
     
