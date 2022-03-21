@@ -21,13 +21,18 @@ window.onload = function () {
     banner.style.marginTop="200px";
     banner.style.padding="0";
     
+    var buttonproduct;
     
     for(i=0;i<product.length;i++) {
         product[i].style.padding="0";
         product[i].style.margin="0";
+        
+        if (i == (product.length-1)) {
+            buttonproduct = product[i].querySelector('a');
+        }
     }
     
-    var buttonproduct = product[i-1].querySelector('a');
+    
     
     for(i=1;i<imgbanner.length;i++) {
         imgbanner[i].style.marginTop="50px";
