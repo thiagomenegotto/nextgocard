@@ -23,6 +23,8 @@ window.onload = function () {
     
     var buttonproduct;
     
+    console.log('Script: No of produtct is ${product.length}');
+    
     for(i=0;i<product.length;i++) {
         product[i].style.padding="0";
         product[i].style.margin="0";
