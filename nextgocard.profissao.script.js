@@ -14,7 +14,7 @@ window.onload = function () {
 
     var products = document.querySelector('.products');
     var product = document.querySelector('.product');
-    var banner = document.querySelector('banner');
+    var banner = document.querySelector('.banner');
     
     products.style.marginTop="200px";
     banner.style.marginTop="200px";
