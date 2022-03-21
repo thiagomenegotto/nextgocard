@@ -1,5 +1,5 @@
 window.onload = function () {
-    console.log('Script is Matched!');
+    
     var buttonextralarge = document.querySelector('.extra_large');
     var buttonlarge = document.querySelectorAll('.large');
     
@@ -63,7 +63,7 @@ window.onload = function () {
     {
         footera.style.color = "#dc7316";
     }
-
+    console.log('Script is Matched!');
     buttonproduct.style.width='auto';
     buttonproduct.style.backgroundSize='contain';
     buttonproduct.style.padding="0";
@@ -73,7 +73,7 @@ window.onload = function () {
 
 
     function checkForWindowResize() {
-        console.log(`Screen width: ${window.innerWidth}`);
+        console.log('Screen width: ${window.innerWidth}');
 
         if (window.innerWidth < 321) {
            photo.style.height="150px";
