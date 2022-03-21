@@ -64,8 +64,8 @@ window.onload = function () {
         footera.style.color = "#dc7316";
     }
     console.log('Script is Matched!');
-    buttonproduct.style.width='auto';
-    buttonproduct.style.backgroundSize='contain';
+    buttonproduct.style.width="auto";
+    buttonproduct.style.backgroundSize="contain";
     buttonproduct.style.padding="0";
     buttonproduct.style.marginTop="0";
     buttonproduct.style.maxWidth="79%";
