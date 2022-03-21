@@ -27,11 +27,13 @@ window.onload = function () {
         product[i].style.margin="0";
     }
     
+    var buttonproduct = product[i-1].querySelector('a');
+    
     for(i=1;i<imgbanner.length;i++) {
         imgbanner[i].style.marginTop="50px";
     }
 
-    var buttonproduct = product.querySelector('a');
+    
     var profile = document.querySelector('.profile'); 
     var photo = document.querySelector('.photo');
     var lead = document.querySelector('.lead');
