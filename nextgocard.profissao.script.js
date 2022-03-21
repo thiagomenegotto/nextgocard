@@ -13,9 +13,9 @@ window.onload = function () {
     }
 
     var products = document.querySelector('.products');
-    var product = products.querySelector('div');
+    var product = document.querySelectorAll('.product');
     var banner = document.querySelector('.banner');
-    var imgbanner = banner.querySelector('img');
+    var imgbanner = banner.querySelectorAll('img');
     
     products.style.marginTop="25px";
     banner.style.marginTop="200px";
