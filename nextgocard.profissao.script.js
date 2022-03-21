@@ -29,6 +29,11 @@ window.onload = function () {
         
         if (i == (product.length-1)) {
             buttonproduct = product[i].querySelector('a');
+            buttonproduct.style.width="auto";
+            buttonproduct.style.backgroundSize="contain";
+            buttonproduct.style.padding="0";
+            buttonproduct.style.marginTop="0";
+            buttonproduct.style.maxWidth="79%";
         }
     }
     
@@ -71,11 +76,7 @@ window.onload = function () {
         footera.style.color = "#dc7316";
     }
     console.log('Script is Matched!');
-    buttonproduct.style.width="auto";
-    buttonproduct.style.backgroundSize="contain";
-    buttonproduct.style.padding="0";
-    buttonproduct.style.marginTop="0";
-    buttonproduct.style.maxWidth="79%";
+   
     checkForWindowResize();
 
 
