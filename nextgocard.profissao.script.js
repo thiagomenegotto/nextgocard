@@ -23,7 +23,7 @@ window.onload = function () {
     
     var buttonproduct;
     
-    console.log('Script: No of produtct is ${product.length}');
+    console.log(`Script: No of produtct is ${product.length}`);
     
     for(i=0;i<product.length;i++) {
         product[i].style.padding="0";
@@ -85,7 +85,7 @@ window.onload = function () {
 
 
     function checkForWindowResize() {
-        console.log('Screen width: ${window.innerWidth}');
+        console.log(`Screen width: ${window.innerWidth}`);
 
         if (window.innerWidth < 321) {
            photo.style.height="150px";
