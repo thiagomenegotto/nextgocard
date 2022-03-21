@@ -15,8 +15,9 @@ window.onload = function () {
     var products = document.querySelector('.products');
     var product = document.querySelector('.product');
     var banner = document.querySelector('.banner');
+    var imgbanner = banner.querySelector('img');
     
-    products.style.marginTop="200px";
+    products.style.marginTop="25px";
     banner.style.marginTop="200px";
     banner.style.padding="0";
     
@@ -24,6 +25,10 @@ window.onload = function () {
     for(i=0;i<product.length;i++) {
         product[i].style.padding="0";
         product[i].style.margin="0";
+    }
+    
+    for(i=1;i<imgbanner.length;i++) {
+        imgbanner[i].style.marginTop="50px";
     }
 
     var buttonproduct = product.querySelector('a');
