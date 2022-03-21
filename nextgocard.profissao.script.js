@@ -34,13 +34,16 @@ window.onload = function () {
             buttonproduct.style.padding="0";
             buttonproduct.style.marginTop="0";
             buttonproduct.style.maxWidth="79%";
+            
+            console.log('Script: Product was Selected');
         }
+        
+        console.log('Script: ${i}');
     }
-    
-    
-    
+        
     for(i=1;i<imgbanner.length;i++) {
         imgbanner[i].style.marginTop="50px";
+        console.log('Script: Image was Selected');
     }
 
     
@@ -75,7 +78,6 @@ window.onload = function () {
     {
         footera.style.color = "#dc7316";
     }
-    console.log('Script is Matched!');
    
     checkForWindowResize();
 
