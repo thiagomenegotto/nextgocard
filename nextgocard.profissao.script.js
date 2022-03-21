@@ -14,9 +14,17 @@ window.onload = function () {
 
     var products = document.querySelector('.products');
     var product = document.querySelector('.product');
+    var banner = document.querySelector('banner');
     
-    products.style.marginTop="280px";
-    product.style.padding="0";
+    products.style.marginTop="200px";
+    banner.style.marginTop="200px";
+    banner.style.padding="0";
+    
+    
+    for(i=0;i<product.length;i++) {
+        product[i].style.padding="0";
+        product[i].style.margin="0";
+    }
 
     var buttonproduct = product.querySelector('a');
     var profile = document.querySelector('.profile'); 
