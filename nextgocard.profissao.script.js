@@ -17,14 +17,12 @@ window.onload = function () {
     var banner = document.querySelector('.banner');
     var imgbanner = banner.querySelectorAll('img');
     
-    products.style.marginTop="80px";
+    products.style.marginTop="40px";
     banner.style.marginTop="160px";
     banner.style.padding="0";
     
     var buttonproduct;
-    
-    console.log(`Script: No of produtct is ${product.length}`);
-    
+        
     for(i=0;i<product.length;i++) {
         
         var image = product[i].querySelector('.image');
@@ -43,18 +41,14 @@ window.onload = function () {
             buttonproduct.style.width="auto";
             buttonproduct.style.backgroundSize="contain";
             buttonproduct.style.padding="0";
-            buttonproduct.style.marginTop="0";
+            buttonproduct.style.marginTop="20px";
             buttonproduct.style.maxWidth="79%";
             
-            console.log('Script: Product was Selected');
         }
-        
-        console.log('Script: ${i}');
     }
         
     for(i=1;i<imgbanner.length;i++) {
-        imgbanner[i].style.marginTop="40px";
-        console.log('Script: Image was Selected');
+        imgbanner[i].style.marginTop="80px";
     }
 
     
