@@ -129,7 +129,7 @@ window.onload = function () {
            }
         }
         else {
-            photo.style.height="auto";
+            //photo.style.height="auto";
             lead.style.height="180px";
             buttonextralarge.style.height="97px";
             for(i=0;i<buttonlarge.length;i++) {
