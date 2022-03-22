@@ -104,7 +104,7 @@ window.onload = function () {
         console.log(`Screen width: ${window.innerWidth}`);
 
         if (window.innerWidth < 321) {
-           photo.style.height="180px";
+           photo.style.height="170px";
            lead.style.height="100px";
            buttonextralarge.style.height="60px";
            products.style.marginTop="20px";
@@ -118,7 +118,7 @@ window.onload = function () {
            }
         }
         else if (window.innerWidth < 376) {
-           photo.style.height="210px";
+           photo.style.height="200px";
            lead.style.height="120px";
            buttonextralarge.style.height="70px";
            products.style.marginTop="20px";
