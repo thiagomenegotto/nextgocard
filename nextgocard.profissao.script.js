@@ -17,7 +17,7 @@ window.onload = function () {
     
     photo.style.margin="0";
     photo.style.padding="0";
-    //photo.style.maxHeight="346px";
+    photo.style.width="100%";
     
     lead.style.height="180px";
     lead.style.padding="0";
