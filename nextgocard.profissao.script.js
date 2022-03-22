@@ -103,6 +103,7 @@ window.onload = function () {
         console.log(`Screen width: ${window.innerWidth}`);
 
         if (window.innerWidth < 321) {
+           logo.style.margin="0";
            photo.style.height="150px";
            lead.style.height="100px";
            buttonextralarge.style.height="60px";
@@ -110,7 +111,8 @@ window.onload = function () {
                 buttonlarge[i].style.height="70px";
            }
         }
-        else if (window.innerWidth < 376){
+        else if (window.innerWidth < 376) {
+           logo.style.margin="0";
            photo.style.height="190px";
            lead.style.height="120px";
            buttonextralarge.style.height="70px";
@@ -118,7 +120,8 @@ window.onload = function () {
                 buttonlarge[i].style.height="70px";
            }
         }
-        else if (window.innerWidth < 426){
+        else if (window.innerWidth < 426) {
+           logo.style.margin="0";
            photo.style.height="220px";
            lead.style.height="140px";
            buttonextralarge.style.height="80px";
