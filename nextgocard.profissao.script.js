@@ -17,8 +17,8 @@ window.onload = function () {
     var banner = document.querySelector('.banner');
     var imgbanner = banner.querySelectorAll('img');
     
-    products.style.marginTop="25px";
-    banner.style.marginTop="200px";
+    products.style.marginTop="40px";
+    banner.style.marginTop="160px";
     banner.style.padding="0";
     
     var buttonproduct;
@@ -26,8 +26,13 @@ window.onload = function () {
     console.log(`Script: No of produtct is ${product.length}`);
     
     for(i=0;i<product.length;i++) {
+        
+        var image = product[i].querySelector('.image');
+        
         product[i].style.padding="0";
         product[i].style.margin="0";
+        
+        image.style.margin="0";
         
         if (i == (product.length-1)) {
             buttonproduct = product[i].querySelector('a');
@@ -44,7 +49,7 @@ window.onload = function () {
     }
         
     for(i=1;i<imgbanner.length;i++) {
-        imgbanner[i].style.marginTop="50px";
+        imgbanner[i].style.marginTop="40px";
         console.log('Script: Image was Selected');
     }
 
