@@ -2,11 +2,13 @@ window.onload = function () {
     
     // *** Profile, Photo and Lead ***
     var card = document.querySelector('.card-container');
+    var logo = document.querySelector('.logo');
     var profile = document.querySelector('.profile'); 
     var photo = document.querySelector('.photo');
     var lead = document.querySelector('.lead');
     
     card.style.padding="0";
+    logo.style.margin="0";
     
     profile.style.margin="0";
     profile.style.padding="0";
