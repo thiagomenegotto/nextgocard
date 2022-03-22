@@ -81,7 +81,7 @@ window.onload = function () {
     footer.style.width="auto";
     footer.style.maxWidth="233px";
     footer.style.marginTop="80px";
-    footer.style.marginBottom="20px";
+    footer.style.marginBottom="10px";
     footer.style.padding="0";
     footer.style.position="relative";
     
@@ -116,6 +116,7 @@ window.onload = function () {
            for(i=0;i<buttonlarge.length;i++) {
                 buttonlarge[i].style.height="70px";
            }
+           footer.style.paddingBottom="10px";
         }
         else if (window.innerWidth < 376) {
            photo.style.height="200px";
@@ -130,6 +131,7 @@ window.onload = function () {
            for(i=0;i<buttonlarge.length;i++) {
                 buttonlarge[i].style.height="70px";
            }
+           footer.style.paddingBottom="10px";
         }
         else if (window.innerWidth < 426) {
            photo.style.height="230px";
@@ -139,6 +141,7 @@ window.onload = function () {
            for(i=0;i<buttonlarge.length;i++) {
                 buttonlarge[i].style.height="80px";
            }
+           footer.style.paddingBottom="10px";
         }
         else {
             photo.style.height="340px";
@@ -148,6 +151,7 @@ window.onload = function () {
             for(i=0;i<buttonlarge.length;i++) {
                 buttonlarge[i].style.height="97px";
             }
+            footer.style.paddingBottom="0";
         }
     }
 
