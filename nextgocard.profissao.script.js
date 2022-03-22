@@ -2,13 +2,15 @@ window.onload = function () {
     
     // *** Profile, Photo and Lead ***
     var card = document.querySelector('.card-container');
-    var logo = document.querySelector('.logo');
+    var onlyLarge = document.querySelector('.only-on-large');
+    var hideLarge = document.querySelector('.hide-on-large');
     var profile = document.querySelector('.profile'); 
     var photo = document.querySelector('.photo');
     var lead = document.querySelector('.lead');
     
     card.style.padding="0";
-    logo.style.margin="0";
+    onlyLarge.style.margin="0";
+    hideLarge.style.margin="0";
     
     profile.style.margin="0";
     profile.style.padding="0";
@@ -103,7 +105,6 @@ window.onload = function () {
         console.log(`Screen width: ${window.innerWidth}`);
 
         if (window.innerWidth < 321) {
-           logo.style.margin="0";
            photo.style.height="150px";
            lead.style.height="100px";
            buttonextralarge.style.height="60px";
@@ -112,7 +113,6 @@ window.onload = function () {
            }
         }
         else if (window.innerWidth < 376) {
-           logo.style.margin="0";
            photo.style.height="190px";
            lead.style.height="120px";
            buttonextralarge.style.height="70px";
@@ -121,7 +121,6 @@ window.onload = function () {
            }
         }
         else if (window.innerWidth < 426) {
-           logo.style.margin="0";
            photo.style.height="220px";
            lead.style.height="140px";
            buttonextralarge.style.height="80px";
