@@ -42,9 +42,7 @@ window.onload = function () {
     var buttonproduct;
     var banner = document.querySelector('.banner');
     var imgbanner = banner.querySelectorAll('img');
-    
-    products.style.marginTop="40px";
-    
+        
     banner.style.marginTop="160px";
     banner.style.padding="0";
         
@@ -109,6 +107,7 @@ window.onload = function () {
            photo.style.height="150px";
            lead.style.height="100px";
            buttonextralarge.style.height="60px";
+           products.style.marginTop="20px";
            for(i=0;i<buttonlarge.length;i++) {
                 buttonlarge[i].style.height="70px";
            }
@@ -117,14 +116,16 @@ window.onload = function () {
            photo.style.height="190px";
            lead.style.height="120px";
            buttonextralarge.style.height="70px";
+           products.style.marginTop="20px";
            for(i=0;i<buttonlarge.length;i++) {
                 buttonlarge[i].style.height="70px";
            }
         }
         else if (window.innerWidth < 426) {
-           photo.style.height="220px";
+           photo.style.height="240px";
            lead.style.height="140px";
            buttonextralarge.style.height="80px";
+            products.style.marginTop="20px";
            for(i=0;i<buttonlarge.length;i++) {
                 buttonlarge[i].style.height="80px";
            }
@@ -133,6 +134,7 @@ window.onload = function () {
             photo.style.height="340px";
             lead.style.height="180px";
             buttonextralarge.style.height="97px";
+            products.style.marginTop="40px";
             for(i=0;i<buttonlarge.length;i++) {
                 buttonlarge[i].style.height="97px";
             }
