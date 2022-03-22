@@ -17,7 +17,7 @@ window.onload = function () {
     var banner = document.querySelector('.banner');
     var imgbanner = banner.querySelectorAll('img');
     
-    products.style.marginTop="40px";
+    products.style.marginTop="80px";
     banner.style.marginTop="160px";
     banner.style.padding="0";
     
@@ -33,6 +33,10 @@ window.onload = function () {
         product[i].style.margin="0";
         
         image.style.margin="0";
+        
+        if (i > 0) {
+            product[i].style.marginTop="20px";
+        }
         
         if (i == (product.length-1)) {
             buttonproduct = product[i].querySelector('a');
