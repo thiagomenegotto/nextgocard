@@ -71,6 +71,8 @@ window.onload = function () {
     
     footer.style.width="auto";
     footer.style.maxWidth="233px";
+    footer.style.marginTop="40px";
+    footer.style.padding="0";
     
     footera.style.fontWeight="700";
     footerp.style.fontWeight="700";
