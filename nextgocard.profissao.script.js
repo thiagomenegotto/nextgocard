@@ -74,7 +74,7 @@ window.onload = function () {
     
     footer.style.width="auto";
     footer.style.maxWidth="233px";
-    footer.style.marginTop="40px";
+    footer.style.marginTop="80px";
     footer.style.padding="0";
     footer.style.position="relative";
     
@@ -98,6 +98,7 @@ window.onload = function () {
 
         if (window.innerWidth < 321) {
            photo.style.height="150px";
+           lead.style.height="100px";
            buttonextralarge.style.height="60px";
            for(i=0;i<buttonlarge.length;i++) {
                 buttonlarge[i].style.height="70px";
@@ -105,12 +106,15 @@ window.onload = function () {
         }
         else if (window.innerWidth < 376){
            photo.style.height="190px";
+           lead.style.height="100px";
            buttonextralarge.style.height="70px";
            for(i=0;i<buttonlarge.length;i++) {
                 buttonlarge[i].style.height="70px";
            }
         }
         else if (window.innerWidth < 426){
+           photo.style.height="200px";
+           lead.style.height="146px";
            buttonextralarge.style.height="80px";
            for(i=0;i<buttonlarge.length;i++) {
                 buttonlarge[i].style.height="80px";
