@@ -17,7 +17,7 @@ window.onload = function () {
     
     photo.style.margin="0";
     photo.style.padding="0";
-    photo.style.maxHeight="346px";
+    //photo.style.maxHeight="346px";
     
     lead.style.height="180px";
     lead.style.padding="0";
@@ -129,7 +129,7 @@ window.onload = function () {
            }
         }
         else {
-            photo.style.height="346px";
+            photo.style.height="auto";
             lead.style.height="180px";
             buttonextralarge.style.height="97px";
             for(i=0;i<buttonlarge.length;i++) {
