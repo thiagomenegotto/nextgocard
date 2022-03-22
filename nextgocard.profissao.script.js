@@ -1,5 +1,20 @@
 window.onload = function () {
     
+    // *** Profile, Photo and Lead ***
+    var profile = document.querySelector('.profile'); 
+    var photo = document.querySelector('.photo');
+    var lead = document.querySelector('.lead');
+    
+    profile.style.margin="0";
+    profile.style.padding="0";
+    photo.style.margin="0";
+    photo.style.padding="0";
+    photo.style.maxHeight="346px";
+    
+    lead.style.height="200px";
+    lead.style.padding="0";
+    
+    // *** Button Large and Extralarge ***
     var buttonextralarge = document.querySelector('.extra_large');
     var buttonlarge = document.querySelectorAll('.large');
     
@@ -11,7 +26,8 @@ window.onload = function () {
         buttonlarge[i].style.width="46.6667%";
         buttonlarge[i].style.padding="0";
     }
-
+    
+    // *** Banner and Product ***
     var products = document.querySelector('.products');
     var product = document.querySelectorAll('.product');
     var banner = document.querySelector('.banner');
@@ -51,28 +67,16 @@ window.onload = function () {
         imgbanner[i].style.marginTop="80px";
     }
 
-    
-    var profile = document.querySelector('.profile'); 
-    var photo = document.querySelector('.photo');
-    var lead = document.querySelector('.lead');
-    
+    // *** Footer ***
     var footer = document.querySelector('.footer-text-box');
     var footerp = footer.querySelector('p');
     var footera = footerp.querySelector('a');
-    
-    profile.style.margin="0";
-    profile.style.padding="0";
-    photo.style.margin="0";
-    photo.style.padding="0";
-    photo.style.maxHeight="346px";
-    
-    lead.style.height="200px";
-    lead.style.padding="0";
     
     footer.style.width="auto";
     footer.style.maxWidth="233px";
     footer.style.marginTop="40px";
     footer.style.padding="0";
+    footer.style.position="relative";
     
     footera.style.fontWeight="700";
     footerp.style.fontWeight="700";
@@ -86,8 +90,8 @@ window.onload = function () {
         footera.style.color = "#dc7316";
     }
    
+    // *** Check Window Size ***
     checkForWindowResize();
-
 
     function checkForWindowResize() {
         console.log(`Screen width: ${window.innerWidth}`);
