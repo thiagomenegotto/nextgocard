@@ -76,6 +76,7 @@ window.onload = function () {
     var footer = document.querySelector('.footer-text-box');
     var footerp = footer.querySelector('p');
     var footera = footerp.querySelector('a');
+    var footeracolor = footera.style.color;
     
     footer.style.width="auto";
     footer.style.maxWidth="233px";
@@ -84,8 +85,8 @@ window.onload = function () {
     footer.style.padding="0";
     footer.style.position="relative";
     
-    footera.style.fontWeight="700";
     footerp.style.fontWeight="700";
+    footera.style.fontWeight="700";
     footera.onmouseover = function() 
     {
         footera.style.color = "white";
@@ -93,11 +94,10 @@ window.onload = function () {
 
     footera.onmouseout = function() 
     {
-        footera.style.color = "#dc7316";
+        footera.style.color = footeracolor;
+        console.log(`cor do footer a: ${footeracolor}`);
     }
     
-    console.log(`cor do footer a: ${footera.style.color}`);
-   
     // *** Check Window Size ***
     checkForWindowResize();
 
