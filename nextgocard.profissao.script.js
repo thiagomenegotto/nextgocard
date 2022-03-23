@@ -96,7 +96,7 @@ window.onload = function () {
         footera.style.color = "#dc7316";
     }
     
-    console.log(`cor do footer a: ${footera.value}`);
+    console.log(`cor do footer a: ${footera.style.color}`);
    
     // *** Check Window Size ***
     checkForWindowResize();
