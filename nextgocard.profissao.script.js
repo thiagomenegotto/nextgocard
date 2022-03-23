@@ -42,8 +42,7 @@ window.onload = function () {
     var buttonproduct;
     var banner = document.querySelector('.banner');
     var imgbanner = banner.querySelectorAll('img');
-        
-    banner.style.marginTop="160px";
+       
     banner.style.padding="0";
         
     for(i=0;i<product.length;i++) {
@@ -96,6 +95,8 @@ window.onload = function () {
     {
         footera.style.color = "#dc7316";
     }
+    
+    console.log(`cor do footer a: ${footera.value}`);
    
     // *** Check Window Size ***
     checkForWindowResize();
@@ -106,6 +107,7 @@ window.onload = function () {
         if (window.innerWidth < 321) {
            photo.style.height="170px";
            lead.style.height="100px";
+           banner.style.marginTop="80px";
            buttonextralarge.style.height="60px";
            products.style.marginTop="20px";
            for(i=0;i<product.length;i++) {
@@ -121,6 +123,7 @@ window.onload = function () {
         else if (window.innerWidth < 376) {
            photo.style.height="200px";
            lead.style.height="120px";
+           banner.style.marginTop="80px";
            buttonextralarge.style.height="70px";
            products.style.marginTop="20px";
            for(i=0;i<product.length;i++) {
@@ -136,6 +139,7 @@ window.onload = function () {
         else if (window.innerWidth < 426) {
            photo.style.height="230px";
            lead.style.height="140px";
+            banner.style.marginTop="80px";
            buttonextralarge.style.height="80px";
            products.style.marginTop="20px";
            for(i=0;i<buttonlarge.length;i++) {
@@ -146,6 +150,7 @@ window.onload = function () {
         else {
             photo.style.height="340px";
             lead.style.height="180px";
+            banner.style.marginTop="160px";
             buttonextralarge.style.height="97px";
             products.style.marginTop="40px";
             for(i=0;i<buttonlarge.length;i++) {
