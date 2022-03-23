@@ -107,7 +107,7 @@ window.onload = function () {
         if (window.innerWidth < 321) {
            photo.style.height="170px";
            lead.style.height="100px";
-           banner.style.marginTop="30px";
+           banner.style.marginTop="35px";
            buttonextralarge.style.height="60px";
            products.style.marginTop="20px";
            for(i=0;i<product.length;i++) {
@@ -123,7 +123,7 @@ window.onload = function () {
         else if (window.innerWidth < 376) {
            photo.style.height="200px";
            lead.style.height="120px";
-           banner.style.marginTop="70px";
+           banner.style.marginTop="65px";
            buttonextralarge.style.height="70px";
            products.style.marginTop="20px";
            for(i=0;i<product.length;i++) {
