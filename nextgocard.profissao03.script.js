@@ -27,8 +27,10 @@ window.onload = function () {
     var buttonextralarge = document.querySelectorAll('.extra_large');
     var buttonlarge = document.querySelectorAll('.large');
     
-    buttonextralarge.style.backgroundSize='contain';
-    buttonextralarge.style.padding="0";
+    for(i=0;i<buttonextralarge.length;i++) {
+        buttonextralarge[i].style.backgroundSize='contain';
+        buttonextralarge[i].style.padding="0";
+    }
 
     for(i=0;i<buttonlarge.length;i++) {
         buttonlarge[i].style.backgroundSize='contain';
