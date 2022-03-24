@@ -105,8 +105,8 @@ window.onload = function () {
         console.log(`Screen width: ${window.innerWidth}`);
 
         if (window.innerWidth < 321) {
-           photo.style.height="240px";
-           lead.style.height="100px";
+           photo.style.height="260px";
+           lead.style.height="80px";
            banner.style.marginTop="30px";
            buttonextralarge.style.height="60px";
            products.style.marginTop="20px";
@@ -123,7 +123,7 @@ window.onload = function () {
         else if (window.innerWidth < 376) {
            photo.style.height="290px";
            lead.style.height="100px";
-           banner.style.marginTop="60px";
+           banner.style.marginTop="40px";
            buttonextralarge.style.height="70px";
            products.style.marginTop="20px";
            for(i=0;i<product.length;i++) {
@@ -137,8 +137,8 @@ window.onload = function () {
            footer.style.paddingBottom="10px";
         }
         else if (window.innerWidth < 426) {
-           photo.style.height="340px";
-           lead.style.height="120px";
+           photo.style.height="320px";
+           lead.style.height="100px";
            banner.style.marginTop="40px";
            buttonextralarge.style.height="80px";
            products.style.marginTop="20px";
