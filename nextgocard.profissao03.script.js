@@ -140,10 +140,10 @@ window.onload = function () {
            photo.style.height="330px";
            lead.style.height="100px";
            banner.style.marginTop="40px";
-           buttonextralarge.style.height="80px";
            products.style.marginTop="20px";
-           for(i=0;i<buttonlarge.length;i++) {
-                buttonlarge[i].style.height="80px";
+           for(i=0;i<buttonextralarge.length;i++) {
+                buttonextralarge[i].style.height="70px";
+                //buttonlarge[i].style.height="80px";
            }
            footer.style.paddingBottom="10px";
         }
@@ -153,8 +153,8 @@ window.onload = function () {
             banner.style.marginTop="160px";
             buttonextralarge.style.height="97px";
             products.style.marginTop="40px";
-            for(i=0;i<buttonlarge.length;i++) {
-                buttonlarge[i].style.height="97px";
+            for(i=0;i<buttonextralarge.length;i++) {
+                buttonextralarge[i].style.height="97px";
             }
             footer.style.paddingBottom="0";
         }
