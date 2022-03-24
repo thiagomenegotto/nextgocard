@@ -148,7 +148,7 @@ window.onload = function () {
            footer.style.paddingBottom="10px";
         }
         else {
-            photo.style.height="340px";
+            photo.style.height="400px";
             lead.style.height="180px";
             banner.style.marginTop="160px";
             buttonextralarge.style.height="97px";
