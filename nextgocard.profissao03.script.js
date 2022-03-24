@@ -150,7 +150,7 @@ window.onload = function () {
         else {
             photo.style.height="480px";
             lead.style.height="150px";
-            banner.style.marginTop="80px";
+            banner.style.marginTop="160px";
             buttonextralarge.style.height="97px";
             products.style.marginTop="40px";
             for(i=0;i<buttonlarge.length;i++) {
