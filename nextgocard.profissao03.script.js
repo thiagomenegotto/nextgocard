@@ -109,7 +109,7 @@ window.onload = function () {
         if (window.innerWidth < 321) {
            photo.style.height="250px";
            lead.style.height="80px";
-           banner.style.marginTop="130px";
+           banner.style.marginTop="100px";
            products.style.marginTop="20px";
            for(i=0;i<product.length;i++) {
                 if (i > 0) {
@@ -125,7 +125,7 @@ window.onload = function () {
         else if (window.innerWidth < 376) {
            photo.style.height="290px";
            lead.style.height="100px";
-           banner.style.marginTop="140px";
+           banner.style.marginTop="120px";
            products.style.marginTop="20px";
            for(i=0;i<product.length;i++) {
                 if (i > 0) {
@@ -133,7 +133,7 @@ window.onload = function () {
                 }
            }
            for(i=0;i<buttonextralarge.length;i++) {
-                buttonextralarge[i].style.height="55px";
+                buttonextralarge[i].style.height="50px";
                 //buttonlarge[i].style.height="80px";
            }
            footer.style.paddingBottom="10px";
