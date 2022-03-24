@@ -105,7 +105,7 @@ window.onload = function () {
         console.log(`Screen width: ${window.innerWidth}`);
 
         if (window.innerWidth < 321) {
-           photo.style.height="260px";
+           photo.style.height="250px";
            lead.style.height="80px";
            banner.style.marginTop="30px";
            buttonextralarge.style.height="60px";
@@ -137,7 +137,7 @@ window.onload = function () {
            footer.style.paddingBottom="10px";
         }
         else if (window.innerWidth < 426) {
-           photo.style.height="320px";
+           photo.style.height="330px";
            lead.style.height="100px";
            banner.style.marginTop="40px";
            buttonextralarge.style.height="80px";
