@@ -24,7 +24,7 @@ window.onload = function () {
     lead.style.padding="0";
     
     // *** Button Large and Extralarge ***
-    var buttonextralarge = document.querySelector('.extra_large');
+    var buttonextralarge = document.querySelectorAll('.extra_large');
     var buttonlarge = document.querySelectorAll('.large');
     
     buttonextralarge.style.backgroundSize='contain';
