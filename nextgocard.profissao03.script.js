@@ -140,7 +140,7 @@ window.onload = function () {
         }
         else if (window.innerWidth < 426) {
            photo.style.height="330px";
-           lead.style.height="110px";
+           lead.style.height="120px";
            banner.style.marginTop="40px";
            products.style.marginTop="20px";
            for(i=0;i<buttonextralarge.length;i++) {
