@@ -156,7 +156,7 @@ window.onload = function () {
             buttonextralarge.style.height="97px";
             products.style.marginTop="40px";
             for(i=0;i<buttonextralarge.length;i++) {
-                buttonextralarge[i].style.height="97px";
+                buttonextralarge[i].style.height="97px"; 
             }
             footer.style.paddingBottom="0";
         }
