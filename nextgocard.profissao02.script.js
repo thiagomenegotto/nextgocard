@@ -20,7 +20,7 @@ window.onload = function () {
     photo.style.width="100%";
     photo.style.maxHeight="480px";
     
-    lead.style.height="180px";
+    //lead.style.height="180px";
     lead.style.padding="0";
     
     // *** Button Large and Extralarge ***
@@ -149,8 +149,8 @@ window.onload = function () {
         }
         else {
             photo.style.height="480px";
-            lead.style.height="180px";
-            banner.style.marginTop="160px";
+            lead.style.height="160px";
+            banner.style.marginTop="120px";
             buttonextralarge.style.height="97px";
             products.style.marginTop="40px";
             for(i=0;i<buttonlarge.length;i++) {
