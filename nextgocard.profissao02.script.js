@@ -18,7 +18,7 @@ window.onload = function () {
     photo.style.margin="0";
     photo.style.padding="0";
     photo.style.width="100%";
-    photo.style.maxHeight="460px";
+    photo.style.maxHeight="480px";
     
     lead.style.height="180px";
     lead.style.padding="0";
@@ -148,7 +148,7 @@ window.onload = function () {
            footer.style.paddingBottom="10px";
         }
         else {
-            photo.style.height="460px";
+            photo.style.height="480px";
             lead.style.height="180px";
             banner.style.marginTop="160px";
             buttonextralarge.style.height="97px";
