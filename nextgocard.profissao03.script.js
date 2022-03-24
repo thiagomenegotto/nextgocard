@@ -144,7 +144,7 @@ window.onload = function () {
            banner.style.marginTop="40px";
            products.style.marginTop="20px";
            for(i=0;i<buttonextralarge.length;i++) {
-                buttonextralarge[i].style.height="70px";
+                buttonextralarge[i].style.height="60px";
                 //buttonlarge[i].style.height="80px";
            }
            footer.style.paddingBottom="10px";
