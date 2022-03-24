@@ -109,39 +109,39 @@ window.onload = function () {
         if (window.innerWidth < 321) {
            photo.style.height="250px";
            lead.style.height="80px";
-           banner.style.marginTop="30px";
-           buttonextralarge.style.height="60px";
+           banner.style.marginTop="130px";
            products.style.marginTop="20px";
            for(i=0;i<product.length;i++) {
                 if (i > 0) {
                     product[i].style.marginTop="10px";
                 }
            }
-           for(i=0;i<buttonlarge.length;i++) {
-                buttonlarge[i].style.height="70px";
+           for(i=0;i<buttonextralarge.length;i++) {
+                buttonextralarge[i].style.height="50px";
+                //buttonlarge[i].style.height="80px";
            }
            footer.style.paddingBottom="10px";
         }
         else if (window.innerWidth < 376) {
            photo.style.height="290px";
            lead.style.height="100px";
-           banner.style.marginTop="40px";
-           buttonextralarge.style.height="70px";
+           banner.style.marginTop="140px";
            products.style.marginTop="20px";
            for(i=0;i<product.length;i++) {
                 if (i > 0) {
                     product[i].style.marginTop="10px";
                 }
            }
-           for(i=0;i<buttonlarge.length;i++) {
-                buttonlarge[i].style.height="70px";
+           for(i=0;i<buttonextralarge.length;i++) {
+                buttonextralarge[i].style.height="55px";
+                //buttonlarge[i].style.height="80px";
            }
            footer.style.paddingBottom="10px";
         }
         else if (window.innerWidth < 426) {
            photo.style.height="330px";
            lead.style.height="115px";
-           banner.style.marginTop="40px";
+           banner.style.marginTop="140px";
            products.style.marginTop="20px";
            for(i=0;i<buttonextralarge.length;i++) {
                 buttonextralarge[i].style.height="60px";
