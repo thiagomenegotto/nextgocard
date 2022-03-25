@@ -25,15 +25,15 @@ window.onload = function () {
     
     // *** Button Large and Extralarge ***
     var buttonextralarge = document.querySelector('.extra_large');
-    var buttonlarge = document.querySelectorAll('.large');
+    var buttonsmall = document.querySelectorAll('.small');
     
     buttonextralarge.style.backgroundSize='contain';
     buttonextralarge.style.padding="0";
 
-    for(i=0;i<buttonlarge.length;i++) {
-        buttonlarge[i].style.backgroundSize='contain';
-        buttonlarge[i].style.width="46.6667%";
-        buttonlarge[i].style.padding="0";
+    for(i=0;i<buttonsmall.length;i++) {
+        buttonsmall[i].style.backgroundSize='contain';
+        buttonsmall[i].style.width="46.6667%";
+        buttonsmall[i].style.padding="0";
     }
     
     // *** Banner and Product ***
@@ -101,8 +101,8 @@ window.onload = function () {
         console.log(`Screen width: ${window.innerWidth}`);
 
         if (window.innerWidth < 321) {
-           photo.style.height="210px";
-           lead.style.height="90px";
+           photo.style.height="200px";
+           lead.style.height="120px";
            banner.style.marginTop="30px";
            buttonextralarge.style.height="60px";
            products.style.marginTop="20px";
@@ -111,14 +111,14 @@ window.onload = function () {
                     product[i].style.marginTop="10px";
                 }
            }
-           for(i=0;i<buttonlarge.length;i++) {
-                buttonlarge[i].style.height="70px";
+           for(i=0;i<buttonsmall.length;i++) {
+                buttonsmall[i].style.height="70px";
            }
            footer.style.paddingBottom="10px";
         }
         else if (window.innerWidth < 376) {
-           photo.style.height="240px";
-           lead.style.height="110px";
+           photo.style.height="220px";
+           lead.style.height="150px";
            banner.style.marginTop="60px";
            buttonextralarge.style.height="70px";
            products.style.marginTop="20px";
@@ -127,14 +127,14 @@ window.onload = function () {
                     product[i].style.marginTop="10px";
                 }
            }
-           for(i=0;i<buttonlarge.length;i++) {
-                buttonlarge[i].style.height="70px";
+           for(i=0;i<buttonsmall.length;i++) {
+                buttonsmall[i].style.height="70px";
            }
            footer.style.paddingBottom="10px";
         }
         else if (window.innerWidth < 426) {
-           photo.style.height="280px";
-           lead.style.height="120px";
+           photo.style.height="260px";
+           lead.style.height="160px";
            banner.style.marginTop="65px";
            buttonextralarge.style.height="80px";
            products.style.marginTop="20px";
@@ -143,14 +143,14 @@ window.onload = function () {
                     product[i].style.marginTop="10px";
                 }
            }
-           for(i=0;i<buttonlarge.length;i++) {
-                buttonlarge[i].style.height="80px";
+           for(i=0;i<buttonsmall.length;i++) {
+                buttonsmall[i].style.height="80px";
            }
            footer.style.paddingBottom="10px";
         }
         else {
-            photo.style.height="400px";
-            lead.style.height="180px";
+            photo.style.height="380px";
+            lead.style.height="200px";
             banner.style.marginTop="80px";
             buttonextralarge.style.height="97px";
             products.style.marginTop="40px";
@@ -159,8 +159,8 @@ window.onload = function () {
                     product[i].style.marginTop="20px";
                 }
            }
-            for(i=0;i<buttonlarge.length;i++) {
-                buttonlarge[i].style.height="97px";
+            for(i=0;i<buttonsmall.length;i++) {
+                buttonsmall[i].style.height="97px";
             }
             footer.style.paddingBottom="0";
         }
