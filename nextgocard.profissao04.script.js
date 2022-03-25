@@ -118,7 +118,7 @@ window.onload = function () {
         }
         else if (window.innerWidth < 376) {
            photo.style.height="240px";
-           lead.style.height="100px";
+           lead.style.height="110px";
            banner.style.marginTop="60px";
            buttonextralarge.style.height="70px";
            products.style.marginTop="20px";
