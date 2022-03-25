@@ -101,8 +101,8 @@ window.onload = function () {
         console.log(`Screen width: ${window.innerWidth}`);
 
         if (window.innerWidth < 321) {
-           photo.style.height="200px";
-           lead.style.height="60px";
+           photo.style.height="210px";
+           lead.style.height="80px";
            banner.style.marginTop="30px";
            buttonextralarge.style.height="60px";
            products.style.marginTop="20px";
@@ -118,7 +118,7 @@ window.onload = function () {
         }
         else if (window.innerWidth < 376) {
            photo.style.height="240px";
-           lead.style.height="8px";
+           lead.style.height="80px";
            banner.style.marginTop="60px";
            buttonextralarge.style.height="70px";
            products.style.marginTop="20px";
@@ -133,7 +133,7 @@ window.onload = function () {
            footer.style.paddingBottom="10px";
         }
         else if (window.innerWidth < 426) {
-           photo.style.height="260px";
+           photo.style.height="280px";
            lead.style.height="100px";
            banner.style.marginTop="65px";
            buttonextralarge.style.height="80px";
@@ -150,7 +150,7 @@ window.onload = function () {
         }
         else {
             photo.style.height="400px";
-            lead.style.height="120px";
+            lead.style.height="140px";
             banner.style.marginTop="80px";
             buttonextralarge.style.height="97px";
             products.style.marginTop="40px";
