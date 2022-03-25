@@ -121,8 +121,8 @@ window.onload = function () {
            photo.style.height="230px";
            lead.style.height="180px";
            banner.style.marginTop="60px";
-           buttonextralarge.style.height="70px";
-           buttonextralarge.style.marginTop="20px";
+           buttonextralarge.style.height="92px";
+           buttonextralarge.style.marginTop="10px";
            products.style.marginTop="20px";
            for(i=0;i<product.length;i++) {
                 if (i > 0) {
@@ -130,7 +130,7 @@ window.onload = function () {
                 }
            }
            for(i=0;i<buttonsmall.length;i++) {
-                buttonsmall[i].style.height="60px";
+                buttonsmall[i].style.height="82px";
            }
            footer.style.paddingBottom="10px";
         }
@@ -138,8 +138,8 @@ window.onload = function () {
            photo.style.height="260px";
            lead.style.height="205px";
            banner.style.marginTop="65px";
-           buttonextralarge.style.height="80px";
-            buttonextralarge.style.marginTop="20px";
+           buttonextralarge.style.height="102px";
+           buttonextralarge.style.marginTop="10px";
            products.style.marginTop="20px";
            for(i=0;i<product.length;i++) {
                 if (i > 0) {
@@ -147,7 +147,7 @@ window.onload = function () {
                 }
            }
            for(i=0;i<buttonsmall.length;i++) {
-                buttonsmall[i].style.height="72px";
+                buttonsmall[i].style.height="94px";
            }
            footer.style.paddingBottom="10px";
         }
@@ -155,8 +155,8 @@ window.onload = function () {
             photo.style.height="370px";
             lead.style.height="300px";
             banner.style.marginTop="80px";
-            buttonextralarge.style.height="97px";
-            buttonextralarge.style.marginTop="40px";
+            buttonextralarge.style.height="122px";
+            buttonextralarge.style.marginTop="20px";
             products.style.marginTop="40px";
             for(i=0;i<product.length;i++) {
                 if (i > 0) {
@@ -164,7 +164,7 @@ window.onload = function () {
                 }
            }
             for(i=0;i<buttonsmall.length;i++) {
-                buttonsmall[i].style.height="97px";
+                buttonsmall[i].style.height="122px";
             }
             footer.style.paddingBottom="0";
         }
