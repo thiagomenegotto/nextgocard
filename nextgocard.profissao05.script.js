@@ -102,7 +102,7 @@ window.onload = function () {
 
         if (window.innerWidth < 321) {
            photo.style.height="190px";
-           lead.style.height="155px";
+           lead.style.height="160px";
            banner.style.marginTop="30px";
            buttonextralarge.style.height="60px";
            products.style.marginTop="20px";
@@ -134,7 +134,7 @@ window.onload = function () {
         }
         else if (window.innerWidth < 426) {
            photo.style.height="260px";
-           lead.style.height="210px";
+           lead.style.height="200px";
            banner.style.marginTop="65px";
            buttonextralarge.style.height="80px";
            products.style.marginTop="20px";
@@ -150,7 +150,7 @@ window.onload = function () {
         }
         else {
             photo.style.height="370px";
-            lead.style.height="280px";
+            lead.style.height="300px";
             banner.style.marginTop="80px";
             buttonextralarge.style.height="97px";
             products.style.marginTop="40px";
