@@ -102,7 +102,7 @@ window.onload = function () {
 
         if (window.innerWidth < 321) {
            photo.style.height="190px";
-           lead.style.height="150px";
+           lead.style.height="155px";
            banner.style.marginTop="30px";
            buttonextralarge.style.height="60px";
            products.style.marginTop="20px";
@@ -112,7 +112,7 @@ window.onload = function () {
                 }
            }
            for(i=0;i<buttonsmall.length;i++) {
-                buttonsmall[i].style.height="60px";
+                buttonsmall[i].style.height="55px";
            }
            footer.style.paddingBottom="10px";
         }
@@ -134,7 +134,7 @@ window.onload = function () {
         }
         else if (window.innerWidth < 426) {
            photo.style.height="260px";
-           lead.style.height="200px";
+           lead.style.height="210px";
            banner.style.marginTop="65px";
            buttonextralarge.style.height="80px";
            products.style.marginTop="20px";
@@ -144,13 +144,13 @@ window.onload = function () {
                 }
            }
            for(i=0;i<buttonsmall.length;i++) {
-                buttonsmall[i].style.height="70px";
+                buttonsmall[i].style.height="75px";
            }
            footer.style.paddingBottom="10px";
         }
         else {
             photo.style.height="370px";
-            lead.style.height="260px";
+            lead.style.height="280px";
             banner.style.marginTop="80px";
             buttonextralarge.style.height="97px";
             products.style.marginTop="40px";
