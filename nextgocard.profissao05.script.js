@@ -112,7 +112,7 @@ window.onload = function () {
                 }
            }
            for(i=0;i<buttonsmall.length;i++) {
-                buttonsmall[i].style.height="55px";
+                buttonsmall[i].style.height="50px";
            }
            footer.style.paddingBottom="10px";
         }
@@ -144,7 +144,7 @@ window.onload = function () {
                 }
            }
            for(i=0;i<buttonsmall.length;i++) {
-                buttonsmall[i].style.height="75px";
+                buttonsmall[i].style.height="72px";
            }
            footer.style.paddingBottom="10px";
         }
