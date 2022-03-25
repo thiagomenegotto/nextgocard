@@ -60,7 +60,7 @@ window.onload = function () {
             buttonproduct.style.backgroundSize="contain";
             buttonproduct.style.padding="0";
             buttonproduct.style.marginTop="20px";
-            buttonproduct.style.maxWidth="79%";
+            buttonproduct.style.maxWidth="92.257%";
         }
     }
         
@@ -119,7 +119,7 @@ window.onload = function () {
         }
         else if (window.innerWidth < 376) {
            photo.style.height="230px";
-           lead.style.height="170px";
+           lead.style.height="160px";
            banner.style.marginTop="60px";
            buttonextralarge.style.height="92px";
            buttonextralarge.style.marginTop="5px";
