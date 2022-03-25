@@ -109,7 +109,7 @@ window.onload = function () {
            products.style.marginTop="20px";
            for(i=0;i<product.length;i++) {
                 if (i > 0) {
-                    product[i].style.marginTop="10px";
+                    product[i].style.marginTop="0px";
                 }
            }
            for(i=0;i<buttonsmall.length;i++) {
@@ -122,7 +122,7 @@ window.onload = function () {
            lead.style.height="170px";
            banner.style.marginTop="60px";
            buttonextralarge.style.height="92px";
-           buttonextralarge.style.marginTop="10px";
+           buttonextralarge.style.marginTop="5px";
            products.style.marginTop="20px";
            for(i=0;i<product.length;i++) {
                 if (i > 0) {
@@ -143,7 +143,7 @@ window.onload = function () {
            products.style.marginTop="20px";
            for(i=0;i<product.length;i++) {
                 if (i > 0) {
-                    product[i].style.marginTop="10px";
+                    product[i].style.marginTop="5px";
                 }
            }
            for(i=0;i<buttonsmall.length;i++) {
@@ -153,7 +153,7 @@ window.onload = function () {
         }
         else {
             photo.style.height="370px";
-            lead.style.height="280px";
+            lead.style.height="285px";
             banner.style.marginTop="80px";
             buttonextralarge.style.height="122px";
             buttonextralarge.style.marginTop="20px";
