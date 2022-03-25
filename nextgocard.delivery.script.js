@@ -152,12 +152,12 @@ window.onload = function () {
            footer.style.paddingBottom="10px";
         }
         else {
-            photo.style.height="370px";
-            lead.style.height="285px";
+            photo.style.height="300px";
+            lead.style.height="355px";
             banner.style.marginTop="80px";
             buttonextralarge.style.height="97px";
             buttonextralarge.style.marginTop="20px";
-            products.style.marginTop="40px";
+            products.style.marginTop="80px";
             for(i=0;i<product.length;i++) {
                 if (i > 0) {
                     product[i].style.marginTop="20px";
