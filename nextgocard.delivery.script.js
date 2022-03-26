@@ -2,6 +2,7 @@ window.onload = function () {
     
     var cardNext = document.querySelectorAll('.card-container');
     
+    console.log(`No de card: ${cardNext.length}`);
     for(i=0;i<cardNext.length;i++) {
         if (i==5) {
             cardNext[i].style.minHeight="0";
