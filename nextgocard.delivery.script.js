@@ -39,10 +39,10 @@ window.onload = function () {
     var products = document.querySelector('.products');
     var product = document.querySelectorAll('.product');
     var buttonproduct;
-    //var banner = document.querySelector('.banner');
+    var banner = document.querySelector('.banner');
     //var imgbanner = banner.querySelectorAll('img');
        
-    //banner.style.padding="0";
+    banner.style.padding="0";
         
     for(i=0;i<product.length;i++) {
         
@@ -100,12 +100,11 @@ window.onload = function () {
         console.log(`Screen width: ${window.innerWidth}`);
 
         if (window.innerWidth < 321) {
-           photo.style.height="160px";
-           lead.style.height="250px";
+           photo.style.height="140px";
+           lead.style.height="220px";
            //banner.style.marginTop="30px";
            buttonextralarge.style.height="65px";
-           buttonextralarge.style.marginTop="0px";
-           products.style.marginTop="20px";
+           products.style.marginTop="40px";
            for(i=0;i<product.length;i++) {
                 if (i > 0) {
                     product[i].style.marginTop="0px";
@@ -118,12 +117,11 @@ window.onload = function () {
            footer.style.paddingBottom="10px";
         }
         else if (window.innerWidth < 376) {
-           photo.style.height="180px";
-           lead.style.height="250px";
+           photo.style.height="160px";
+           lead.style.height="280px";
            //banner.style.marginTop="60px";
            buttonextralarge.style.height="75px";
-           buttonextralarge.style.marginTop="5px";
-           products.style.marginTop="40px";
+           products.style.marginTop="60px";
            for(i=0;i<product.length;i++) {
                 if (i > 0) {
                     product[i].style.marginTop="0px";
@@ -137,7 +135,7 @@ window.onload = function () {
         }
         else if (window.innerWidth < 426) {
            photo.style.height="160px";
-           lead.style.height="330px";
+           lead.style.height="320px";
            //banner.style.marginTop="65px";
            buttonextralarge.style.height="85px";
            products.style.marginTop="80px";
