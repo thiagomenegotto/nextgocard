@@ -20,7 +20,6 @@ window.onload = function () {
     photo.style.width="100%";
     photo.style.maxHeight="400px";
     
-    lead.style.height="180px";
     lead.style.padding="0";
     
     // *** Button Large and Extralarge ***
@@ -32,7 +31,7 @@ window.onload = function () {
 
     for(i=0;i<buttonsmall.length;i++) {
         buttonsmall[i].style.backgroundSize='contain';
-        buttonsmall[i].style.width="21.6343%";
+        buttonsmall[i].style.width="30%";
         buttonsmall[i].style.padding="0";
     }
     
@@ -152,12 +151,11 @@ window.onload = function () {
            footer.style.paddingBottom="10px";
         }
         else {
-            photo.style.height="300px";
-            lead.style.height="355px";
+            photo.style.height="250px";
+            lead.style.height="425px";
             banner.style.marginTop="80px";
             buttonextralarge.style.height="97px";
-            buttonextralarge.style.marginTop="20px";
-            products.style.marginTop="80px";
+            products.style.marginTop="120px";
             for(i=0;i<product.length;i++) {
                 if (i > 0) {
                     product[i].style.marginTop="20px";
@@ -165,6 +163,7 @@ window.onload = function () {
            }
             for(i=0;i<buttonsmall.length;i++) {
                 buttonsmall[i].style.height="85px";
+                buttonsmall[i].style.marginTop="20px";
             }
             footer.style.paddingBottom="0";
         }
