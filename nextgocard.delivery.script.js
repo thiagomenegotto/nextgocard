@@ -31,7 +31,7 @@ window.onload = function () {
 
     for(i=0;i<buttonsmall.length;i++) {
         buttonsmall[i].style.backgroundSize='contain';
-        buttonsmall[i].style.width="25%";
+        buttonsmall[i].style.width="27%";
         buttonsmall[i].style.padding="0";
     }
     
