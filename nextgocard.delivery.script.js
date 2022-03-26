@@ -1,5 +1,13 @@
 window.onload = function () {
     
+    var cardNext = document.querySelectorAll('.card-container');
+    
+    for(i=0;i<cardNext.length;i++) {
+        if (i==5) {
+            cardNext[i].style.minHeight="0";
+        }
+    }
+    
     // *** Profile, Photo and Lead ***
     var card = document.querySelector('.card-container');
     var onlyLarge = document.querySelector('.only-on-large');
