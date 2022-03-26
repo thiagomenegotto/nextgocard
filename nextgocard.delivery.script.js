@@ -137,7 +137,7 @@ window.onload = function () {
            photo.style.height="160px";
            lead.style.height="320px";
            //banner.style.marginTop="65px";
-           //buttonextralarge.style.height="85px";
+           buttonextralarge.style.height="85px";
            products.style.marginTop="80px";
            for(i=0;i<product.length;i++) {
                 if (i > 0) {
@@ -145,7 +145,7 @@ window.onload = function () {
                 }
            }
            for(i=0;i<buttonsmall.length;i++) {
-                buttonsmall[i].style.height="75px";
+                buttonsmall[i].style.height="74px";
                 buttonsmall[i].style.marginTop="10px";
            }
            footer.style.paddingBottom="10px";
@@ -154,7 +154,7 @@ window.onload = function () {
             photo.style.height="250px";
             lead.style.height="440px";
             //banner.style.marginTop="80px";
-            //buttonextralarge.style.height="97px";
+            buttonextralarge.style.height="97px";
             products.style.marginTop="120px";
             for(i=0;i<product.length;i++) {
                 if (i > 0) {
