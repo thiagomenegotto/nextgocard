@@ -155,8 +155,8 @@ window.onload = function () {
            footer.style.paddingBottom="10px";
         }
         else {
-            photo.style.height="250px";
-            lead.style.height="440px";
+            photo.style.height="300px";
+            lead.style.height="460px";
             //banner.style.marginTop="80px";
             buttonextralarge.style.height="97px";
             products.style.marginTop="120px";
@@ -166,7 +166,7 @@ window.onload = function () {
                 }
            }
             for(i=0;i<buttonsmall.length;i++) {
-                buttonsmall[i].style.height="85px";
+                buttonsmall[i].style.height="92px";
                 buttonsmall[i].style.marginTop="20px";
             }
             footer.style.paddingBottom="0";
