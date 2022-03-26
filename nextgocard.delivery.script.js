@@ -1,6 +1,6 @@
 window.onload = function () {
     
-    var cardNext = document.querySelectorAll('.card-container');
+    var cardNext = document.querySelectorAll('.card-container div');
     
     console.log(`No de card: ${cardNext.length}`);
     for(i=0;i<cardNext.length;i++) {
@@ -113,7 +113,7 @@ window.onload = function () {
            lead.style.height="240px";
            //banner.style.marginTop="30px";
            buttonextralarge.style.height="65px";
-           products.style.marginTop="60px";
+           products.style.marginTop="80px";
            for(i=0;i<product.length;i++) {
                 if (i > 0) {
                     product[i].style.marginTop="0px";
@@ -130,7 +130,7 @@ window.onload = function () {
            lead.style.height="290px";
            //banner.style.marginTop="60px";
            buttonextralarge.style.height="75px";
-           products.style.marginTop="60px";
+           products.style.marginTop="80px";
            for(i=0;i<product.length;i++) {
                 if (i > 0) {
                     product[i].style.marginTop="0px";
