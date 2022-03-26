@@ -42,7 +42,11 @@ window.onload = function () {
     var buttonproduct;
     var banner = document.querySelector('.banner');
     var imgbanner = banner.querySelectorAll('img');
-       
+    
+    var cardNext = products.nextElementSibling;
+    
+    cardNext.style.minHeight="0";
+    
     banner.style.padding="0";
         
     for(i=0;i<product.length;i++) {
