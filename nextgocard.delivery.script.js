@@ -79,7 +79,7 @@ window.onload = function () {
     
     footer.style.width="auto";
     footer.style.maxWidth="233px";
-    footer.style.marginTop="60px";
+    footer.style.marginTop="80px";
     footer.style.marginBottom="10px";
     footer.style.padding="0";
     footer.style.position="relative";
