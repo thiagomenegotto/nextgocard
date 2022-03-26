@@ -1,14 +1,5 @@
 window.onload = function () {
-    
-    var cardNext = document.querySelectorAll('.card-container div');
-    
-    console.log(`No de card: ${cardNext.length}`);
-    for(i=0;i<cardNext.length;i++) {
-        if (i==5) {
-            cardNext[i].style.minHeight="0";
-        }
-    }
-    
+        
     // *** Profile, Photo and Lead ***
     var card = document.querySelector('.card-container');
     var onlyLarge = document.querySelector('.only-on-large');
@@ -50,7 +41,11 @@ window.onload = function () {
     var buttonproduct;
     var banner = document.querySelector('.banner');
     //var imgbanner = banner.querySelectorAll('img');
-       
+    
+    var cardNext = products.nextElementSibling;
+    
+    cardNext.style.minHeight="0";
+    
     banner.style.padding="0";
         
     for(i=0;i<product.length;i++) {
