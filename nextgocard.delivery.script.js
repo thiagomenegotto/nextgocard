@@ -31,7 +31,7 @@ window.onload = function () {
 
     for(i=0;i<buttonsmall.length;i++) {
         buttonsmall[i].style.backgroundSize='contain';
-        buttonsmall[i].style.width="30%";
+        buttonsmall[i].style.width="25%";
         buttonsmall[i].style.padding="0";
     }
     
@@ -59,7 +59,7 @@ window.onload = function () {
             buttonproduct.style.backgroundSize="contain";
             buttonproduct.style.padding="0";
             buttonproduct.style.marginTop="20px";
-            buttonproduct.style.maxWidth="92.257%";
+            buttonproduct.style.maxWidth="79%";
         }
     }
         
@@ -152,7 +152,7 @@ window.onload = function () {
         }
         else {
             photo.style.height="250px";
-            lead.style.height="425px";
+            lead.style.height="440px";
             banner.style.marginTop="80px";
             buttonextralarge.style.height="97px";
             products.style.marginTop="120px";
