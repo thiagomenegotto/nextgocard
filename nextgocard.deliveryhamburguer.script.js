@@ -31,7 +31,7 @@ window.onload = function () {
 
     for(i=0;i<buttonsmall.length;i++) {
         buttonsmall[i].style.backgroundSize='contain';
-        buttonsmall[i].style.width="23%";
+        buttonsmall[i].style.width="20%";
         buttonsmall[i].style.padding="0";
     }
     
@@ -174,6 +174,7 @@ window.onload = function () {
                 else {
                     buttonsmall[i].style.height="92px";
                     buttonsmall[i].style.marginTop="20px";
+                }
             }
             footer.style.paddingBottom="0";
         }
