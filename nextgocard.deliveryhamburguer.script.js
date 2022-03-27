@@ -108,6 +108,7 @@ window.onload = function () {
            lead.style.height="250px";
            //banner.style.marginTop="30px";
            buttonextralarge.style.height="65px";
+           buttonextralarge.style.marginTop="10px";
            products.style.marginTop="80px";
            for(i=0;i<product.length;i++) {
                 if (i > 0) {
@@ -115,8 +116,14 @@ window.onload = function () {
                 }
            }
            for(i=0;i<buttonsmall.length;i++) {
-                buttonsmall[i].style.height="55px";
-                buttonsmall[i].style.marginTop="10px";
+                
+                if (i < 3) {
+                    buttonsmall[i].style.height="50px";
+                }
+                else {
+                    buttonsmall[i].style.height="55px";
+                    buttonsmall[i].style.marginTop="10px";
+                }
            }
            footer.style.paddingBottom="10px";
         }
@@ -125,6 +132,7 @@ window.onload = function () {
            lead.style.height="290px";
            //banner.style.marginTop="60px";
            buttonextralarge.style.height="75px";
+           buttonextralarge.style.marginTop="10px";
            products.style.marginTop="80px";
            for(i=0;i<product.length;i++) {
                 if (i > 0) {
@@ -132,8 +140,14 @@ window.onload = function () {
                 }
            }
            for(i=0;i<buttonsmall.length;i++) {
-                buttonsmall[i].style.height="64px";
-                buttonsmall[i].style.marginTop="10px";
+                
+                if (i < 3) {
+                    buttonsmall[i].style.height="50px";
+                }
+                else {
+                    buttonsmall[i].style.height="64px";
+                    buttonsmall[i].style.marginTop="10px";
+                }
            }
            footer.style.paddingBottom="10px";
         }
@@ -142,6 +156,7 @@ window.onload = function () {
            lead.style.height="330px";
            //banner.style.marginTop="65px";
            buttonextralarge.style.height="85px";
+           buttonextralarge.style.marginTop="10px";
            products.style.marginTop="80px";
            for(i=0;i<product.length;i++) {
                 if (i > 0) {
@@ -149,8 +164,14 @@ window.onload = function () {
                 }
            }
            for(i=0;i<buttonsmall.length;i++) {
-                buttonsmall[i].style.height="74px";
-                buttonsmall[i].style.marginTop="10px";
+                
+                if (i < 3) {
+                    buttonsmall[i].style.height="58px";
+                }
+                else {
+                    buttonsmall[i].style.height="74px";
+                    buttonsmall[i].style.marginTop="10px";
+                }
            }
            footer.style.paddingBottom="10px";
         }
