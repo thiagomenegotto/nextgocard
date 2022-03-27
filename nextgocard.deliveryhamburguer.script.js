@@ -159,6 +159,7 @@ window.onload = function () {
             lead.style.height="480px";
             //banner.style.marginTop="80px";
             buttonextralarge.style.height="97px";
+            buttonextralarge.style.marginTop="20px";
             products.style.marginTop="120px";
             for(i=0;i<product.length;i++) {
                 if (i > 0) {
@@ -166,8 +167,13 @@ window.onload = function () {
                 }
            }
             for(i=0;i<buttonsmall.length;i++) {
-                buttonsmall[i].style.height="92px";
-                buttonsmall[i].style.marginTop="20px";
+                
+                if (i < 3) {
+                    buttonsmall[i].style.height="72px";
+                }
+                else {
+                    buttonsmall[i].style.height="92px";
+                    buttonsmall[i].style.marginTop="20px";
             }
             footer.style.paddingBottom="0";
         }
