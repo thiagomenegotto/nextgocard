@@ -116,12 +116,12 @@ window.onload = function () {
         }
         else if (window.innerWidth < 376) {
            photo.style.height="200px";
-           lead.style.height="120px";
+           lead.style.height="110px";
            //banner.style.marginTop="60px";
            for(i=0;i<buttonextralarge.length;i++) {
                buttonextralarge[i].style.height="62px";
            }
-           products.style.marginTop="80px";
+           products.style.marginTop="120px";
            footer.style.paddingBottom="10px";
         }
         else if (window.innerWidth < 426) {
