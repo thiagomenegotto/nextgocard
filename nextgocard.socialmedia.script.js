@@ -109,7 +109,7 @@ window.onload = function () {
            lead.style.height="140px";
            //banner.style.marginTop="30px";
            for(i=0;i<buttonextralarge.length;i++) {
-               buttonextralarge[i].style.height="60px";
+               buttonextralarge[i].style.height="56px";
            }
            products.style.marginTop="80px";
            footer.style.paddingBottom="10px";
@@ -119,7 +119,7 @@ window.onload = function () {
            lead.style.height="160px";
            //banner.style.marginTop="60px";
            for(i=0;i<buttonextralarge.length;i++) {
-               buttonextralarge[i].style.height="70px";
+               buttonextralarge[i].style.height="64px";
            }
            products.style.marginTop="80px";
            footer.style.paddingBottom="10px";
@@ -129,14 +129,14 @@ window.onload = function () {
            lead.style.height="180px";
            //banner.style.marginTop="65px";
            for(i=0;i<buttonextralarge.length;i++) {
-               buttonextralarge[i].style.height="74px";
+               buttonextralarge[i].style.height="72px";
            }
            products.style.marginTop="80px";
            footer.style.paddingBottom="10px";
         }
         else {
             photo.style.height="340px";
-            lead.style.height="250px";
+            lead.style.height="260px";
             //banner.style.marginTop="160px";
             for(i=0;i<buttonextralarge.length;i++) {
                 buttonextralarge[i].style.height="82px";
