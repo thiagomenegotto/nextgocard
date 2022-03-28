@@ -126,7 +126,7 @@ window.onload = function () {
         }
         else if (window.innerWidth < 426) {
            photo.style.height="230px";
-           lead.style.height="140px";
+           lead.style.height="130px";
            //banner.style.marginTop="65px";
            for(i=0;i<buttonextralarge.length;i++) {
                buttonextralarge[i].style.height="70px";
@@ -136,7 +136,7 @@ window.onload = function () {
         }
         else {
             photo.style.height="340px";
-            lead.style.height="200px";
+            lead.style.height="190px";
             //banner.style.marginTop="160px";
             for(i=0;i<buttonextralarge.length;i++) {
                 buttonextralarge[i].style.height="82px";
