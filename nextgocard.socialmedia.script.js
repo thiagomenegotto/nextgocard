@@ -129,17 +129,17 @@ window.onload = function () {
            lead.style.height="180px";
            //banner.style.marginTop="65px";
            for(i=0;i<buttonextralarge.length;i++) {
-               buttonextralarge[i].style.height="80px";
+               buttonextralarge[i].style.height="74px";
            }
            products.style.marginTop="80px";
            footer.style.paddingBottom="10px";
         }
         else {
             photo.style.height="340px";
-            lead.style.height="240px";
+            lead.style.height="250px";
             //banner.style.marginTop="160px";
             for(i=0;i<buttonextralarge.length;i++) {
-                buttonextralarge[i].style.height="97px";
+                buttonextralarge[i].style.height="82px";
             }
             products.style.marginTop="120px";
             footer.style.paddingBottom="0";
