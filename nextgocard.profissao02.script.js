@@ -160,7 +160,7 @@ window.onload = function () {
             for(i=0;i<buttonlarge.length;i++) {
                 buttonlarge[i].style.height="97px";
             }
-            footer.style.paddingBottom="0"; 
+            footer.style.paddingBottom="0";
         }
     }
 
