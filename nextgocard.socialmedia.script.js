@@ -109,7 +109,7 @@ window.onload = function () {
            lead.style.height="140px";
            //banner.style.marginTop="30px";
            for(i=0;i<buttonextralarge.length;i++) {
-               buttonextralarge.style.height="60px";
+               buttonextralarge[i].style.height="60px";
            }
            products.style.marginTop="80px";
            footer.style.paddingBottom="10px";
@@ -119,7 +119,7 @@ window.onload = function () {
            lead.style.height="160px";
            //banner.style.marginTop="60px";
            for(i=0;i<buttonextralarge.length;i++) {
-               buttonextralarge.style.height="70px";
+               buttonextralarge[i].style.height="70px";
            }
            products.style.marginTop="80px";
            footer.style.paddingBottom="10px";
