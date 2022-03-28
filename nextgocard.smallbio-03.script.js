@@ -144,7 +144,7 @@ window.onload = function () {
             products.style.marginTop="120px"; 
             footer.style.paddingBottom="0";
         }
-    }
+    } 
 
     window.addEventListener('resize', checkForWindowResize);
 }
