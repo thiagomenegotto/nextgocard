@@ -109,7 +109,7 @@ window.onload = function () {
            lead.style.height="140px";
            //banner.style.marginTop="30px";
            for(i=0;i<buttonextralarge.length;i++) {
-               buttonextralarge[i].style.height="56px";
+               buttonextralarge[i].style.height="54px";
            }
            products.style.marginTop="80px";
            footer.style.paddingBottom="10px";
@@ -119,7 +119,7 @@ window.onload = function () {
            lead.style.height="160px";
            //banner.style.marginTop="60px";
            for(i=0;i<buttonextralarge.length;i++) {
-               buttonextralarge[i].style.height="64px";
+               buttonextralarge[i].style.height="62px";
            }
            products.style.marginTop="80px";
            footer.style.paddingBottom="10px";
@@ -129,7 +129,7 @@ window.onload = function () {
            lead.style.height="180px";
            //banner.style.marginTop="65px";
            for(i=0;i<buttonextralarge.length;i++) {
-               buttonextralarge[i].style.height="72px";
+               buttonextralarge[i].style.height="70px";
            }
            products.style.marginTop="80px";
            footer.style.paddingBottom="10px";
