@@ -141,7 +141,7 @@ window.onload = function () {
             for(i=0;i<buttonextralarge.length;i++) {
                 buttonextralarge[i].style.height="82px";
             }
-            products.style.marginTop="120px";
+            products.style.marginTop="120px"; 
             footer.style.paddingBottom="0";
         }
     }
