@@ -32,7 +32,7 @@ window.onload = function () {
     for(i=0;i<buttonsmall.length;i++) {
         buttonsmall[i].style.backgroundSize='contain';
         buttonsmall[i].style.width="26%";
-        buttonsmall[i].style.padding="0";
+        buttonsmall[i].style.padding="0"; 
     }
     
     // *** Banner and Product ***
