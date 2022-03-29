@@ -161,10 +161,13 @@ window.onload = function () {
             }
             products.style.marginTop="230px"; 
             for(i=0;i<product.length;i++) {
-               if (i > 0) {
-                   product[i].style.marginTop="40px";
+               if (i > 1) {
+                   product[i].style.marginTop="60px";
                    buttonproduct = product[i].querySelector('a');
                    buttonproduct.style.marginTop="20px";   
+               }
+               else if (i == 1) {
+                   product[i].style.marginTop="40px";
                }
             }
             footer.style.paddingBottom="0";
