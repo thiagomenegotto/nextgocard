@@ -56,9 +56,6 @@ window.onload = function () {
         
         if (i > 0) {
             product[i].style.marginTop="20px";
-        }
-        
-        if (i == (product.length-1)) {
             buttonproduct = product[i].querySelector('a');
             buttonproduct.style.width="auto";
             buttonproduct.style.backgroundSize="contain";
@@ -115,10 +112,8 @@ window.onload = function () {
            for(i=0;i<product.length;i++) {
                if (i > 0) {
                    product[i].style.marginTop="0px";
-                   if (i == (product.length-1)) {
-                       buttonproduct = product[i].querySelector('a');
-                       buttonproduct.style.marginTop="0px";
-                   }   
+                   buttonproduct = product[i].querySelector('a');
+                   buttonproduct.style.marginTop="0px"; 
                }
            }
            footer.style.paddingBottom="10px";
@@ -134,10 +129,8 @@ window.onload = function () {
            for(i=0;i<product.length;i++) {
                if (i > 0) {
                    product[i].style.marginTop="10px";
-                   if (i == (product.length-1)) {
-                       buttonproduct = product[i].querySelector('a');
-                       buttonproduct.style.marginTop="10px";
-                   }   
+                   buttonproduct = product[i].querySelector('a');
+                   buttonproduct.style.marginTop="10px";
                }
            }
            footer.style.paddingBottom="10px";
@@ -153,10 +146,8 @@ window.onload = function () {
            for(i=0;i<product.length;i++) {
                if (i > 0) {
                    product[i].style.marginTop="10px";
-                   if (i == (product.length-1)) {
-                       buttonproduct = product[i].querySelector('a');
-                       buttonproduct.style.marginTop="10px";
-                   }   
+                   buttonproduct = product[i].querySelector('a');
+                   buttonproduct.style.marginTop="10px";
                }
            }
            footer.style.paddingBottom="10px";
@@ -172,10 +163,8 @@ window.onload = function () {
             for(i=0;i<product.length;i++) {
                if (i > 0) {
                    product[i].style.marginTop="20px";
-                   if (i == (product.length-1)) {
-                       buttonproduct = product[i].querySelector('a');
-                       buttonproduct.style.marginTop="20px";
-                   }    
+                   buttonproduct = product[i].querySelector('a');
+                   buttonproduct.style.marginTop="20px";   
                }
             }
             footer.style.paddingBottom="0";
