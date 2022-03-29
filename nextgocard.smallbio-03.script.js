@@ -106,18 +106,18 @@ window.onload = function () {
 
         if (window.innerWidth < 321) {
            photo.style.height="170px";
-           lead.style.height="100px";
+           lead.style.height="90px";
            //banner.style.marginTop="30px";
            for(i=0;i<buttonextralarge.length;i++) {
                buttonextralarge[i].style.height="54px";
            }
-           products.style.marginTop="90px";
+           products.style.marginTop="120px";
            for(i=0;i<product.length;i++) {
                if (i > 0) {
                    product[i].style.marginTop="0px";
                    if (i == (product.length-1)) {
                        buttonproduct = product[i].querySelector('a');
-                       buttonproduct.style.marginTop="10px";
+                       buttonproduct.style.marginTop="0px";
                    }   
                }
            }
@@ -133,7 +133,7 @@ window.onload = function () {
            products.style.marginTop="90px";
            for(i=0;i<product.length;i++) {
                if (i > 0) {
-                   product[i].style.marginTop="0px";
+                   product[i].style.marginTop="10px";
                    if (i == (product.length-1)) {
                        buttonproduct = product[i].querySelector('a');
                        buttonproduct.style.marginTop="10px";
@@ -152,7 +152,7 @@ window.onload = function () {
            products.style.marginTop="100px";
            for(i=0;i<product.length;i++) {
                if (i > 0) {
-                   product[i].style.marginTop="0px";
+                   product[i].style.marginTop="10px";
                    if (i == (product.length-1)) {
                        buttonproduct = product[i].querySelector('a');
                        buttonproduct.style.marginTop="10px";
