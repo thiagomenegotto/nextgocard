@@ -111,7 +111,7 @@ window.onload = function () {
            products.style.marginTop="70px";
            for(i=0;i<product.length;i++) {
                if (i > 0) {
-                   product[i].style.marginTop="0px";
+                   product[i].style.marginTop="10px";
                    buttonproduct = product[i].querySelector('a');
                    buttonproduct.style.marginTop="0px"; 
                }
@@ -128,7 +128,7 @@ window.onload = function () {
            products.style.marginTop="90px";
            for(i=0;i<product.length;i++) {
                if (i > 0) {
-                   product[i].style.marginTop="10px";
+                   product[i].style.marginTop="20px";
                    buttonproduct = product[i].querySelector('a');
                    buttonproduct.style.marginTop="10px";
                }
@@ -145,7 +145,7 @@ window.onload = function () {
            products.style.marginTop="100px";
            for(i=0;i<product.length;i++) {
                if (i > 0) {
-                   product[i].style.marginTop="10px";
+                   product[i].style.marginTop="20px";
                    buttonproduct = product[i].querySelector('a');
                    buttonproduct.style.marginTop="10px";
                }
@@ -162,7 +162,7 @@ window.onload = function () {
             products.style.marginTop="230px"; 
             for(i=0;i<product.length;i++) {
                if (i > 0) {
-                   product[i].style.marginTop="20px";
+                   product[i].style.marginTop="40px";
                    buttonproduct = product[i].querySelector('a');
                    buttonproduct.style.marginTop="20px";   
                }
