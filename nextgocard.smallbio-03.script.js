@@ -111,10 +111,14 @@ window.onload = function () {
            for(i=0;i<buttonextralarge.length;i++) {
                buttonextralarge[i].style.height="54px";
            }
-           products.style.marginTop="80px";
+           products.style.marginTop="90px";
            for(i=0;i<product.length;i++) {
                if (i > 0) {
                    product[i].style.marginTop="0px";
+                   if (i == (product.length-1)) {
+                       buttonproduct = product[i].querySelector('a');
+                       buttonproduct.style.marginTop="10px";
+                   }   
                }
            }
            footer.style.paddingBottom="10px";
@@ -130,6 +134,10 @@ window.onload = function () {
            for(i=0;i<product.length;i++) {
                if (i > 0) {
                    product[i].style.marginTop="0px";
+                   if (i == (product.length-1)) {
+                       buttonproduct = product[i].querySelector('a');
+                       buttonproduct.style.marginTop="10px";
+                   }   
                }
            }
            footer.style.paddingBottom="10px";
@@ -145,21 +153,29 @@ window.onload = function () {
            for(i=0;i<product.length;i++) {
                if (i > 0) {
                    product[i].style.marginTop="0px";
+                   if (i == (product.length-1)) {
+                       buttonproduct = product[i].querySelector('a');
+                       buttonproduct.style.marginTop="10px";
+                   }   
                }
            }
            footer.style.paddingBottom="10px";
         }
         else {
             photo.style.height="340px";
-            lead.style.height="200px";
+            lead.style.height="190px";
             //banner.style.marginTop="160px";
             for(i=0;i<buttonextralarge.length;i++) {
                 buttonextralarge[i].style.height="82px";
             }
-            products.style.marginTop="220px"; 
+            products.style.marginTop="230px"; 
             for(i=0;i<product.length;i++) {
                if (i > 0) {
                    product[i].style.marginTop="20px";
+                   if (i == (product.length-1)) {
+                       buttonproduct = product[i].querySelector('a');
+                       buttonproduct.style.marginTop="20px";
+                   }    
                }
             }
             footer.style.paddingBottom="0";
