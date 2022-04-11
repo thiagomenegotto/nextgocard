@@ -168,7 +168,7 @@ window.onload = function () {
             for(i=0;i<buttonextralarge.length;i++) {
                 buttonextralarge[i].style.height="82px";
             }
-            products.style.marginTop="230px"; 
+            products.style.marginTop="220px"; 
             for(i=0;i<product.length;i++) {
                if (i > 1) {
                    product[i].style.marginTop="60px";
