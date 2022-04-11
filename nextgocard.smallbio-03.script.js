@@ -71,8 +71,8 @@ window.onload = function () {
 
     // *** Footer ***
     var footer = document.querySelector('.footer-text-box');
-    var footerp = footer.querySelector('p');
-    var footera = footerp.querySelector('a');
+    //var footerp = footer.querySelector('p');
+    var footera = footer.querySelector('a');
     var footeracolor = footera.style.color;
     
     footer.style.width="auto";
@@ -82,8 +82,8 @@ window.onload = function () {
     footer.style.padding="0";
     footer.style.position="relative";
     
-    footerp.style.fontWeight="700";
-    footera.style.fontWeight="700";
+    footer.style.fontWeight="700";
+    //footera.style.fontWeight="700";
     footera.onmouseover = function() 
     {
         footera.style.color = "white";
