@@ -53,7 +53,7 @@ window.onload = function () {
         product[i].style.margin="0";
         
         image.style.margin="0";
-        image.querySelector('.swiper').style.paddingBottom="10px";
+        image.querySelector('.swiper').style.paddingBottom="30px";
         product[i].querySelector('.details').style.display="none";
         
         if (i > 0) {
@@ -62,7 +62,7 @@ window.onload = function () {
             buttonproduct.style.width="auto";
             buttonproduct.style.backgroundSize="contain";
             buttonproduct.style.padding="0";
-            buttonproduct.style.marginTop="20px";
+            buttonproduct.style.marginTop="0px";
             buttonproduct.style.maxWidth="79%";
         }
     }
@@ -155,10 +155,10 @@ window.onload = function () {
                if (i > 1) {
                    product[i].style.marginTop="40px";
                    buttonproduct = product[i].querySelector('a');
-                   buttonproduct.style.marginTop="10px";   
+                   buttonproduct.style.marginTop="0px";   
                }
                else if (i == 1) {
-                   product[i].style.marginTop="20px";
+                   product[i].style.marginTop="0px";
                }
            }
            footer.style.paddingBottom="10px";
