@@ -53,6 +53,8 @@ window.onload = function () {
         product[i].style.margin="0";
         
         image.style.margin="0";
+        image.querySelector('.swiper').style.paddingBottom="0";
+        product[i].querySelector('.details').style.display="none";
         
         if (i > 0) {
             product[i].style.marginTop="20px";
@@ -62,9 +64,6 @@ window.onload = function () {
             buttonproduct.style.padding="0";
             buttonproduct.style.marginTop="20px";
             buttonproduct.style.maxWidth="79%";
-            
-            product[i].querySelector('.swiper').style.paddingBottom="0";
-            product[i].querySelector('.details').style.display="none";
         }
     }
         
