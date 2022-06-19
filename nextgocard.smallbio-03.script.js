@@ -53,7 +53,7 @@ window.onload = function () {
         product[i].style.margin="0";
         
         image.style.margin="0";
-        image.querySelector('.swiper').style.paddingBottom="0";
+        image.querySelector('.swiper').style.paddingBottom="10px";
         product[i].querySelector('.details').style.display="none";
         
         if (i > 0) {
@@ -173,7 +173,7 @@ window.onload = function () {
             products.style.marginTop="215px"; 
             for(i=0;i<product.length;i++) {
                if (i > 1) {
-                   product[i].style.marginTop="60px";
+                   product[i].style.marginTop="80px";
                    buttonproduct = product[i].querySelector('a');
                    buttonproduct.style.marginTop="20px";   
                }
