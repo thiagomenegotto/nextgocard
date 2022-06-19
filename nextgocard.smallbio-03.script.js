@@ -63,8 +63,8 @@ window.onload = function () {
             buttonproduct.style.marginTop="20px";
             buttonproduct.style.maxWidth="79%";
             
-            product[i].querySelector('swiper').style.paddingBottom="0";
-            product[i].querySelector('details').style.display="none";
+            product[i].querySelector('.swiper').style.paddingBottom="0";
+            product[i].querySelector('.details').style.display="none";
         }
     }
         
