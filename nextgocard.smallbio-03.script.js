@@ -62,6 +62,9 @@ window.onload = function () {
             buttonproduct.style.padding="0";
             buttonproduct.style.marginTop="20px";
             buttonproduct.style.maxWidth="79%";
+            
+            product[i].querySelector('swiper').style.paddingBottom="0";
+            product[i].querySelector('details').style.display="none";
         }
     }
         
