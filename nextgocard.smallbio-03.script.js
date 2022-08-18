@@ -32,7 +32,7 @@ window.onload = function () {
     buttons.style.padding="0px 20px 0px 20px";
     
     for(i=0;i<buttonextralarge.length;i++) {
-        buttonextralarge[i].style.backgroundSize='contain';
+        //buttonextralarge[i].style.backgroundSize='contain';
         buttonextralarge[i].style.padding="0";
         buttonextralarge[i].style.width="100%";
         buttonextralarge[i].style.backgroundPosition = 'left';
@@ -50,7 +50,7 @@ window.onload = function () {
     
     cardNext.style.minHeight="0";
     
-    banner.style.padding="0";
+    //banner.style.padding="0";
     products.style.padding="150px 20px 0px 20px";
         
     for(i=0;i<product.length;i++) {
@@ -62,7 +62,7 @@ window.onload = function () {
         
         image.style.margin="0";
         image.querySelector('.swiper').style.paddingBottom="30px";
-        product[i].querySelector('.details').style.display="none";
+        //product[i].querySelector('.details').style.display="none";
         
         if (i > 0) {
             product[i].style.marginTop="20px";
@@ -118,7 +118,7 @@ window.onload = function () {
            for(i=0;i<buttonextralarge.length;i++) {
                buttonextralarge[i].style.height="54px";
            }
-           products.style.marginTop="60px";
+           //products.style.marginTop="60px";
            for(i=0;i<product.length;i++) {
                if (i > 1) {
                    product[i].style.marginTop="20px";
@@ -138,7 +138,7 @@ window.onload = function () {
            for(i=0;i<buttonextralarge.length;i++) {
                buttonextralarge[i].style.height="62px";
            }
-           products.style.marginTop="80px";
+           //products.style.marginTop="80px";
            for(i=0;i<product.length;i++) {
                if (i > 1) {
                    product[i].style.marginTop="40px";
@@ -158,7 +158,7 @@ window.onload = function () {
            for(i=0;i<buttonextralarge.length;i++) {
                buttonextralarge[i].style.height="60px";
            }
-           products.style.marginTop="90px";
+           //products.style.marginTop="90px";
            for(i=0;i<product.length;i++) {
                if (i > 1) {
                    product[i].style.marginTop="40px";
@@ -178,7 +178,7 @@ window.onload = function () {
             for(i=0;i<buttonextralarge.length;i++) {
                 buttonextralarge[i].style.height="82px";
             }
-            products.style.marginTop="215px"; 
+            //products.style.marginTop="215px"; 
             for(i=0;i<product.length;i++) {
                if (i > 1) {
                    product[i].style.marginTop="80px";
