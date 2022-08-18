@@ -54,7 +54,7 @@ window.onload = function () {
         product[i].style.margin="0";
         product[i].style.backgroundColor="";
         
-        product[i].insertBefore(details, image);
+        product[i].insertBefore(details, 1);
         
         image.style.margin="0";
         image.querySelector('.swiper').style.paddingBottom="30px";
