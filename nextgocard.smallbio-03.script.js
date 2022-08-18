@@ -44,6 +44,7 @@ window.onload = function () {
     cardNext.style.minHeight="0";
     
     banner.style.padding="0";
+    products.style.padding="150px 20px 0px 20px";
         
     for(i=0;i<product.length;i++) {
         
