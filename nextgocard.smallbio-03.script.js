@@ -1,19 +1,17 @@
 window.onload = function () {
     
 // ***** FONTS *****
-    
-    var font = new FontFace("Gilroy Font", "url(https://thiagomenegotto.github.io/nextgocard/tree/main/uploads/2022/07/Gilroy-Bold.woff2)", {
-    style: 'normal', weight: '700'
-    });
-
-    // don't wait for the render tree, initiate an immediate fetch!
-    font.load().then(function() {
-    // apply the font (which may re-render text and cause a page reflow)
-    // after the font has finished downloading
-    document.fonts.add(font);
-    document.body.style.fontFamily = "Gilroy Font, sans-serif";
+   
+    async function loadFonts() {
         
-    });
+        const font = new FontFace("Gilroy Font", "url(https://thiagomenegotto.github.io/nextgocard/tree/main/uploads/2022/07/Gilroy-Bold.woff2)", {
+        style: 'normal', weight: '700'
+        });
+        
+        await font.load();
+        document.fonts.add(font);
+        document.body.style.fontFamily = "Gilroy Font, sans-serif";
+    }
     
     
 // ***** PROFILE, PHOTO AND LEAD *****
