@@ -3,7 +3,7 @@ window.onload = function () {
 // ***** FONTS *****
     
     var newStyle = document.createElement('style');
-    newStyle.appendChild(document.createTextNode(" @font-face { font-family: "Gilroy Font"; src: url('"https://thiagomenegotto.github.io/nextgocard/tree/main/uploads/2022/07/Gilroy-Bold.woff2"') format('woff2'); } "));
+    newStyle.appendChild(document.createTextNode(" @font-face { font-family: "Gilroy Font"; src: url("https://thiagomenegotto.github.io/nextgocard/tree/main/uploads/2022/07/Gilroy-Bold.woff2") format('woff2'); } "));
 
     document.head.appendChild(newStyle);
     
