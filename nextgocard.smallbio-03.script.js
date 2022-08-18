@@ -113,7 +113,7 @@ window.onload = function () {
 
         if (window.innerWidth < 321) {
            photo.style.height="170px";
-           lead.style.height="90px";
+           //lead.style.height="90px";
            //banner.style.marginTop="30px";
            for(i=0;i<buttonextralarge.length;i++) {
                buttonextralarge[i].style.height="54px";
@@ -133,7 +133,7 @@ window.onload = function () {
         }
         else if (window.innerWidth < 376) {
            photo.style.height="200px";
-           lead.style.height="110px";
+           //lead.style.height="110px";
            //banner.style.marginTop="60px";
            for(i=0;i<buttonextralarge.length;i++) {
                buttonextralarge[i].style.height="62px";
@@ -153,7 +153,7 @@ window.onload = function () {
         }
         else if (window.innerWidth < 426) {
            photo.style.height="230px";
-           lead.style.height="130px";
+           //lead.style.height="130px";
            //banner.style.marginTop="65px";
            for(i=0;i<buttonextralarge.length;i++) {
                buttonextralarge[i].style.height="60px";
@@ -173,7 +173,7 @@ window.onload = function () {
         }
         else {
             photo.style.height="340px";
-            lead.style.height="190px";
+            //lead.style.height="190px";
             //banner.style.marginTop="160px";
             for(i=0;i<buttonextralarge.length;i++) {
                 buttonextralarge[i].style.height="82px";
