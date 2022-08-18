@@ -6,14 +6,14 @@ window.onload = function () {
     var hideLarge = document.querySelector('.hide-on-large');
     var profile = document.querySelector('.profile'); 
     var photo = document.querySelector('.photo');
-    var lead = document.querySelector('.lead');
+    //var lead = document.querySelector('.lead');
     
     card.style.padding="0";
     onlyLarge.style.margin="0";
     hideLarge.style.margin="0";
     
     profile.style.margin="0";
-    profile.style.padding="149px 20px 0px 20px";
+    profile.style.padding="599px 20px 0px 20px";
     
     photo.style.margin="0";
     photo.style.padding="0";
@@ -21,8 +21,8 @@ window.onload = function () {
     photo.style.maxHeight="0";
     photo.style.minHeight="0";
     
-    lead.style.padding="0";
-    lead.style.minHeight="0";
+    //lead.style.padding="0";
+    //lead.style.minHeight="0";
     
     // *** Button Large and Extralarge ***
     var buttonextralarge = document.querySelectorAll('.extra_large');
