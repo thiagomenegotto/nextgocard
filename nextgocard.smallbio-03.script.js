@@ -1,6 +1,7 @@
 window.onload = function () {
     
-    // *** Profile, Photo and Lead ***
+// ***** PROFILE, PHOTO AND LEAD *****
+    
     var card = document.querySelector('.card-container');
     var onlyLarge = document.querySelector('.only-on-large');
     var hideLarge = document.querySelector('.hide-on-large');
@@ -20,7 +21,7 @@ window.onload = function () {
     //lead.style.padding="0";
     //lead.style.minHeight="0";
     
-    // *** Button Large and Extralarge ***
+// ***** BUTTON LARGE AND EXTRALARGE ***** 
     var buttonextralarge = document.querySelectorAll('.extra_large');
     var buttons = document.querySelector('.buttons.row.buttons-left');
     //var buttonlarge = document.querySelectorAll('.large');
@@ -35,19 +36,13 @@ window.onload = function () {
     }
 
         
-    // *** Banner and Product ***
+// ***** PRODUCT ***** 
     var products = document.querySelector('.products');
     var product = document.querySelectorAll('.product');
     var buttonproduct;
-    var banner = document.querySelector('.banner');
-    var imgbanner = banner.querySelectorAll('img');
     
-    var cardNext = products.nextElementSibling;
-    
-    cardNext.style.minHeight="0";
-    
-    //banner.style.padding="0";
     products.style.padding="150px 20px 0px 20px";
+    products.style.margin="0";
         
     for(i=0;i<product.length;i++) {
         
@@ -71,12 +66,22 @@ window.onload = function () {
             buttonproduct.style.maxWidth="79%";
         }
     }
-        
+    
+// ***** BANNER *****
+    var banner = document.querySelector('.banner');
+    var imgbanner = banner.querySelectorAll('img');
+    
+    var cardNext = products.nextElementSibling;
+    
+    cardNext.style.minHeight="0";
+    
+    //banner.style.padding="0";
+    
     for(i=1;i<imgbanner.length;i++) {
         imgbanner[i].style.marginTop="80px";
     }
 
-    // *** Footer ***
+// ***** FOOTER ***** 
     var footer = document.querySelector('.footer-text-box');
     //var footerp = footer.querySelector('p');
     var footera = footer.querySelector('a');
