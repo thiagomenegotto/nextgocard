@@ -152,7 +152,7 @@ window.onload = function () {
            lead.style.height="130px";
            //banner.style.marginTop="65px";
            for(i=0;i<buttonextralarge.length;i++) {
-               buttonextralarge[i].style.height="70px";
+               buttonextralarge[i].style.height="60px";
            }
            products.style.marginTop="90px";
            for(i=0;i<product.length;i++) {
