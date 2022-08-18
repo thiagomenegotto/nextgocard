@@ -48,13 +48,14 @@ window.onload = function () {
         
         var image = product[i].querySelector('.image');
         var details = product[i].querySelector('.details');
+        var inner = product[i].querySelector('.product-inner');
        
         
         product[i].style.padding="0";
         product[i].style.margin="0";
         product[i].style.backgroundColor="";
         
-        product[i].appendChild(details);
+        inner.insertBefore(details,image);
         
         image.style.margin="0";
         image.querySelector('.swiper').style.paddingBottom="30px";
