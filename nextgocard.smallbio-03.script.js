@@ -13,7 +13,7 @@ window.onload = function () {
     hideLarge.style.margin="0";
     
     profile.style.margin="0";
-    profile.style.padding="0";
+    profile.style.padding="149px 20px 0px 20px";
     
     photo.style.margin="0";
     photo.style.padding="0";
