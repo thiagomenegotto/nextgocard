@@ -2,20 +2,21 @@ window.onload = function () {
     
 // ***** FONTS *****
     
-    const fonts = [
-      new FontFace('Gilroy Font', 'url(https://thiagomenegotto.github.io/nextgocard/tree/main/uploads/2022/07/Gilroy-Bold.woff2)'),  // 400
-      //new FontFace('theinhardt', 'url(/fonts/akzidenz-grotesk/AkzidenzGrotesk-Regular.woff2)'),  // 500
-      //new FontFace('theinhardt', 'url(/fonts/akzidenz-grotesk/AkzidenzGrotesk-Medium.woff2)'), // 600
-    ];
+    async function loadFonts() {  
+        const fonts = [
+            new FontFace('Gilroy Font', 'url(https://thiagomenegotto.github.io/nextgocard/tree/main/uploads/2022/07/Gilroy-Bold.woff2)'),  // 400
+            //new FontFace('theinhardt', 'url(/fonts/akzidenz-grotesk/AkzidenzGrotesk-Regular.woff2)'),  // 500
+            //new FontFace('theinhardt', 'url(/fonts/akzidenz-grotesk/AkzidenzGrotesk-Medium.woff2)'), // 600
+        ];
 
-    Promise.all(fonts).forEach(fontsLoaded => {
-      fontsLoaded.forEach(font => {
-        await font.load();
-        document.fonts.add(font);
-      });
-      document.body.classList.add('fonts-loaded');
-    });
-  }
+        Promise.all(fonts).forEach(fontsLoaded => {
+            fontsLoaded.forEach(font => {
+                await font.load();
+                document.fonts.add(font);
+            });
+            document.body.classList.add('fonts-loaded');
+        });
+    }
     //document.head.appendChild(newStyle);
     
     
