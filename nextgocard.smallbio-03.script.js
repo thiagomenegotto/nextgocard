@@ -35,6 +35,7 @@ window.onload = function () {
         buttonextralarge[i].style.backgroundSize='contain';
         buttonextralarge[i].style.padding="0";
         buttonextralarge[i].style.width="100%";
+        buttonextralarge[i].style.textAlign = "left";
     }
 
         
