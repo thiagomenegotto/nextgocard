@@ -2,22 +2,18 @@ window.onload = function () {
     
 // ***** FONTS *****
     
-    async function loadFonts() {  
-        const fonts = [
-            new FontFace('Gilroy Font', 'url(https://thiagomenegotto.github.io/nextgocard/tree/main/uploads/2022/07/Gilroy-Bold.woff2)'),  // 400
-            //new FontFace('theinhardt', 'url(/fonts/akzidenz-grotesk/AkzidenzGrotesk-Regular.woff2)'),  // 500
-            //new FontFace('theinhardt', 'url(/fonts/akzidenz-grotesk/AkzidenzGrotesk-Medium.woff2)'), // 600
-        ];
+    var font = new FontFace("Gilroy Font", "url(https://thiagomenegotto.github.io/nextgocard/tree/main/uploads/2022/07/Gilroy-Bold.woff2)", {
+    style: 'normal', weight: '700'
+    });
 
-        Promise.all(fonts).forEach(fontsLoaded => {
-            fontsLoaded.forEach(font => {
-                await font.load();
-                document.fonts.add(font);
-            });
-            document.body.classList.add('fonts-loaded');
-        });
-    }
-    //document.head.appendChild(newStyle);
+    // don't wait for the render tree, initiate an immediate fetch!
+    font.load().then(function() {
+    // apply the font (which may re-render text and cause a page reflow)
+    // after the font has finished downloading
+    document.fonts.add(font);
+    document.body.style.fontFamily = "Gilroy Font, sans-serif";
+        
+    });
     
     
 // ***** PROFILE, PHOTO AND LEAD *****
