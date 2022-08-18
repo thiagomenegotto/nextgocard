@@ -2,10 +2,21 @@ window.onload = function () {
     
 // ***** FONTS *****
     
-    var newStyle = document.createElement('style');
-    newStyle.appendChild(document.createTextNode('@font-face{font-family: '+Gilroy Font+'; src: url('+https://thiagomenegotto.github.io/nextgocard/tree/main/uploads/2022/07/Gilroy-Bold.woff2+');}'));
-    
-    document.head.appendChild(newStyle);
+    const fonts = [
+      new FontFace('Gilroy Font', 'url(https://thiagomenegotto.github.io/nextgocard/tree/main/uploads/2022/07/Gilroy-Bold.woff2)'),  // 400
+      //new FontFace('theinhardt', 'url(/fonts/akzidenz-grotesk/AkzidenzGrotesk-Regular.woff2)'),  // 500
+      //new FontFace('theinhardt', 'url(/fonts/akzidenz-grotesk/AkzidenzGrotesk-Medium.woff2)'), // 600
+    ];
+
+    Promise.all(fonts).forEach(fontsLoaded => {
+      fontsLoaded.forEach(font => {
+        await font.load();
+        document.fonts.add(font);
+      });
+      document.body.classList.add('fonts-loaded');
+    });
+  }
+    //document.head.appendChild(newStyle);
     
     
 // ***** PROFILE, PHOTO AND LEAD *****
