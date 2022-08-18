@@ -17,10 +17,12 @@ window.onload = function () {
     
     photo.style.margin="0";
     photo.style.padding="0";
-    photo.style.width="100%";
-    photo.style.maxHeight="340px";
+    //photo.style.width="100%";
+    photo.style.maxHeight="0";
+    photo.style.minHeight="0";
     
     lead.style.padding="0";
+    lead.style.minHeight="0";
     
     // *** Button Large and Extralarge ***
     var buttonextralarge = document.querySelectorAll('.extra_large');
@@ -32,6 +34,7 @@ window.onload = function () {
     for(i=0;i<buttonextralarge.length;i++) {
         buttonextralarge[i].style.backgroundSize='contain';
         buttonextralarge[i].style.padding="0";
+        buttonextralarge[i].style.width="100%";
     }
 
         
