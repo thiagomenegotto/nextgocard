@@ -15,11 +15,7 @@ window.onload = function () {
     profile.style.margin="0";
     profile.style.padding="599px 20px 0px 20px";
     
-    photo.style.margin="0";
-    photo.style.padding="0";
-    //photo.style.width="100%";
-    photo.style.maxHeight="0";
-    photo.style.minHeight="0";
+    photo.style.display = "none";
     
     //lead.style.padding="0";
     //lead.style.minHeight="0";
@@ -59,13 +55,14 @@ window.onload = function () {
         
         product[i].style.padding="0";
         product[i].style.margin="0";
+        product[i].style.backgroundColor="";
         
         image.style.margin="0";
         image.querySelector('.swiper').style.paddingBottom="30px";
         //product[i].querySelector('.details').style.display="none";
         
         if (i > 0) {
-            product[i].style.marginTop="20px";
+            //product[i].style.marginTop="20px";
             buttonproduct = product[i].querySelector('a');
             buttonproduct.style.width="auto";
             buttonproduct.style.backgroundSize="contain";
@@ -152,7 +149,7 @@ window.onload = function () {
            footer.style.paddingBottom="10px";
         }
         else if (window.innerWidth < 426) {
-           photo.style.height="230px";
+           //photo.style.height="230px";
            //lead.style.height="130px";
            //banner.style.marginTop="65px";
            for(i=0;i<buttonextralarge.length;i++) {
@@ -161,18 +158,18 @@ window.onload = function () {
            //products.style.marginTop="90px";
            for(i=0;i<product.length;i++) {
                if (i > 1) {
-                   product[i].style.marginTop="40px";
+                   //product[i].style.marginTop="40px";
                    buttonproduct = product[i].querySelector('a');
                    buttonproduct.style.marginTop="0px";   
                }
                else if (i == 1) {
-                   product[i].style.marginTop="0px";
+                   //product[i].style.marginTop="0px";
                }
            }
            footer.style.paddingBottom="10px";
         }
         else {
-            photo.style.height="340px";
+            //photo.style.height="340px";
             //lead.style.height="190px";
             //banner.style.marginTop="160px";
             for(i=0;i<buttonextralarge.length;i++) {
