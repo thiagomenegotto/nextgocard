@@ -24,7 +24,10 @@ window.onload = function () {
     
     // *** Button Large and Extralarge ***
     var buttonextralarge = document.querySelectorAll('.extra_large');
+    var buttons = document.querySelector('.buttons');
     //var buttonlarge = document.querySelectorAll('.large');
+    
+    buttons.style.padding="0px 20px 0px 20px";
     
     for(i=0;i<buttonextralarge.length;i++) {
         buttonextralarge[i].style.backgroundSize='contain';
