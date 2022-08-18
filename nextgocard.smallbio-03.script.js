@@ -6,8 +6,6 @@ window.onload = function () {
     newStyle.appendChild(document.createTextNode("\
     @font-face {\
         font-family: " + Gilroy Font + ";\
-        font-style: " + normal + ";\
-        font-weight: " + 700 + ";\
         src: url('" + https://github.com/thiagomenegotto/nextgocard/tree/main/uploads/2022/07/Gilroy-Bold.woff2 + "') format('woff2');\
     }\
     "));
