@@ -1,11 +1,27 @@
 window.onload = function () {
     
+// ***** FONTS *****
+    
+    var newStyle = document.createElement('style');
+    newStyle.appendChild(document.createTextNode("\
+    @font-face {\
+        font-family: " + Gilroy Font + ";\
+        font-style: " + normal + ";\
+        font-weight: " + 700 + ";\
+        src: url('" + https://github.com/thiagomenegotto/nextgocard/tree/main/uploads/2022/07/Gilroy-Bold.woff2 + "') format('woff2');\
+    }\
+    "));
+
+    document.head.appendChild(newStyle);
+    
+    
 // ***** PROFILE, PHOTO AND LEAD *****
     
     var card = document.querySelector('.card-container');
     var onlyLarge = document.querySelector('.only-on-large');
     var hideLarge = document.querySelector('.hide-on-large');
     var profile = document.querySelector('.profile'); 
+    var profileH2 = document.querySelector('h2');
     var photo = document.querySelector('.photo');
     //var lead = document.querySelector('.lead');
     
@@ -17,6 +33,10 @@ window.onload = function () {
     profile.style.padding="599px 20px 0px 20px";
     
     photo.style.display = "none";
+
+    profileH2.style.fontFamily = "Gilroy Font";
+    profileH2.style.fontSize = "28px";
+    
     
     //lead.style.padding="0";
     //lead.style.minHeight="0";
