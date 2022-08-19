@@ -78,9 +78,9 @@ window.onload = function () {
         
         inner.insertBefore(details,image);
         
-        if (details.querySelector('h2') !== null) {
-            details.querySelector('h2').style.fontFamily = "Gilroy Font";
-            details.querySelector('h2').style.fontWeight = "700";
+        if (product[i].querySelector('h2') !== null) {
+            product[i].querySelector('h2').style.fontFamily = "Gilroy Font";
+            product[i].querySelector('h2').style.fontWeight = "700";
         }
         else if (details.querySelector('h3') !== null) {
             details.querySelector('h3').style.fontFamily = "Gilroy Font";
