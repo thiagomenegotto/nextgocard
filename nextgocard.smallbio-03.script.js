@@ -22,10 +22,10 @@ window.onload = function () {
     onlyLarge.setAttribute('style', 'margin: 0');
     hideLarge.setAttribute('style', 'margin: 0');
     
-    profile.setAttribute('style', 'margin: 0');
-    profile.setAttribute('style', 'padding: 599px 20px 0px 20px');
+    //profile.setAttribute('style', 'margin: 0');
+    //profile.setAttribute('style', 'padding: 599px 20px 0px 20px');
     
-    photo.setAttribute('style', 'display: none');
+    //photo.setAttribute('style', 'display: none');
 /*
     profile.querySelector('.profile_h2').setAttribute('style', 'font-family: Gilroy Font');
     profile.querySelector('.profile_h2').setAttribute('style', 'font-weight: 700');
