@@ -64,7 +64,7 @@ window.onload = function () {
     
     products.setAttribute('style', 'padding: 0px 20px 0px 20px');
     products.setAttribute('style', 'margin: 0');
-    products.setAttribute('style', 'background-image: url("https://thiagomenegotto.github.io/nextgocard/uploads/2022/08/Fundo-v2.jpg")');
+    //products.setAttribute('style', 'background-image: url("https://thiagomenegotto.github.io/nextgocard/uploads/2022/08/Fundo-v2.jpg")');
     products.setAttribute('style', 'background-position: top center');   
     products.setAttribute('style', 'background-repeat: no-repeat');
         
