@@ -18,7 +18,8 @@ window.onload = function () {
     var photo = document.querySelector('.photo');
     //var lead = document.querySelector('.lead');
     
-    card.style.padding= "0";
+    //card.style.padding= "0";
+    card.setAttribute('style', 'padding: 0px');
     onlyLarge.setAttribute('style', 'margin: 0');
     hideLarge.setAttribute('style', 'margin: 0');
     
