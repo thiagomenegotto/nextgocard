@@ -70,6 +70,7 @@ window.onload = function () {
         var image = product[i].querySelector('.image');
         var details = product[i].querySelector('.details');
         var inner = product[i].querySelector('.product-inner');
+        var desc = product[i].querySelector('.description');
        
         
         product[i].style.padding="0";
@@ -78,18 +79,19 @@ window.onload = function () {
         
         inner.insertBefore(details,image);
         
-        if (product[i].querySelector('h2')) {
-            product[i].querySelector('h2').style.fontFamily = "Gilroy Font";
-            product[i].querySelector('h2').style.fontWeight = "700";
+        if (details.querySelector('h2')) {
+            details.querySelector('h2').style.fontFamily = "Gilroy Font";
+            details.querySelector('h2').style.fontWeight = "700";
         }
-        else if (product[i].querySelector('h3')) {
-            product[i].querySelector('h3').style.fontFamily = "Gilroy Font";
-            product[i].querySelector('h3').style.fontWeight = "700";
+        else if (details.querySelector('h3')) {
+            details.querySelector('h3').style.fontFamily = "Gilroy Font";
+            details.querySelector('h3').style.fontWeight = "700";
         }
-        else if (product[i].querySelector('p')) {
-            product[i].querySelector('p').style.fontFamily = "Gilroy Font";
-            product[i].querySelector('p').style.fontWeight = "400";
-            product[i].querySelector('p').style.fontSize = "16px";
+        
+        if (desc.querySelector('p')) {
+            desc.querySelector('p').style.fontFamily = "Gilroy Font";
+            desc.querySelector('p').style.fontWeight = "400";
+            desc.querySelector('p').style.fontSize = "16px";
         }
        
         
