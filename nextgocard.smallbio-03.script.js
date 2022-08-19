@@ -107,7 +107,7 @@ window.onload = function () {
         }
              
         if (i == 0) {
-            details.style.marginTop="-121px";
+            details.style.marginTop="-80px";
             image.style.marginTop="57px";
         }
         
