@@ -14,20 +14,17 @@ window.onload = function () {
     var onlyLarge = document.querySelector('.only-on-large');
     var hideLarge = document.querySelector('.hide-on-large');
     var profile = document.querySelector('.profile'); 
-    //var profileH2 = profile.querySelector('h2');
     var photo = document.querySelector('.photo');
-    //var lead = document.querySelector('.lead');
     
-    //card.style.padding= "0";
-    card.setAttribute('style', 'padding-top: 0px');
+    card.style.padding= "0";
     onlyLarge.setAttribute('style', 'margin: 0');
     hideLarge.setAttribute('style', 'margin: 0');
     
-    //profile.setAttribute('style', 'margin: 0');
-    //profile.setAttribute('style', 'padding: 599px 20px 0px 20px');
+    profile.setAttribute('style', 'margin: 0');
+    profile.setAttribute('style', 'padding: 599px 20px 0px 20px');
     
-    //photo.setAttribute('style', 'display: none');
-/*
+    photo.setAttribute('style', 'display: none');
+
     profile.querySelector('.profile_h2').setAttribute('style', 'font-family: Gilroy Font');
     profile.querySelector('.profile_h2').setAttribute('style', 'font-weight: 700');
     profile.querySelector('.profile_h2').setAttribute('style', 'font-size: 28px');
@@ -36,12 +33,12 @@ window.onload = function () {
     profile.querySelector('.profile_p').setAttribute('style', 'font-weight: 700');
     profile.querySelector('.profile_p').setAttribute('style', 'font-size: 18px');
 
-    */
+    
 // ***** END PROFILE, PHOTO AND LEAD *****
 
     
 // ***** BUTTON LARGE AND EXTRALARGE ***** 
-    /*
+   
     var buttonextralarge = document.querySelectorAll('.extra_large');
     var buttons = document.querySelector('.buttons.row.buttons-left');
     //var buttonlarge = document.querySelectorAll('.large');
@@ -53,12 +50,12 @@ window.onload = function () {
         buttonextralarge[i].setAttribute('style', 'padding: 0');
         buttonextralarge[i].setAttribute('style', 'width: 100%');
         buttonextralarge[i].setAttribute('style', 'background-position: left');
-    } */
+    }
     
 // ***** END BUTTON LARGE AND EXTRALARGE *****
         
 // ***** PRODUCT ***** 
-    /*
+    
     var products = document.querySelector('.products');
     var product = document.querySelectorAll('.product');
     var buttonproduct;
@@ -122,7 +119,7 @@ window.onload = function () {
             buttonproduct.setAttribute('style', 'max-width: 79%');
         }
     }
-    */
+    
 // ***** END PRODUCT *****
     
 // ***** BANNER *****
