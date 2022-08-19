@@ -108,7 +108,7 @@ window.onload = function () {
              
         if (i == 0) {
             details.style.marginTop="-80px";
-            image.style.marginTop="57px important";
+            image.style.setAttribute('style', 'margin-top: 57px !important');
         }
         
         if (i > 0) {
