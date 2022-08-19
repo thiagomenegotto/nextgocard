@@ -1,10 +1,6 @@
-window.onload = function () {
-    
-// ***** LOAD FONTS *****
-   
-    async function loadFonts() {
+function loadFonts() {
         
-        const font700 = new FontFace("Gilroy Font", "url(https://thiagomenegotto.github.io/nextgocard/tree/main/uploads/2022/07/Gilroy-Bold.woff)", {
+        const font700 = new FontFace("Gilroy Font", "url(https://thiagomenegotto.github.io/nextgocard/tree/main/uploads/2022/07/Gilroy-Bold.woff2)", {
         style: 'normal', weight: '700'
         });
         const font600 = new FontFace("Gilroy Font", "url(https://thiagomenegotto.github.io/nextgocard/tree/main/uploads/2022/07/Gilroy-SemiBold.woff2)", {
@@ -20,11 +16,11 @@ window.onload = function () {
         style: 'normal', weight: '300'
         });
         
-        await font700.load();
-        await font600.load();
-        await font500.load();
-        await font400.load();
-        await font300.load();
+        font700.load();
+        font600.load();
+        font500.load();
+        font400.load();
+        font300.load();
         
         document.fonts.add(font700);
         document.fonts.add(font600);
@@ -33,7 +29,12 @@ window.onload = function () {
         document.fonts.add(font300);
         
         document.body.style.fontFamily = "Gilroy Font, sans-serif";
-    }
+}
+
+window.onload = function () {
+    
+// ***** LOAD FONTS *****
+   
  
 // ***** END LOAD FONTS *****
     
