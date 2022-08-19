@@ -19,7 +19,7 @@ window.onload = function () {
     //var lead = document.querySelector('.lead');
     
     //card.setAttribute('style', 'padding: 0');
-    //onlyLarge.setAttribute('style', 'margin: 0');
+    onlyLarge.setAttribute('style', 'margin: 0');
     //hideLarge.setAttribute('style', 'margin: 0');
     
     //profile.setAttribute('style', 'margin: 0');
