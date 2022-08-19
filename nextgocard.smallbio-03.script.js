@@ -77,7 +77,7 @@ window.onload = function () {
         
         product[i].setAttribute('style', 'padding: 0');
         product[i].setAttribute('style', 'margin: 0');
-        product[i].setAttribute('style', 'background-color:""');
+        //product[i].setAttribute('style', 'background-color: ""');
         
         inner.insertBefore(details,image);
         
