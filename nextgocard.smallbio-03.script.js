@@ -25,11 +25,11 @@ window.onload = function () {
     
     photo.setAttribute('style', 'display: none');
 
-    profile.querySelector('.profile_h2').setAttribute('style', 'font-family: Gilroy Font');
+    profile.querySelector('.profile_h2').setAttribute('style', 'font-family: "Gilroy Font"');
     profile.querySelector('.profile_h2').setAttribute('style', 'font-weight: 700');
     profile.querySelector('.profile_h2').setAttribute('style', 'font-size: 28px');
     
-    profile.querySelector('.profile_p').setAttribute('style', 'font-family: Gilroy Font');
+    profile.querySelector('.profile_p').setAttribute('style', 'font-family: "Gilroy Font"');
     profile.querySelector('.profile_p').setAttribute('style', 'font-weight: 700');
     profile.querySelector('.profile_p').setAttribute('style', 'font-size: 18px');
 
