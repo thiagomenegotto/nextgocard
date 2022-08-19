@@ -9,7 +9,7 @@ window.onload = function () {
 // ***** END LOAD FONTS *****
     
 // ***** PROFILE, PHOTO AND LEAD *****
-    /*
+    
     var card = document.querySelector('.card-container');
     var onlyLarge = document.querySelector('.only-on-large');
     var hideLarge = document.querySelector('.hide-on-large');
@@ -26,7 +26,7 @@ window.onload = function () {
     profile.setAttribute('style', 'padding: 599px 20px 0px 20px');
     
     photo.setAttribute('style', 'display: none');
-
+/*
     profile.querySelector('.profile_h2').setAttribute('style', 'font-family: Gilroy Font');
     profile.querySelector('.profile_h2').setAttribute('style', 'font-weight: 700');
     profile.querySelector('.profile_h2').setAttribute('style', 'font-size: 28px');
