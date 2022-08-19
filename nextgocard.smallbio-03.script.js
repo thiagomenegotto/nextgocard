@@ -89,8 +89,11 @@ window.onload = function () {
             details.querySelector('.hide-on-large').querySelector('h2').style.fontWeight = "700";
         }
         else if (details.querySelector('h3') !== null) {
-            details.querySelector('h3').style.fontFamily = "Gilroy Font";
-            details.querySelector('h3').style.fontWeight = "700";
+            details.querySelector('.only-on-large').querySelector('h3').style.fontFamily = "Gilroy Font";
+            details.querySelector('.only-on-large').querySelector('h3').style.fontWeight = "700";
+            
+            details.querySelector('.hide-on-large').querySelector('h3').style.fontFamily = "Gilroy Font";
+            details.querySelector('.hide-on-large').querySelector('h3').style.fontWeight = "700";
         }
         
         if (product[i].querySelector('.description') !== null) {
