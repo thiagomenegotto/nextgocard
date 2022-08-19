@@ -1,40 +1,10 @@
-function loadFonts() {
-        
-        const font700 = new FontFace("Gilroy Font", "url(https://thiagomenegotto.github.io/nextgocard/tree/main/uploads/2022/07/Gilroy-Bold.woff2)", {
-        style: 'normal', weight: '700'
-        });
-        const font600 = new FontFace("Gilroy Font", "url(https://thiagomenegotto.github.io/nextgocard/tree/main/uploads/2022/07/Gilroy-SemiBold.woff2)", {
-        style: 'normal', weight: '600'
-        });
-        const font500 = new FontFace("Gilroy Font", "url(https://thiagomenegotto.github.io/nextgocard/tree/main/uploads/2022/07/Gilroy-Medium.woff2)", {
-        style: 'normal', weight: '500'
-        });
-        const font400 = new FontFace("Gilroy Font", "url(https://thiagomenegotto.github.io/nextgocard/tree/main/uploads/2022/07/Gilroy-Regular.woff2)", {
-        style: 'normal', weight: '400'
-        });
-        const font300 = new FontFace("Gilroy Font", "url(https://thiagomenegotto.github.io/nextgocard/tree/main/uploads/2022/07/Gilroy-Light.woff2)", {
-        style: 'normal', weight: '300'
-        });
-        
-        font700.load();
-        font600.load();
-        font500.load();
-        font400.load();
-        font300.load();
-        
-        document.fonts.add(font700);
-        document.fonts.add(font600);
-        document.fonts.add(font500);
-        document.fonts.add(font400);
-        document.fonts.add(font300);
-        
-        document.body.style.fontFamily = "Gilroy Font, sans-serif";
-}
-
 window.onload = function () {
     
 // ***** LOAD FONTS *****
-   
+        
+    var newStyle = document.createElement('style');
+    newStyle.appendChild(document.createTextNode('@font-face{font-family: '+Gilroy Font+'; src: url('+https://thiagomenegotto.github.io/nextgocard/tree/main/uploads/2022/07/Gilroy-Bold.woff2+');}'));
+    document.body.appendChild(newStyle);
  
 // ***** END LOAD FONTS *****
     
