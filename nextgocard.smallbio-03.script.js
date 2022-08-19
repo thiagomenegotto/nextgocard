@@ -57,14 +57,14 @@ window.onload = function () {
 // ***** END BUTTON LARGE AND EXTRALARGE *****
         
 // ***** PRODUCT ***** 
-    
+    /*
     var products = document.querySelector('.products');
     var product = document.querySelectorAll('.product');
     var buttonproduct;
     
     products.setAttribute('style', 'padding: 0px 20px 0px 20px');
     products.setAttribute('style', 'margin: 0');
-    //products.setAttribute('style', 'background-image: url("https://thiagomenegotto.github.io/nextgocard/uploads/2022/08/Fundo-v2.jpg")');
+    products.setAttribute('style', 'background-image: url("https://thiagomenegotto.github.io/nextgocard/uploads/2022/08/Fundo-v2.jpg")');
     products.setAttribute('style', 'background-position: top center');   
     products.setAttribute('style', 'background-repeat: no-repeat');
         
@@ -121,7 +121,7 @@ window.onload = function () {
             buttonproduct.setAttribute('style', 'max-width: 79%');
         }
     }
-    
+    */
 // ***** END PRODUCT *****
     
 // ***** BANNER *****
@@ -142,7 +142,7 @@ window.onload = function () {
 // ***** END BANNER *****
 
 // ***** FOOTER ***** 
-    
+    /*
     var footer = document.querySelector('.footer-text-box');
     //var footerp = footer.querySelector('p');
     var footera = footer.querySelector('a');
@@ -166,7 +166,7 @@ window.onload = function () {
     {
         footera.setAttribute('style', 'color: footeracolor');
         console.log(`cor do footer a: ${footeracolor}`);
-    }
+    } */
 
 // ***** END FOOTER ***** 
     
