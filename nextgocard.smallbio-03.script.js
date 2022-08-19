@@ -9,7 +9,7 @@ window.onload = function () {
 // ***** END LOAD FONTS *****
     
 // ***** PROFILE, PHOTO AND LEAD *****
-    
+    /*
     var card = document.querySelector('.card-container');
     var onlyLarge = document.querySelector('.only-on-large');
     var hideLarge = document.querySelector('.hide-on-large');
@@ -35,7 +35,7 @@ window.onload = function () {
     profile.querySelector('.profile_p').setAttribute('style', 'font-weight: 700');
     profile.querySelector('.profile_p').setAttribute('style', 'font-size: 18px');
 
-    
+    */
 // ***** END PROFILE, PHOTO AND LEAD *****
 
     
