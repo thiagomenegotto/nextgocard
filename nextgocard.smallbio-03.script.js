@@ -18,22 +18,22 @@ window.onload = function () {
     var photo = document.querySelector('.photo');
     //var lead = document.querySelector('.lead');
     
-    card.style.padding="0";
-    onlyLarge.style.margin="0";
-    hideLarge.style.margin="0";
+    card.setAttribute('style', 'padding: 0');
+    onlyLarge.setAttribute('style', 'margin: 0');
+    hideLarge.setAttribute('style', 'margin: 0');
     
-    profile.style.margin="0";
-    profile.style.padding="599px 20px 0px 20px";
+    profile.setAttribute('style', 'margin: 0');
+    profile.setAttribute('style', 'padding: 599px 20px 0px 20px');
     
-    photo.style.display = "none";
+    photo.setAttribute('style', 'display: none');
 
-    profile.querySelector('.profile_h2').style.fontFamily = "Gilroy Font";
-    profile.querySelector('.profile_h2').style.fontWeight = "700";
-    profile.querySelector('.profile_h2').style.fontSize = "28px";
+    profile.querySelector('.profile_h2').setAttribute('style', 'font-family: Gilroy Font');
+    profile.querySelector('.profile_h2').setAttribute('style', 'font-weight: 700');
+    profile.querySelector('.profile_h2').setAttribute('style', 'font-size: 28px');
     
-    profile.querySelector('.profile_p').style.fontFamily = "Gilroy Font";
-    profile.querySelector('.profile_p').style.fontWeight = "700";
-    profile.querySelector('.profile_p').style.fontSize = "18px";
+    profile.querySelector('.profile_p').setAttribute('style', 'font-family: Gilroy Font');
+    profile.querySelector('.profile_p').setAttribute('style', 'font-weight: 700');
+    profile.querySelector('.profile_p').setAttribute('style', 'font-size: 18px');
 
     
 // ***** END PROFILE, PHOTO AND LEAD *****
@@ -45,13 +45,13 @@ window.onload = function () {
     var buttons = document.querySelector('.buttons.row.buttons-left');
     //var buttonlarge = document.querySelectorAll('.large');
     
-    buttons.style.padding="0px 20px 150px 20px";
+    buttons.setAttribute('style', 'padding: 0px 20px 150px 20px');
     
     for(i=0;i<buttonextralarge.length;i++) {
         //buttonextralarge[i].style.backgroundSize='contain';
-        buttonextralarge[i].style.padding="0";
-        buttonextralarge[i].style.width="100%";
-        buttonextralarge[i].style.backgroundPosition = 'left';
+        buttonextralarge[i].setAttribute('style', 'padding: 0');
+        buttonextralarge[i].setAttribute('style', 'width: 100%');
+        buttonextralarge[i].setAttribute('style', 'background-position: left');
     }
     
 // ***** END BUTTON LARGE AND EXTRALARGE *****
@@ -62,11 +62,11 @@ window.onload = function () {
     var product = document.querySelectorAll('.product');
     var buttonproduct;
     
-    products.style.padding="0px 20px 0px 20px";
-    products.style.margin="0";
-    products.style.backgroundImage="url('https://thiagomenegotto.github.io/nextgocard/uploads/2022/08/Fundo-v2.jpg')";
-    products.style.backgroundPosition="top center";   
-    products.style.backgroundRepeat="no-repeat";
+    products.setAttribute('style', 'padding: 0px 20px 0px 20px');
+    products.setAttribute('style', 'margin: 0');
+    products.setAttribute('style', 'background-image: url("https://thiagomenegotto.github.io/nextgocard/uploads/2022/08/Fundo-v2.jpg")');
+    products.setAttribute('style', 'background-position: top center');   
+    products.setAttribute('style', 'background-repeat: no-repeat');
         
     for(i=0;i<product.length;i++) {
         
@@ -75,50 +75,50 @@ window.onload = function () {
         var inner = product[i].querySelector('.product-inner');
        
         
-        product[i].style.padding="0";
-        product[i].style.margin="0";
-        product[i].style.backgroundColor="";
+        product[i].setAttribute('style', 'padding: 0');
+        product[i].setAttribute('style', 'margin: 0');
+        product[i].setAttribute('style', 'background-color:""');
         
         inner.insertBefore(details,image);
         
         if (details.querySelector('h2') !== null) {
-            details.querySelector('.only-on-large').querySelector('h2').style.fontFamily = "Gilroy Font";
-            details.querySelector('.only-on-large').querySelector('h2').style.fontWeight = "700";
+            details.querySelector('.only-on-large').querySelector('h2').setAttribute('style', 'font-family: Gilroy Font');
+            details.querySelector('.only-on-large').querySelector('h2').setAttribute('style', 'font-weight: 700');
             
-            details.querySelector('.hide-on-large').querySelector('h2').style.fontFamily = "Gilroy Font";
-            details.querySelector('.hide-on-large').querySelector('h2').style.fontWeight = "700";
+            details.querySelector('.hide-on-large').querySelector('h2').setAttribute('style', 'font-family: Gilroy Font');
+            details.querySelector('.hide-on-large').querySelector('h2').setAttribute('style', 'font-weight: 700');
         }
         else if (details.querySelector('h3') !== null) {
-            details.querySelector('.only-on-large').querySelector('h3').style.fontFamily = "Gilroy Font";
-            details.querySelector('.only-on-large').querySelector('h3').style.fontWeight = "700";
+            details.querySelector('.only-on-large').querySelector('h3').setAttribute('style', 'font-family: Gilroy Font');
+            details.querySelector('.only-on-large').querySelector('h3').setAttribute('style', 'font-weight: 700');
             
-            details.querySelector('.hide-on-large').querySelector('h3').style.fontFamily = "Gilroy Font";
-            details.querySelector('.hide-on-large').querySelector('h3').style.fontWeight = "700";
+            details.querySelector('.hide-on-large').querySelector('h3').setAttribute('style', 'font-family: Gilroy Font');
+            details.querySelector('.hide-on-large').querySelector('h3').setAttribute('style', 'font-weight: 700');
         }
         
         if (product[i].querySelector('.description') !== null) {
             var desc = product[i].querySelector('.description');
             
             if (desc.querySelector('p') !== null) {
-                desc.querySelector('p').style.fontFamily = "Gilroy Font";
-                desc.querySelector('p').style.fontWeight = "400";
-                desc.querySelector('p').style.fontSize = "16px";
+                desc.querySelector('p').setAttribute('style', 'font-family: Gilroy Font');
+                desc.querySelector('p').setAttribute('style', 'font-weight: 400');
+                desc.querySelector('p').setAttribute('style', 'font-size: 16px');
             }
         }
              
         if (i == 0) {
-            details.style.marginTop="-80px";
+            details.setAttribute('style', 'margin-top: -80px');
             image.setAttribute('style', 'margin-top: 57px !important');
         }
         
         if (i > 0) {
             //product[i].style.marginTop="20px";
             buttonproduct = product[i].querySelector('a');
-            buttonproduct.style.width="auto";
-            buttonproduct.style.backgroundSize="contain";
-            buttonproduct.style.padding="0";
-            buttonproduct.style.marginTop="0px";
-            buttonproduct.style.maxWidth="79%";
+            buttonproduct.setAttribute('style', 'width: auto');
+            buttonproduct.setAttribute('style', 'background-size: contain');
+            buttonproduct.setAttribute('style', 'padding: 0');
+            buttonproduct.setAttribute('style', 'margin-top: 0px');
+            buttonproduct.setAttribute('style', 'max-width: 79%');
         }
     }
     
@@ -148,23 +148,23 @@ window.onload = function () {
     var footera = footer.querySelector('a');
     var footeracolor = footera.style.color;
     
-    footer.style.width="auto";
-    footer.style.maxWidth="233px";
-    footer.style.marginTop="80px";
-    footer.style.marginBottom="10px";
-    footer.style.padding="0";
-    footer.style.position="relative";
+    footer.setAttribute('style', 'width: auto');
+    footer.setAttribute('style', 'max-width: 233px');
+    footer.setAttribute('style', 'margin-top: 80px');
+    footer.setAttribute('style', 'margin-bottom: 10px');
+    footer.setAttribute('style', 'padding: 0');
+    footer.setAttribute('style', 'position: relative');
     
-    footer.style.fontWeight="700";
+    footer.setAttribute('style', 'font-weight: 700');
     //footera.style.fontWeight="700";
     footera.onmouseover = function() 
     {
-        footera.style.color = "white";
+        footera.setAttribute('style', 'color: white');
     }
 
     footera.onmouseout = function() 
     {
-        footera.style.color = footeracolor;
+        footera.setAttribute('style', 'color: footeracolor');
         console.log(`cor do footer a: ${footeracolor}`);
     }
 
