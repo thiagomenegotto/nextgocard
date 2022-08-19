@@ -75,7 +75,7 @@ window.onload = function () {
         
         product[i].style.padding="0";
         product[i].style.margin="0";
-        product[i].style.backgroundColor:"";
+        product[i].style.backgroundColor="";
         
         inner.insertBefore(details,image);
         
