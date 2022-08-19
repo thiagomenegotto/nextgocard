@@ -1,18 +1,41 @@
 window.onload = function () {
     
-// ***** FONTS *****
+// ***** LOAD FONTS *****
    
     async function loadFonts() {
         
-        const font = new FontFace("Gilroy Font", "url(https://thiagomenegotto.github.io/nextgocard/tree/main/uploads/2022/07/Gilroy-Bold.woff2)", {
+        const font700 = new FontFace("Gilroy Font", "url(https://thiagomenegotto.github.io/nextgocard/tree/main/uploads/2022/07/Gilroy-Bold.woff2)", {
         style: 'normal', weight: '700'
         });
+        const font600 = new FontFace("Gilroy Font", "url(https://thiagomenegotto.github.io/nextgocard/tree/main/uploads/2022/07/Gilroy-SemiBold.woff2)", {
+        style: 'normal', weight: '600'
+        });
+        const font500 = new FontFace("Gilroy Font", "url(https://thiagomenegotto.github.io/nextgocard/tree/main/uploads/2022/07/Gilroy-Medium.woff2)", {
+        style: 'normal', weight: '500'
+        });
+        const font400 = new FontFace("Gilroy Font", "url(https://thiagomenegotto.github.io/nextgocard/tree/main/uploads/2022/07/Gilroy-Regular.woff2)", {
+        style: 'normal', weight: '400'
+        });
+        const font300 = new FontFace("Gilroy Font", "url(https://thiagomenegotto.github.io/nextgocard/tree/main/uploads/2022/07/Gilroy-Light.woff2)", {
+        style: 'normal', weight: '300'
+        });
         
-        await font.load();
-        document.fonts.add(font);
+        await font700.load();
+        await font600.load();
+        await font500.load();
+        await font400.load();
+        await font300.load();
+        
+        document.fonts.add(font700);
+        document.fonts.add(font600);
+        document.fonts.add(font500);
+        document.fonts.add(font400);
+        document.fonts.add(font300);
+        
         document.body.style.fontFamily = "Gilroy Font, sans-serif";
     }
-    
+ 
+// ***** END LOAD FONTS *****
     
 // ***** PROFILE, PHOTO AND LEAD *****
     
@@ -20,7 +43,7 @@ window.onload = function () {
     var onlyLarge = document.querySelector('.only-on-large');
     var hideLarge = document.querySelector('.hide-on-large');
     var profile = document.querySelector('.profile'); 
-    var profileH2 = document.querySelector('h2');
+    //var profileH2 = profile.querySelector('h2');
     var photo = document.querySelector('.photo');
     //var lead = document.querySelector('.lead');
     
@@ -33,14 +56,20 @@ window.onload = function () {
     
     photo.style.display = "none";
 
-    profileH2.style.fontFamily = "Gilroy Font";
-    profileH2.style.fontSize = "28px";
+    profile.querySelector('.profile_h2').style.fontFamily = "Gilroy Font";
+    profile.querySelector('.profile_h2').style.fontWeight = "700";
+    profile.querySelector('.profile_h2').style.fontSize = "28px";
     
+    profile.querySelector('.profile_p').style.fontFamily = "Gilroy Font";
+    profile.querySelector('.profile_p').style.fontWeight = "700";
+    profile.querySelector('.profile_p').style.fontSize = "18px";
+
     
-    //lead.style.padding="0";
-    //lead.style.minHeight="0";
+// ***** END PROFILE, PHOTO AND LEAD *****
+
     
 // ***** BUTTON LARGE AND EXTRALARGE ***** 
+    
     var buttonextralarge = document.querySelectorAll('.extra_large');
     var buttons = document.querySelector('.buttons.row.buttons-left');
     //var buttonlarge = document.querySelectorAll('.large');
@@ -53,9 +82,11 @@ window.onload = function () {
         buttonextralarge[i].style.width="100%";
         buttonextralarge[i].style.backgroundPosition = 'left';
     }
-
+    
+// ***** END BUTTON LARGE AND EXTRALARGE *****
         
 // ***** PRODUCT ***** 
+    
     var products = document.querySelector('.products');
     var product = document.querySelectorAll('.product');
     var buttonproduct;
@@ -91,7 +122,10 @@ window.onload = function () {
         }
     }
     
+// ***** END PRODUCT *****
+    
 // ***** BANNER *****
+    
     var banner = document.querySelector('.banner');
     var imgbanner = banner.querySelectorAll('img');
     
@@ -104,8 +138,11 @@ window.onload = function () {
     for(i=1;i<imgbanner.length;i++) {
         imgbanner[i].style.marginTop="80px";
     }
+    
+// ***** END BANNER *****
 
 // ***** FOOTER ***** 
+    
     var footer = document.querySelector('.footer-text-box');
     //var footerp = footer.querySelector('p');
     var footera = footer.querySelector('a');
@@ -130,8 +167,11 @@ window.onload = function () {
         footera.style.color = footeracolor;
         console.log(`cor do footer a: ${footeracolor}`);
     }
+
+// ***** END FOOTER ***** 
     
-    // *** Check Window Size ***
+// **** CHECK WINDOW SIZE ****
+    
     checkForWindowResize();
 
     function checkForWindowResize() {
@@ -220,4 +260,7 @@ window.onload = function () {
     } 
 
     window.addEventListener('resize', checkForWindowResize);
+    
+ // **** END CHECK WINDOW SIZE ****
+    
 }
