@@ -4,7 +4,7 @@ window.onload = function () {
    
     async function loadFonts() {
         
-        const font700 = new FontFace("Gilroy Font", "url(https://thiagomenegotto.github.io/nextgocard/tree/main/uploads/2022/07/Gilroy-Bold.woff2)", {
+        const font700 = new FontFace("Gilroy Font", "url(https://thiagomenegotto.github.io/nextgocard/tree/main/uploads/2022/07/Gilroy-Bold.woff)", {
         style: 'normal', weight: '700'
         });
         const font600 = new FontFace("Gilroy Font", "url(https://thiagomenegotto.github.io/nextgocard/tree/main/uploads/2022/07/Gilroy-SemiBold.woff2)", {
