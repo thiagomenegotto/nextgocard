@@ -126,7 +126,7 @@ window.onload = function () {
     
 // ***** BANNER *****
     
-    var banner = document.querySelector('.banner');
+    /* var banner = document.querySelector('.banner');
     var imgbanner = banner.querySelectorAll('img');
     
     var cardNext = products.nextElementSibling;
@@ -137,7 +137,7 @@ window.onload = function () {
     
     for(i=1;i<imgbanner.length;i++) {
         imgbanner[i].style.marginTop="80px";
-    }
+    } */
     
 // ***** END BANNER *****
 
@@ -172,7 +172,7 @@ window.onload = function () {
     
 // **** CHECK WINDOW SIZE ****
     
-    checkForWindowResize();
+    /* checkForWindowResize();
 
     function checkForWindowResize() {
         console.log(`Screen width: ${window.innerWidth}`);
@@ -259,7 +259,7 @@ window.onload = function () {
         }
     } 
 
-    window.addEventListener('resize', checkForWindowResize);
+    window.addEventListener('resize', checkForWindowResize); */
     
  // **** END CHECK WINDOW SIZE ****
     
