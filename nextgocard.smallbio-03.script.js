@@ -20,7 +20,7 @@ window.onload = function () {
     
     card.setAttribute('style', 'padding: 0');
     onlyLarge.setAttribute('style', 'margin: 0');
-    hideLarge.setAttribute('style', 'margin: 0');
+    //hideLarge.setAttribute('style', 'margin: 0');
     
     //profile.setAttribute('style', 'margin: 0');
     //profile.setAttribute('style', 'padding: 599px 20px 0px 20px');
