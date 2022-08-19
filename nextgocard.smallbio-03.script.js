@@ -40,7 +40,7 @@ window.onload = function () {
 
     
 // ***** BUTTON LARGE AND EXTRALARGE ***** 
-    
+    /*
     var buttonextralarge = document.querySelectorAll('.extra_large');
     var buttons = document.querySelector('.buttons.row.buttons-left');
     //var buttonlarge = document.querySelectorAll('.large');
@@ -52,7 +52,7 @@ window.onload = function () {
         buttonextralarge[i].setAttribute('style', 'padding: 0');
         buttonextralarge[i].setAttribute('style', 'width: 100%');
         buttonextralarge[i].setAttribute('style', 'background-position: left');
-    }
+    } */
     
 // ***** END BUTTON LARGE AND EXTRALARGE *****
         
