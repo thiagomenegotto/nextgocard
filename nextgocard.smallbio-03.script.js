@@ -79,16 +79,16 @@ window.onload = function () {
         
         inner.insertBefore(details,image);
         
-        if (details.querySelector('h2') <> null) {
+        if (details.querySelector('h2')) {
             details.querySelector('h2').style.fontFamily = "Gilroy Font";
             details.querySelector('h2').style.fontWeight = "700";
         }
-        else if (details.querySelector('h3') <> null) {
+        else if (details.querySelector('h3')) {
             details.querySelector('h3').style.fontFamily = "Gilroy Font";
             details.querySelector('h3').style.fontWeight = "700";
         }
         
-        if (desc.querySelector('p') <> null) {
+        if (desc.querySelector('p') != null) {
             desc.querySelector('p').style.fontFamily = "Gilroy Font";
             desc.querySelector('p').style.fontWeight = "400";
             desc.querySelector('p').style.fontSize = "16px";
