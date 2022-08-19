@@ -1,39 +1,10 @@
 window.onload = function () {
     
 // ***** LOAD FONTS *****
-   
-    async function loadFonts() {
         
-        const font700 = new FontFace("Gilroy Font", "url(https://thiagomenegotto.github.io/nextgocard/tree/main/uploads/2022/07/Gilroy-Bold.woff2)", {
-        style: 'normal', weight: '700'
-        });
-        const font600 = new FontFace("Gilroy Font", "url(https://thiagomenegotto.github.io/nextgocard/tree/main/uploads/2022/07/Gilroy-SemiBold.woff2)", {
-        style: 'normal', weight: '600'
-        });
-        const font500 = new FontFace("Gilroy Font", "url(https://thiagomenegotto.github.io/nextgocard/tree/main/uploads/2022/07/Gilroy-Medium.woff2)", {
-        style: 'normal', weight: '500'
-        });
-        const font400 = new FontFace("Gilroy Font", "url(https://thiagomenegotto.github.io/nextgocard/tree/main/uploads/2022/07/Gilroy-Regular.woff2)", {
-        style: 'normal', weight: '400'
-        });
-        const font300 = new FontFace("Gilroy Font", "url(https://thiagomenegotto.github.io/nextgocard/tree/main/uploads/2022/07/Gilroy-Light.woff2)", {
-        style: 'normal', weight: '300'
-        });
-        
-        await font700.load();
-        await font600.load();
-        await font500.load();
-        await font400.load();
-        await font300.load();
-        
-        document.fonts.add(font700);
-        document.fonts.add(font600);
-        document.fonts.add(font500);
-        document.fonts.add(font400);
-        document.fonts.add(font300);
-        
-        document.body.style.fontFamily = "Gilroy Font, sans-serif";
-    }
+    var newStyle = document.createElement('style');
+    newStyle.appendChild(document.createTextNode('@font-face { font-family:'+"Gilroy Font"+'; font-weight: '+"700"+'; font-style: '+"normal"+'; src: url('+"https://thiagomenegotto.github.io/nextgocard/uploads/2022/07/Gilroy-Bold.woff2"+');} @font-face { font-family:'+"Gilroy Font"+'; font-weight: '+"400"+'; font-style: '+"normal"+'; src: url('+"https://thiagomenegotto.github.io/nextgocard/uploads/2022/07/Gilroy-Regular.woff2"+');}'));
+    document.body.appendChild(newStyle);
  
 // ***** END LOAD FONTS *****
     
@@ -107,9 +78,28 @@ window.onload = function () {
         
         inner.insertBefore(details,image);
         
-        image.style.margin="0";
-        image.querySelector('.swiper').style.paddingBottom="30px";
-        //product[i].querySelector('.details').style.display="none";
+        if (details.querySelector('h2') !== null) {
+            details.querySelector('.only-on-large').querySelector('h2').style.fontFamily = "Gilroy Font";
+            details.querySelector('.only-on-large').querySelector('h2').style.fontWeight = "700";
+            
+            details.querySelector('.hide-on-large').querySelector('h2').style.fontFamily = "Gilroy Font";
+            details.querySelector('.hide-on-large').querySelector('h2').style.fontWeight = "700";
+        }
+        else if (details.querySelector('h3') !== null) {
+            details.querySelector('h3').style.fontFamily = "Gilroy Font";
+            details.querySelector('h3').style.fontWeight = "700";
+        }
+        
+        if (product[i].querySelector('.description') !== null) {
+            var desc = product[i].querySelector('.description');
+            
+            if (desc.querySelector('p') !== null) {
+                desc.querySelector('p').style.fontFamily = "Gilroy Font";
+                desc.querySelector('p').style.fontWeight = "400";
+                desc.querySelector('p').style.fontSize = "16px";
+            }
+        }
+               
         
         if (i > 0) {
             //product[i].style.marginTop="20px";
