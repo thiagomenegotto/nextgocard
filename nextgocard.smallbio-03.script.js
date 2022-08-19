@@ -105,7 +105,11 @@ window.onload = function () {
                 desc.querySelector('p').style.fontSize = "16px";
             }
         }
-               
+             
+        if (i == 0) {
+            details.style.marginTop="-121px";
+            image.style.marginTop="57px";
+        }
         
         if (i > 0) {
             //product[i].style.marginTop="20px";
