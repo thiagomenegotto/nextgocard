@@ -78,9 +78,12 @@ window.onload = function () {
         
         inner.insertBefore(details,image);
         
-        if (product[i].querySelector('h2') !== null) {
-            product[i].querySelector('h2').style.fontFamily = "Gilroy Font";
-            product[i].querySelector('h2').style.fontWeight = "700";
+        if (details.querySelector('h2') !== null) {
+            details.querySelector('.only-on-large').querySelector('h2').style.fontFamily = "Gilroy Font";
+            details.querySelector('.only-on-large').querySelector('h2').style.fontWeight = "700";
+            
+            details.querySelector('.hide-on-large').querySelector('h2').style.fontFamily = "Gilroy Font";
+            details.querySelector('.hide-on-large').querySelector('h2').style.fontWeight = "700";
         }
         else if (details.querySelector('h3') !== null) {
             details.querySelector('h3').style.fontFamily = "Gilroy Font";
