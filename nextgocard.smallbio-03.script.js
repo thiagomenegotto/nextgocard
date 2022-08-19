@@ -78,9 +78,17 @@ window.onload = function () {
         
         inner.insertBefore(details,image);
         
-        image.style.margin="0";
-        image.querySelector('.swiper').style.paddingBottom="30px";
-        //product[i].querySelector('.details').style.display="none";
+        product[i].querySelector('h2').style.fontFamily = "Gilroy Font";
+        product[i].querySelector('h2').style.fontWeight = "700";
+        product[i].querySelector('h2').style.fontSize = "32px";
+        
+        product[i].querySelector('h3').style.fontFamily = "Gilroy Font";
+        product[i].querySelector('h3').style.fontWeight = "700";
+        product[i].querySelector('h3').style.fontSize = "26px";
+  
+        product[i].querySelector('p').style.fontFamily = "Gilroy Font";
+        product[i].querySelector('p').style.fontWeight = "400";
+        product[i].querySelector('p').style.fontSize = "16px";
         
         if (i > 0) {
             //product[i].style.marginTop="20px";
