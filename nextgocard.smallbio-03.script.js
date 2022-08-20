@@ -98,9 +98,12 @@ window.onload = function () {
             var desc = product[i].querySelector('.description');
             
             if (desc.querySelector('p') !== null) {
-                desc.querySelector('p').style.fontFamily="Gilroy Font";
-                desc.querySelector('p').style.fontWeight="400";
-                desc.querySelector('p').style.fontSize="16px";
+                var desc_p = desc.querySelectorAll('p');
+                
+                for(j=0;j<desc_p.length;j++) {
+                    desc_p.style.fontFamily="Gilroy Font";
+                    desc_p.style.fontWeight="400";
+                }
             }
         }
              
@@ -111,6 +114,7 @@ window.onload = function () {
         
         if (i > 0) {
             image.setAttribute('style', 'margin-top: 40px !important');
+            image.setAttribute('style', 'margin-bottom: 20px !important');
             
             //product[i].style.marginTop="20px";
             buttonproduct = product[i].querySelector('a');
