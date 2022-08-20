@@ -67,7 +67,6 @@ window.onload = function () {
     products.style.backgroundRepeat="no-repeat";
         
     for(i=0;i<product.length;i++) {
-        
         var image = product[i].querySelector('.image');
         var details = product[i].querySelector('.details');
         var inner = product[i].querySelector('.product-inner');
@@ -94,17 +93,18 @@ window.onload = function () {
             details.querySelector('.hide-on-large').querySelector('h3').style.fontWeight="700";
         }
         
-        if (product[i].querySelector('.description') !== null) {
-            var desc = product[i].querySelector('.description');
-            
-            if (desc.querySelector('p') !== null) {
+        if (product[i].querySelector('.description') !== null) {            
+            if (product[i].querySelector('.description').querySelector('p') !== null) {
+                var desc = product[i].querySelectorAll('.description');
                 
-                var desc_p = desc.querySelectorAll('p');
-                
-                for(j=0;j<desc_p.length;j++) {
-                    desc_p[j].style.fontFamily="Gilroy Font";
-                    desc_p[j].style.fontWeight="400";
-                    desc_p[j].style.textAlign="left";
+                for(d=0;d<desc.lenght;d++) {
+                    var desc_p = desc[d].querySelectorAll('p');
+
+                    for(j=0;j<desc_p.length;j++) {
+                        desc_p[j].style.fontFamily="Gilroy Font";
+                        desc_p[j].style.fontWeight="400";
+                        desc_p[j].style.textAlign="left";
+                    }
                 }
             }
         }
