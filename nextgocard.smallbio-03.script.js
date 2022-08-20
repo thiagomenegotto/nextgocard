@@ -102,9 +102,9 @@ window.onload = function () {
                 var desc_p = desc.querySelectorAll('p');
                 
                 for(j=0;j<desc_p.length;j++) {
-                    desc.querySelector('p').style.fontFamily="Gilroy Font";
-                    desc.querySelector('p').style.fontWeight="400";
-                    desc.querySelector('p').style.textAlign="left";
+                    desc_p.style.fontFamily="Gilroy Font";
+                    desc_p.style.fontWeight="400";
+                    desc_p.style.textAlign="left";
                 }
             }
         }
