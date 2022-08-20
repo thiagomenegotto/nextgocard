@@ -103,6 +103,7 @@ window.onload = function () {
                 for(j=0;j<desc_p.length;j++) {
                     desc_p.style.fontFamily="Gilroy Font";
                     desc_p.style.fontWeight="400";
+                    desc_p.style.textAlign="left";
                 }
             }
         }
