@@ -28,10 +28,12 @@ window.onload = function () {
     profile.querySelector('.profile_h2').style.fontFamily="Gilroy Font";
     profile.querySelector('.profile_h2').style.fontWeight="700";
     profile.querySelector('.profile_h2').style.fontSize="28px";
+    profile.querySelector('.profile_h2').style.lineHeight="1";
     
     profile.querySelector('.profile_p').style.fontFamily="Gilroy Font";
     profile.querySelector('.profile_p').style.fontWeight="700";
     profile.querySelector('.profile_p').style.fontSize="18px";
+    profile.querySelector('.profile_p').style.lineHeight="1.3em";
 
     
 // ***** END PROFILE, PHOTO AND LEAD *****
@@ -76,21 +78,27 @@ window.onload = function () {
         product[i].style.margin="0";
         product[i].style.backgroundColor="transparent";
         
+        image.querySelector('.swiper.pagination').style.display="none";
+        
         inner.insertBefore(details,image);
         
         if (details.querySelector('h2') !== null) {
             details.querySelector('.only-on-large').querySelector('h2').style.fontFamily="Gilroy Font";
             details.querySelector('.only-on-large').querySelector('h2').style.fontWeight="700";
+            details.querySelector('.only-on-large').querySelector('h2').style.lineHeight="1";
             
             details.querySelector('.hide-on-large').querySelector('h2').style.fontFamily="Gilroy Font";
             details.querySelector('.hide-on-large').querySelector('h2').style.fontWeight="700";
+            details.querySelector('.hide-on-large').querySelector('h2').style.lineHeight="1";
         }
         else if (details.querySelector('h3') !== null) {
             details.querySelector('.only-on-large').querySelector('h3').style.fontFamily="Gilroy Font";
             details.querySelector('.only-on-large').querySelector('h3').style.fontWeight="700";
+            details.querySelector('.only-on-large').querySelector('h3').style.lineHeight="1";
             
             details.querySelector('.hide-on-large').querySelector('h3').style.fontFamily="Gilroy Font";
             details.querySelector('.hide-on-large').querySelector('h3').style.fontWeight="700";
+            details.querySelector('.hide-on-large').querySelector('h3').style.lineHeight="1";
         }
         
         if (product[i].querySelector('.description') !== null) {            
@@ -98,6 +106,7 @@ window.onload = function () {
                 var desc = product[i].querySelectorAll('.description');
                 
                 for(d=0;d<desc.length;d++) {
+                    desc[d].style.margin="0";
                     var desc_p = desc[d].querySelectorAll('p');
 
                     for(j=0;j<desc_p.length;j++) {
@@ -105,6 +114,7 @@ window.onload = function () {
                         desc_p[j].style.fontWeight="400";
                         desc_p[j].style.fontSize="16px";
                         desc_p[j].style.textAlign="left";
+                        desc_p[j].style.lineHeight="1.6em";
                     }
                     
                     var brs = desc[d].querySelectorAll('br');
@@ -122,16 +132,15 @@ window.onload = function () {
         }
         
         if (i > 0) {
-            image.setAttribute('style', 'margin-top: 40px !important');
-            image.setAttribute('style', 'margin-bottom: 20px !important');
+            image.setAttribute('style', 'margin: 40px 0 20px 0 !important');
             
             //product[i].style.marginTop="20px";
             buttonproduct = product[i].querySelector('a');
             buttonproduct.style.width="auto";
             buttonproduct.style.backgroundSize="contain";
             buttonproduct.style.padding="0";
-            buttonproduct.style.marginTop="0px";
-            buttonproduct.style.maxWidth="79%";
+            buttonproduct.style.marginTop="50px";
+            buttonproduct.style.maxWidth="100%";
         }
     }
     
