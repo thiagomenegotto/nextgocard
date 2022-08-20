@@ -105,9 +105,12 @@ window.onload = function () {
                         desc_p[j].style.fontWeight="400";
                         desc_p[j].style.fontSize="16px";
                         desc_p[j].style.textAlign="left";
-                        
-                        var brs = desc_p[j].nextElementSibling;
-                        brs.remove();
+                    }
+                    
+                    var brs = desc[d].querySelectorAll('br');
+                    
+                    for(j=0;j<brs.length;j++) {
+                        brs[j].remove();
                     }
                 }
             }
