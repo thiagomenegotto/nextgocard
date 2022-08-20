@@ -106,7 +106,7 @@ window.onload = function () {
                         desc_p[j].style.fontSize="16px";
                         desc_p[j].style.textAlign="left";
                         
-                        var brs = desc_p[j].querySelector('br');
+                        var brs = desc_p[j].nextElementSibling;
                         brs.remove();
                     }
                 }
