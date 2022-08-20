@@ -106,7 +106,8 @@ window.onload = function () {
                         desc_p[j].style.fontSize="16px";
                         desc_p[j].style.textAlign="left";
                         
-                        desc_p[j].innerHTML = desc_p[j].innerHTML.replace('<br>','');
+                        var brs = desc_p[j].getElementsByTagName('br');
+                        brs.parentNode.removeChild(brs);
                     }
                 }
             }
