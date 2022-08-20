@@ -78,7 +78,7 @@ window.onload = function () {
         product[i].style.margin="0";
         product[i].style.backgroundColor="transparent";
         
-        //image.querySelector('.swiper.paginationSlider').style.display="none";
+        image.querySelector('.swiper.paginationSlider').style.padding="0";
         
         inner.insertBefore(details,image);
         
