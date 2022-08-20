@@ -107,7 +107,7 @@ window.onload = function () {
                         desc_p[j].style.textAlign="left";
                         
                         var brs = desc_p[j].getElementsByTagName('br');
-                        brs.parentNode.removeChild(brs);
+                        brs.remove();
                     }
                 }
             }
