@@ -97,7 +97,7 @@ window.onload = function () {
             if (product[i].querySelector('.description').querySelector('p') !== null) {
                 var desc = product[i].querySelectorAll('.description');
                 
-                for(d=0;d<desc.lenght;d++) {
+                for(d=0;d<desc.length;d++) {
                     var desc_p = desc[d].querySelectorAll('p');
 
                     for(j=0;j<desc_p.length;j++) {
