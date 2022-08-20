@@ -98,6 +98,7 @@ window.onload = function () {
             var desc = product[i].querySelector('.description');
             
             if (desc.querySelector('p') !== null) {
+                console.log(`${i}`);
                 desc.querySelector('.only-on-large').querySelector('p').style.fontFamily="Gilroy Font";
                 desc.querySelector('.only-on-large').querySelector('p').style.fontWeight="400";
                 desc.querySelector('.only-on-large').querySelector('p').style.textAlign="left";
