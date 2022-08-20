@@ -103,7 +103,10 @@ window.onload = function () {
                     for(j=0;j<desc_p.length;j++) {
                         desc_p[j].style.fontFamily="Gilroy Font";
                         desc_p[j].style.fontWeight="400";
+                        desc_p[j].style.fontSize="16px";
                         desc_p[j].style.textAlign="left";
+                        
+                        desc_p[j].innerHTML = desc_p[j].innerHTML.replace('<br>','');
                     }
                 }
             }
