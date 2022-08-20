@@ -137,6 +137,7 @@ window.onload = function () {
             buttonproduct = product[i].querySelector('a');
             
             buttonproduct.style.fontFamily="Gilroy Font";
+            buttonproduct.style.fontSize="16px";
             buttonproduct.style.fontWeight="700";
             buttonproduct.style.backgroundColor="transparent";
             buttonproduct.style.backgroundImage="linear-gradient(130deg, #05BFCF 0%, #7230EA 100%)";
