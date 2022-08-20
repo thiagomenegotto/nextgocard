@@ -134,13 +134,18 @@ window.onload = function () {
         if (i > 0) {
             image.setAttribute('style', 'margin: 40px 0 20px 0 !important');
             
-            //product[i].style.marginTop="20px";
             buttonproduct = product[i].querySelector('a');
-            buttonproduct.style.width="auto";
-            buttonproduct.style.backgroundSize="contain";
-            buttonproduct.style.padding="0";
+            
+            buttonproduct.style.fontFamily="Gilroy Font";
+            buttonproduct.style.fontWeight="700";
+            buttonproduct.style.backgroundColor="transparent";
+            buttonproduct.style.backgroundImage="linear-gradient(130deg, #05BFCF 0%, #7230EA 100%)";
+            buttonproduct.style.borderRadius="6px 6px 6px 6px";
+            buttonproduct.style.padding="16px 70px 16px 70px";
+            
+            buttonproduct.style.width="100%";
             buttonproduct.style.marginTop="50px";
-            buttonproduct.style.maxWidth="100%";
+            buttonproduct.style.marginBottom="20px";
         }
     }
     
