@@ -131,11 +131,16 @@ window.onload = function () {
              
         if (i == 0) {
             details.style.marginTop="-80px";
-            image.setAttribute('style', 'margin-top: 78px !important');
+            
+            if (image !== null) {
+                image.setAttribute('style', 'margin-top: 78px !important');
+            }
         }
         
         if (i > 0) {
-            image.setAttribute('style', 'margin: 40px 0 20px 0 !important');
+            if (image !== null) {
+                image.setAttribute('style', 'margin: 40px 0 20px 0 !important');
+            }
             
             buttonproduct = product[i].querySelector('a');
             
