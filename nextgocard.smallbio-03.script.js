@@ -136,17 +136,20 @@ window.onload = function () {
             
             buttonproduct = product[i].querySelector('a');
             
-            buttonproduct.style.fontFamily="Gilroy Font";
-            buttonproduct.style.fontSize="16px";
-            buttonproduct.style.fontWeight="700";
-            buttonproduct.style.backgroundColor="transparent";
-            buttonproduct.style.backgroundImage="linear-gradient(130deg, #05BFCF 0%, #7230EA 100%)";
-            buttonproduct.style.borderRadius="6px 6px 6px 6px";
-            buttonproduct.style.padding="16px 70px 16px 70px";
+            if(buttonproduct !== null) {
             
-            buttonproduct.style.width="100%";
-            buttonproduct.style.marginTop="50px";
-            buttonproduct.style.marginBottom="20px";
+                buttonproduct.style.fontFamily="Gilroy Font";
+                buttonproduct.style.fontSize="16px";
+                buttonproduct.style.fontWeight="700";
+                buttonproduct.style.backgroundColor="transparent";
+                buttonproduct.style.backgroundImage="linear-gradient(130deg, #05BFCF 0%, #7230EA 100%)";
+                buttonproduct.style.borderRadius="6px 6px 6px 6px";
+                buttonproduct.style.padding="16px 70px 16px 70px";
+
+                buttonproduct.style.width="100%";
+                buttonproduct.style.marginTop="50px";
+                buttonproduct.style.marginBottom="20px";
+            }
         }
     }
     
