@@ -160,7 +160,7 @@ window.onload = function () {
                     image.setAttribute('style', 'margin: 20px 0 0 0 !important');
                 }
             }
-            else if(i > 5) {
+            else if(i > 6) {
                 buttonproduct.style.width="100%";
                 buttonproduct.style.marginTop="0px";
                 buttonproduct.style.padding="16px 10px 16px 10px";
