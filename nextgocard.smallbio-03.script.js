@@ -45,7 +45,7 @@ window.onload = function () {
     var buttons = document.querySelector('.buttons.row.buttons-left');
     //var buttonlarge = document.querySelectorAll('.large');
     
-    buttons.style.padding="0px 20px 150px 20px";
+    buttons.style.padding="0px 20px 70px 20px";
     
     for(i=0;i<buttonextralarge.length;i++) {
         //buttonextralarge[i].style.backgroundSize='contain';
