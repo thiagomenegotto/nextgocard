@@ -135,7 +135,7 @@ window.onload = function () {
             
             
             if (i == 0) {
-                details.style.marginTop="-80px";
+                details.style.marginTop="-120px";
                 
                 if (image !== null) {
                     image.setAttribute('style', 'margin-top: 80px !important');
