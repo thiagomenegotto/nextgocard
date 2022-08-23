@@ -139,7 +139,7 @@ window.onload = function () {
             var div = document.createElement('div');
             var img = document.createElement('img');
             
-            img.src = 'https://thiagomenegotto.github.io/nextgocard/tree/main/uploads/2022/08/Mockup-h2-2.png';
+            img.src = 'https://thiagomenegotto.github.io/nextgocard/uploads/2022/08/Mockup-h2-2.png';
             img.setAttribute("style", "margin-top: 10px");
             product[i].appendChild(img);
         }
