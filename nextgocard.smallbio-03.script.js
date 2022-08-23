@@ -140,7 +140,7 @@ window.onload = function () {
             var img = document.createElement('img');
             
             img.src = 'https://thiagomenegotto.github.io/nextgocard/uploads/2022/08/Mockup-h2-2.png';
-            img.setAttribute("style", "margin-top: 10px");
+            img.setAttribute("style", "margin: 10px 0 40px 0");
             product[i].appendChild(img);
         }
         
@@ -149,6 +149,7 @@ window.onload = function () {
                 image.setAttribute('style', 'margin: 40px 0 20px 0 !important');
             }
             
+            product[i].style.margin="80px 0 80px 0";
             buttonproduct = product[i].querySelector('a');
             
             if(buttonproduct !== null) {
