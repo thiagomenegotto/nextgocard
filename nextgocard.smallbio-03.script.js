@@ -157,9 +157,9 @@ window.onload = function () {
             else {
                 product[i].style.padding="80px 20px 80px 20px";
                 
-                if (image !== null) {
+                /*if (image !== null) {
                     image.setAttribute('style', 'margin: 40px 0 20px 0 !important');
-                }
+                } */
             }
             
             if (i == 3) {
