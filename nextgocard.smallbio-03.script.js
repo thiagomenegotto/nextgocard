@@ -151,6 +151,10 @@ window.onload = function () {
             if (i == 1) {
                 buttonproduct.style.width="100%";
                 buttonproduct.style.marginTop="50px";
+                
+                if (image !== null) {
+                    image.setAttribute('style', 'margin: 40px 0 20px 0 !important');
+                }
             }
             else if (i == 2) {
                 product[i].style.padding="80px 0 80px 0";
@@ -165,7 +169,9 @@ window.onload = function () {
                 buttonproduct.style.marginTop="0px";
                 buttonproduct.style.padding="16px 10px 16px 10px";
                 
-                image.setAttribute('style', 'margin: 0 0 0 20px !important');
+                if (image !== null) {
+                    image.setAttribute('style', 'margin: 0 0 0 20px !important');
+                }
             }
             else {
                 product[i].style.padding="80px 20px 80px 20px";
