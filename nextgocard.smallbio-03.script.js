@@ -135,7 +135,8 @@ window.onload = function () {
             
             
             if (i == 0) {
-                details.style.marginTop="-120px";
+                details.style.marginTop="-80px";
+                product[i].style.padding="0 20px 0 20px";
                 
                 if (image !== null) {
                     image.setAttribute('style', 'margin-top: 80px !important');
