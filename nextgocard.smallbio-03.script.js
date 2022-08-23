@@ -129,7 +129,7 @@ window.onload = function () {
             }
         }
              
-        if (i !== 2 && i !== 4 i !== 10) {
+        if (i !== 2 && i !== 4 && i !== 10) {
             //details.style.marginTop="-80px";
             product[i].style.padding="80px 20px 80px 20px";
             
