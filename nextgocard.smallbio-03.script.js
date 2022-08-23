@@ -72,6 +72,7 @@ window.onload = function () {
         var image = product[i].querySelector('.image');
         var details = product[i].querySelector('.details');
         var inner = product[i].querySelector('.product-inner');
+        buttonproduct = product[i].querySelector('a');
        
         
         //product[i].style.padding="0";
@@ -128,13 +129,11 @@ window.onload = function () {
                 }
             }
         }
-             
-        if (i !== 2 && i !== 4 && i !== 10) {
-            product[i].style.padding="80px 20px 80px 20px";
             
+        if (i !== 2) {           
             if (i == 0) {
                 details.style.marginTop="-80px";
-                product[i].style.padding="0 20px 0 20px";
+                product[i].style.padding="0 20px 40px 20px";
                 
                 if (image !== null) {
                     image.setAttribute('style', 'margin-top: 80px !important');
@@ -147,21 +146,10 @@ window.onload = function () {
                 img.setAttribute("style", "margin: 10px 0 40px 0");
                 product[i].appendChild(img);
             }
-        }
-        
-        else if (i == 2) {
-            product[i].style.padding="0 20px 0 20px";
-        }
-        
-        else {
-            product[i].style.padding="35px 20px 0px 20px";
-            product[i].style.marginBottom="20px";
-        }
-        
-        /*if () {
-            buttonproduct = product[i].querySelector('a');
             
-            if (i == 1) {
+            else if (i == 1) {
+                product[i].style.padding="80px 20px 80px 20px";
+                
                 buttonproduct.style.width="100%";
                 buttonproduct.style.marginTop="50px";
                 
@@ -169,15 +157,25 @@ window.onload = function () {
                     image.setAttribute('style', 'margin: 40px 0 20px 0 !important');
                 }
             }
-            else if (i == 2) {
-                product[i].style.padding="80px 0 80px 0";
-                product[i].style.backgroundImage = "linear-gradient(180deg, #59BFCA 0%, #7330DE 100%)";
+            
+            else if (i == 3 || i == 5 || i == 11) {
+                product[i].style.padding="80px 20px 0 20px";
                 
-                if (image !== null) {
-                    image.setAttribute('style', 'margin: 20px 0 0 0 !important');
+                if (i !== 11) {
+                    details.style.display="none";
                 }
             }
-            else if(i > 5 && i < 11) {
+            
+            else if (i == 4) {
+                product[i].style.padding="40px 20px 80px 20px";
+            }
+            
+            else if (i == 6 || i == 7 || i == 8 || i == 9 || i == 10) {
+                product[i].style.padding="35px 20px 0 20px";
+                product[i].style.marginBottom="20px";
+                
+                details.style.display="none";
+                
                 buttonproduct.style.width="100%";
                 buttonproduct.style.marginTop="0px";
                 buttonproduct.style.padding="16px 10px 16px 10px";
@@ -185,6 +183,32 @@ window.onload = function () {
                 if (image !== null) {
                     image.setAttribute('style', 'margin: 0 0 0 20px !important');
                 }
+                
+            }
+        }
+        
+        else {
+            product[i].style.padding="80px 0 80px 0";
+            product[i].style.backgroundImage = "linear-gradient(180deg, #59BFCA 0%, #7330DE 100%)";
+                
+            if (image !== null) {
+                image.setAttribute('style', 'margin: 20px 0 0 0 !important');
+            }
+        }
+        
+        
+        /*if () {
+            buttonproduct = product[i].querySelector('a');
+            
+            if (i == 1) {
+                
+            }
+            else if (i == 2) {
+                product[i].style.padding="80px 0 80px 0";
+                
+            }
+            else if(i > 5 && i < 11) {
+                
             }
             else {
                 product[i].style.padding="80px 20px 80px 20px";
