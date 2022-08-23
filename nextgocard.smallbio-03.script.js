@@ -132,8 +132,6 @@ window.onload = function () {
         if (i !== 2 && i !== 4 && i !== 10) {
             product[i].style.padding="80px 20px 80px 20px";
             
-            
-            
             if (i == 0) {
                 details.style.marginTop="-80px";
                 product[i].style.padding="0 20px 0 20px";
@@ -151,7 +149,7 @@ window.onload = function () {
             }
         }
         
-        else if (i == 3) {
+        else if (i == 2) {
             product[i].style.padding="0 20px 0 20px";
         }
         
