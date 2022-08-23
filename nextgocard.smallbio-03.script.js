@@ -45,7 +45,7 @@ window.onload = function () {
     var buttons = document.querySelector('.buttons.row.buttons-left');
     //var buttonlarge = document.querySelectorAll('.large');
     
-    buttons.style.padding="0px 20px 70px 20px";
+    buttons.style.padding="0px 20px 150px 20px";
     
     for(i=0;i<buttonextralarge.length;i++) {
         //buttonextralarge[i].style.backgroundSize='contain';
@@ -130,14 +130,15 @@ window.onload = function () {
         }
              
         if (i !== 2 && i !== 4 && i !== 10) {
-            //details.style.marginTop="-80px";
             product[i].style.padding="80px 20px 80px 20px";
             
             
             
             if (i == 0) {
+                details.style.marginTop="-80px";
+                
                 if (image !== null) {
-                    image.setAttribute('style', 'margin-top: 78px !important');
+                    image.setAttribute('style', 'margin-top: 80px !important');
                 }
 
                 var div = document.createElement('div');
