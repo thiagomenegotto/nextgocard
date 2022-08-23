@@ -145,7 +145,7 @@ window.onload = function () {
         }
         
         if (i == 2) {
-            product[i].backgroundImage = "linear-gradient(180deg, #59BFCA 0%, #7330DE 100%)";
+            product[i].style.backgroundImage = "linear-gradient(180deg, #59BFCA 0%, #7330DE 100%)";
         }
         
         if (i > 0) {
