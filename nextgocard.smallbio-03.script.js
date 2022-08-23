@@ -208,9 +208,9 @@ window.onload = function () {
                 buttonproduct.style.padding="16px 70px 16px 70px";
                 buttonproduct.style.marginBottom="20px";
             }
-            */
-        }
+        }*/
     }
+    
     
 // ***** END PRODUCT *****
     
