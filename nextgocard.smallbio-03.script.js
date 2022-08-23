@@ -145,21 +145,27 @@ window.onload = function () {
             product[i].appendChild(img);
         }
         
-        if (i == 2) {
-            product[i].style.padding="80px 0 80px 0";
-            product[i].style.backgroundImage = "linear-gradient(180deg, #59BFCA 0%, #7330DE 100%)";
-        }
-        
-        if (i > 0) {
+        else if (i > 0) {
+            if (i == 2) {
+                product[i].style.padding="80px 0 80px 0";
+                product[i].style.backgroundImage = "linear-gradient(180deg, #59BFCA 0%, #7330DE 100%)";
+            }
+            else {
+                product[i].style.padding="80px 20px 80px 20px";
+            }
+            
+            if (i == 3) {
+                details.style.display="none";
+            }
+            
             if (image !== null) {
                 image.setAttribute('style', 'margin: 40px 0 20px 0 !important');
             }
-            
-            product[i].style.padding="80px 20px 80px 20px";
+
             buttonproduct = product[i].querySelector('a');
-            
+
             if(buttonproduct !== null) {
-            
+
                 buttonproduct.style.fontFamily="Gilroy Font";
                 buttonproduct.style.fontSize="16px";
                 buttonproduct.style.fontWeight="700";
