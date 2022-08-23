@@ -151,9 +151,8 @@ window.onload = function () {
             if (i == 1) {
                 buttonproduct.style.width="100%";
                 buttonproduct.style.marginTop="50px";
-                buttonproduct.style.marginBottom="20px";
             }
-            if (i == 2) {
+            else if (i == 2) {
                 product[i].style.padding="80px 0 80px 0";
                 product[i].style.backgroundImage = "linear-gradient(180deg, #59BFCA 0%, #7330DE 100%)";
                 
@@ -161,14 +160,22 @@ window.onload = function () {
                     image.setAttribute('style', 'margin: 20px 0 0 0 !important');
                 }
             }
+            else if(i > 5) {
+                buttonproduct.style.width="100%";
+                buttonproduct.style.marginTop="0px";
+                buttonproduct.style.padding="16px 10px 16px 10px";
+                
+                image.setAttribute('style', 'margin: 0 0 0 20px !important');
+            }
             else {
                 product[i].style.padding="80px 20px 80px 20px";
 
                 details.style.display="none";
                 
-                buttonproduct.style.width="73,5%";
-                buttonproduct.style.marginTop="60px";
-                buttonproduct.style.marginBottom="20px";
+                if (buttonproduct !== null) {
+                    buttonproduct.style.width="73,5%";
+                    buttonproduct.style.marginTop="60px";
+                }
             }
             
             if(buttonproduct !== null) {
@@ -180,6 +187,7 @@ window.onload = function () {
                 buttonproduct.style.backgroundImage="linear-gradient(130deg, #05BFCF 0%, #7230EA 100%)";
                 buttonproduct.style.borderRadius="6px 6px 6px 6px";
                 buttonproduct.style.padding="16px 70px 16px 70px";
+                buttonproduct.style.marginBottom="20px";
             }
         }
     }
