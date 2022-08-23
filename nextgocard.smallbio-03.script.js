@@ -144,6 +144,10 @@ window.onload = function () {
             product[i].appendChild(img);
         }
         
+        if (i == 2) {
+            product[i].backgroundImage = "linear-gradient(180deg, #59BFCA 0%, #7330DE 100%)";
+        }
+        
         if (i > 0) {
             if (image !== null) {
                 image.setAttribute('style', 'margin: 40px 0 20px 0 !important');
