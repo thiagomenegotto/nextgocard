@@ -129,23 +129,36 @@ window.onload = function () {
             }
         }
              
-        if (i == 0) {
-            details.style.marginTop="-80px";
-            product[i].style.padding="0 20px 0 20px";
+        if (i !== 2 && i !== 4 i !== 10) {
+            //details.style.marginTop="-80px";
+            product[i].style.padding="80px 20px 80px 20px";
             
-            if (image !== null) {
-                image.setAttribute('style', 'margin-top: 78px !important');
+            
+            
+            if (i == 0) {
+                if (image !== null) {
+                    image.setAttribute('style', 'margin-top: 78px !important');
+                }
+
+                var div = document.createElement('div');
+                var img = document.createElement('img');
+
+                img.src = 'https://thiagomenegotto.github.io/nextgocard/uploads/2022/08/Mockup-h2-2.png';
+                img.setAttribute("style", "margin: 10px 0 40px 0");
+                product[i].appendChild(img);
             }
-            
-            var div = document.createElement('div');
-            var img = document.createElement('img');
-            
-            img.src = 'https://thiagomenegotto.github.io/nextgocard/uploads/2022/08/Mockup-h2-2.png';
-            img.setAttribute("style", "margin: 10px 0 40px 0");
-            product[i].appendChild(img);
+        }
+        
+        else if (i == 3) {
+            product[i].style.padding="0 20px 0 20px";
         }
         
         else {
+            product[i].style.padding="35px 20px 0px 20px";
+            product[i].style.marginBottom="20px";
+        }
+        
+        /*if () {
             buttonproduct = product[i].querySelector('a');
             
             if (i == 1) {
@@ -195,6 +208,7 @@ window.onload = function () {
                 buttonproduct.style.padding="16px 70px 16px 70px";
                 buttonproduct.style.marginBottom="20px";
             }
+            */
         }
     }
     
