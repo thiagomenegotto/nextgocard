@@ -149,17 +149,21 @@ window.onload = function () {
             if (i == 2) {
                 product[i].style.padding="80px 0 80px 0";
                 product[i].style.backgroundImage = "linear-gradient(180deg, #59BFCA 0%, #7330DE 100%)";
+                
+                if (image !== null) {
+                    image.setAttribute('style', 'margin: 20px 0 0 0 !important');
+                }
             }
             else {
                 product[i].style.padding="80px 20px 80px 20px";
+                
+                if (image !== null) {
+                    image.setAttribute('style', 'margin: 40px 0 20px 0 !important');
+                }
             }
             
             if (i == 3) {
                 details.style.display="none";
-            }
-            
-            if (image !== null) {
-                image.setAttribute('style', 'margin: 40px 0 20px 0 !important');
             }
 
             buttonproduct = product[i].querySelector('a');
