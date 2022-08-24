@@ -176,7 +176,7 @@ window.onload = function () {
                 
                 buttonproduct.style.width="100%";
                 buttonproduct.style.maxWidth="365px";
-                buttonproduct.style.marginTop="0px";
+                buttonproduct.style.margin="0 0 0 10px";
                 buttonproduct.style.padding="16px 10px 16px 10px";
                 
                 if (image !== null) {
