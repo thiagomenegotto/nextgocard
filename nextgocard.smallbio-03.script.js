@@ -242,16 +242,56 @@ window.onload = function () {
         }
         
         if (i == 11) {
+            var widget_wrap = document.createElement('div');
             var widget_heading = document.createElement('div');
             var h2 = document.createElement('h2');
-            var countdown = document.createElement('div');
+            var widget_countdown = document.createElement('div');
+            var countdown_wrapper = document.createElement('div');
             
+            widget_wrap.setAttribute("class","widget_wrap");
+            widget_wrap.setAttribute("style","padding: 0; display: flex; width: 100%; flex-wrap: wrap; align-content: flex-start;");
+            
+            widget_heading.setAttribute("class","widget_heading");
+            widget_heading.setAttribute("style","text-align: center; margin-bottom: 20px; width: 100%; margin: 0; padding: 0;");
+            
+            h2.setAttribute("class","element_heading");
+            h2.setAttribute("style","color: #FFF; font-family: Gilroy Font; font-size: 26px; font-weight: 700; margin: 0; padding: 0; line-height: 1");
+            
+            widget_countdown.setAttribute("class","widget_countdown");
+            widget_countdown.setAttribute("style","margin-bottom: 0; width: 100%;");
+            
+            countdown_wrapper.setAttribute("class","countdown_wrapper");
+            countdown_wrapper.setAttribute("style","max-width: 18%; display: flex; justify-content: center; margin-right: auto; margin-left: auto; flex-direction: row;");
             
             for (t=0; t<4; t++) {
                 var countdown_item = document.createElement('div');
                 var digits = document.createElement('span');
                 var label = document.createElement('span');
                 
+                countdown_item.setAttribute("class","countdown_item");
+                countdown_item.setAttribute("style","margin-right: calc(39px/2); background-color: #00E4FF00; flex-basis: 0; flex-grow: 1; padding: 20px 0; text-align: center; color: #fff;");
+                
+                digits.setAttribute("class","countdown_digits");
+                digits.setAttribute("style","font-family: Gilroy Font; font-size: 30px; font-weight: 200; line-height: 1; display: block; text-align: center; color: #fff;");
+                
+                label.setAttribute("class","countdown_label");
+                label.setAttribute("style","font-family: Gilroy Font; font-size: 17px; font-weight: 300; line-height: 1; display: block; text-align: center; color: #fff;");
+                
+                digits.innerText="0";
+                
+                if (t == 0) {
+                    label.innerText="Dias";
+                }
+                else if (t == 1) {
+                    label.innerText="Hrs";
+                }
+                else if (t == 2) {
+                    label.innerText="Min";
+                }
+                else {
+                    label.innerText="Seg";
+                }
+
                 countdown_item.append(digits);
                 countdown_item.append(label);
                 
