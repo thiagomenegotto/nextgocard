@@ -274,7 +274,6 @@ window.onload = function () {
                 var label = document.createElement('span');
                 
                 countdown_item.setAttribute("class","countdown_item");
-                countdown_item.setAttribute("style","margin-right: calc(39px/2); background-color: #00E4FF00; flex-basis: 0; flex-grow: 1; padding: 20px 0; text-align: center; color: #fff;");
                 
                 digits.setAttribute("class","countdown_digits");
                 digits.setAttribute("style","font-family: Gilroy Font; font-size: 30px; font-weight: 200; line-height: 1; display: block; text-align: center; color: #fff;");
@@ -286,15 +285,19 @@ window.onload = function () {
                 
                 if (t == 0) {
                     label.innerText="Dias";
+                    countdown_item.setAttribute("style","margin-right: calc(39px/2); background-color: #00E4FF00; flex-basis: 0; flex-grow: 1; padding: 20px 0; text-align: center; color: #fff;");
                 }
                 else if (t == 1) {
                     label.innerText="Hrs";
+                    countdown_item.setAttribute("style","margin-right: calc(39px/2); margin-left: calc(39px/2); background-color: #00E4FF00; flex-basis: 0; flex-grow: 1; padding: 20px 0; text-align: center; color: #fff;");
                 }
                 else if (t == 2) {
                     label.innerText="Min";
+                    countdown_item.setAttribute("style","margin-right: calc(39px/2); margin-left: calc(39px/2); background-color: #00E4FF00; flex-basis: 0; flex-grow: 1; padding: 20px 0; text-align: center; color: #fff;");
                 }
                 else {
                     label.innerText="Seg";
+                    countdown_item.setAttribute("style","margin-left: calc(39px/2); background-color: #00E4FF00; flex-basis: 0; flex-grow: 1; padding: 20px 0; text-align: center; color: #fff;");
                 }
 
                 countdown_item.append(digits);
