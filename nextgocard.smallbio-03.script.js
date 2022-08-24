@@ -387,10 +387,10 @@ window.onload = function () {
         const mins = Math.floor(totalSeconds / 60) % 60;
         const seconds = Math.floor(totalSeconds) % 60;
         
-        daysEl.innerText = days;
-        hoursEl.innerText = hours;
-        minsEl.innerText = mins;
-        secondsEl.innerText = seconds;
+        daysEl.innerText = formatTime(days);
+        hoursEl.innerText = formatTime(hours);
+        minsEl.innerText = formatTime(mins);
+        secondsEl.innerText = formatTime(seconds);
     }
     
     function formatTime(time) {
