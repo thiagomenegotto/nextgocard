@@ -242,20 +242,25 @@ window.onload = function () {
         }
         
         if (i == 11) {
-            var widget_wrap = document.createElement('div');
-            var widget_heading = document.createElement('div');
+            var section = document.createElement('section');
+            var countdown_container = document.createElement('div');
+            var countdown_heading = document.createElement('div');
             var h2 = document.createElement('h2');
             var widget_countdown = document.createElement('div');
             var countdown_wrapper = document.createElement('div');
             
-            widget_wrap.setAttribute("class","widget_wrap");
-            widget_wrap.setAttribute("style","padding: 0; display: flex; width: 100%; flex-wrap: wrap; align-content: flex-start;");
+            section.setAttribute("class","widget_countdown");
+            section.setAttribute("style","padding: 80px 20px 0 20px");
             
-            widget_heading.setAttribute("class","widget_heading");
-            widget_heading.setAttribute("style","text-align: center; margin-bottom: 20px; width: 100%; margin: 0; padding: 0;");
+            countdown_container.setAttribute("class","countdown_container");
+            countdown_container.setAttribute("style","padding: 0; display: flex; width: 100%; flex-wrap: wrap; align-content: flex-start;");
+            
+            countdown_heading.setAttribute("class","widget_heading");
+            countdown_heading.setAttribute("style","text-align: center; margin-bottom: 20px; width: 100%; margin: 0; padding: 0;");
             
             h2.setAttribute("class","element_heading");
             h2.setAttribute("style","color: #FFF; font-family: Gilroy Font; font-size: 26px; font-weight: 700; margin: 0; padding: 0; line-height: 1");
+            h2.innerText="PROMOÇÃO POR TEMPO LIMITADO";
             
             widget_countdown.setAttribute("class","widget_countdown");
             widget_countdown.setAttribute("style","margin-bottom: 0; width: 100%;");
@@ -277,7 +282,7 @@ window.onload = function () {
                 label.setAttribute("class","countdown_label");
                 label.setAttribute("style","font-family: Gilroy Font; font-size: 17px; font-weight: 300; line-height: 1; display: block; text-align: center; color: #fff;");
                 
-                digits.innerText="0";
+                digits.innerText="00";
                 
                 if (t == 0) {
                     label.innerText="Dias";
@@ -298,12 +303,13 @@ window.onload = function () {
                 countdown_wrapper.append(countdown_item);
             }
             
-            widget_heading.append(h2);
+            countdown_heading.append(h2);
             widget_countdown.append(countdown_wrapper);
-            widget_wrap.append(widget_heading);
-            widget_wrap.append(widget_countdown);
+            countdown_container.append(countdown_heading);
+            countdown_container.append(widget_countdown);
+            section.append(countdown_container);
             
-            products.insertBefore(widget_wrap, product[i]);
+            products.insertBefore(section, product[i]);
         }
     }
     
