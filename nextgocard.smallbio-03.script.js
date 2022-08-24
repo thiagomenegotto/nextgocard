@@ -168,6 +168,8 @@ window.onload = function () {
             
             else if (i == 4) {
                 product[i].style.padding="40px 20px 80px 20px";
+                
+                details.style.display="none";
             }
             
             else if (i == 6 || i == 7 || i == 8 || i == 9 || i == 10) {
