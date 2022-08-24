@@ -295,13 +295,15 @@ window.onload = function () {
                 countdown_item.append(digits);
                 countdown_item.append(label);
                 
-                countdown.append(countdown_item);
+                countdown_wrapper.append(countdown_item);
             }
             
             widget_heading.append(h2);
-            widget_heading.append(countdown);
+            widget_countdown.append(countdown_wrapper);
+            widget_wrap.append(widget_heading);
+            widget_wrap.append(widget_countdown);
             
-            products.insertBefore(widget_heading, product[i]);
+            products.insertBefore(widget_wrap, product[i]);
         }
     }
     
