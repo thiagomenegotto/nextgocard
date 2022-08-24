@@ -167,7 +167,7 @@ window.onload = function () {
             }
             
             else if (i == 4) {
-                product[i].style.padding="40px 20px 80px 20px";
+                product[i].style.padding="40px 20px 0 20px";
                 
                 details.style.display="none";
             }
@@ -183,7 +183,7 @@ window.onload = function () {
                 buttonproduct.style.padding="16px 10px 16px 10px";
                 
                 if (image !== null) {
-                    image.setAttribute('style', 'margin: 0 0 0 20px !important');
+                    image.setAttribute('style', 'margin: 0 0 20px 0 !important');
                 }
                 
             }
