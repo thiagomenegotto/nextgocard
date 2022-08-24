@@ -62,7 +62,7 @@ window.onload = function () {
     var product = document.querySelectorAll('.product');
     var buttonproduct;
     
-    products.style.padding="0px 20px 0px 20px";
+    products.style.padding="0";
     products.style.margin="0";
     products.style.backgroundImage="url('https://thiagomenegotto.github.io/nextgocard/uploads/2022/08/Fundo-v2.jpg')";
     products.style.backgroundPosition="top center";   
@@ -72,9 +72,10 @@ window.onload = function () {
         var image = product[i].querySelector('.image');
         var details = product[i].querySelector('.details');
         var inner = product[i].querySelector('.product-inner');
+        buttonproduct = product[i].querySelector('a');
        
         
-        product[i].style.padding="0";
+        //product[i].style.padding="0";
         product[i].style.margin="0";
         product[i].style.backgroundColor="transparent";
         
@@ -128,24 +129,103 @@ window.onload = function () {
                 }
             }
         }
-             
-        if (i == 0) {
-            details.style.marginTop="-80px";
             
-            if (image !== null) {
-                image.setAttribute('style', 'margin-top: 78px !important');
+        if (i !== 2) {           
+            if (i == 0) {
+                details.style.marginTop="-80px";
+                product[i].style.padding="0 20px 40px 20px";
+                
+                if (image !== null) {
+                    image.setAttribute('style', 'margin-top: 80px !important');
+                }
+
+                var div = document.createElement('div');
+                var img = document.createElement('img');
+
+                img.src = 'https://thiagomenegotto.github.io/nextgocard/uploads/2022/08/Mockup-h2-2.png';
+                img.setAttribute("style", "margin: 10px 0 40px 0");
+                product[i].appendChild(img);
+            }
+            
+            else if (i == 1) {
+                product[i].style.padding="80px 20px 80px 20px";
+                
+                buttonproduct.style.width="100%";
+                buttonproduct.style.marginTop="50px";
+                
+                if (image !== null) {
+                    image.setAttribute('style', 'margin: 40px 0 20px 0 !important');
+                }
+            }
+            
+            else if (i == 3 || i == 5 || i == 11) {
+                product[i].style.padding="80px 20px 0 20px";
+                
+                if (i !== 11) {
+                    details.style.display="none";
+                }
+            }
+            
+            else if (i == 4) {
+                product[i].style.padding="40px 20px 0 20px";
+                
+                details.style.display="none";
+            }
+            
+            else if (i == 6 || i == 7 || i == 8 || i == 9 || i == 10) {
+                product[i].style.padding="35px 20px 10px 20px";
+                //product[i].style.marginBottom="20px";
+                inner.style.padding="10px 10px 0 10px";
+                
+                details.style.display="none";
+                
+                buttonproduct.style.width="100%";
+                buttonproduct.style.marginTop="0px";
+                buttonproduct.style.padding="16px 10px 16px 10px";
+                
+                if (image !== null) {
+                    image.setAttribute('style', 'margin: 0 0 20px 0 !important');
+                }
+                
             }
         }
         
-        if (i > 0) {
+        else {
+            product[i].style.padding="80px 0 80px 0";
+            product[i].style.backgroundImage = "linear-gradient(180deg, #59BFCA 0%, #7330DE 100%)";
+                
             if (image !== null) {
-                image.setAttribute('style', 'margin: 40px 0 20px 0 !important');
+                image.setAttribute('style', 'margin: 20px 0 0 0 !important');
             }
-            
+        }
+        
+        
+        /*if () {
             buttonproduct = product[i].querySelector('a');
             
-            if(buttonproduct !== null) {
+            if (i == 1) {
+                
+            }
+            else if (i == 2) {
+                product[i].style.padding="80px 0 80px 0";
+                
+            }
+            else if(i > 5 && i < 11) {
+                
+            }
+            else {
+                product[i].style.padding="80px 20px 80px 20px";
+
+                details.style.display="none";
+                
+                if (buttonproduct !== null) {
+                    buttonproduct.style.width="73,5%";
+                    buttonproduct.style.marginTop="60px";
+                }
+            }
             
+            if(buttonproduct !== null) {
+
                 buttonproduct.style.fontFamily="Gilroy Font";
                 buttonproduct.style.fontSize="16px";
                 buttonproduct.style.fontWeight="700";
@@ -153,13 +233,11 @@ window.onload = function () {
                 buttonproduct.style.backgroundImage="linear-gradient(130deg, #05BFCF 0%, #7230EA 100%)";
                 buttonproduct.style.borderRadius="6px 6px 6px 6px";
                 buttonproduct.style.padding="16px 70px 16px 70px";
-
-                buttonproduct.style.width="100%";
-                buttonproduct.style.marginTop="50px";
                 buttonproduct.style.marginBottom="20px";
             }
-        }
+        }*/
     }
+    
     
 // ***** END PRODUCT *****
     
