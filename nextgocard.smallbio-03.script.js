@@ -144,7 +144,9 @@ window.onload = function () {
 
                 img.src = 'https://thiagomenegotto.github.io/nextgocard/uploads/2022/08/Mockup-h2-2.png';
                 img.setAttribute("style", "margin: 10px 0 40px 0");
-                product[i].appendChild(img);
+                
+                div.append(img);
+                product[i].appendChild(div);
             }
             
             else if (i == 1) {
@@ -209,8 +211,10 @@ window.onload = function () {
                     image.setAttribute('style', 'margin: 40px 0 20px 0 !important');
                 }
                 
+                var div = document.createElement('div');
                 var img = document.createElement('img');
 
+                div.setAttribute("style", "text-align: center");
                 img.src = 'https://thiagomenegotto.github.io/nextgocard/uploads/2022/08/Formas-pagamento.svg';
                 
                 if (i !== 1) {
@@ -227,7 +231,8 @@ window.onload = function () {
                     img.setAttribute("style", "vertical-align: middle; display: inline-block; width: 69%; height: auto; max-width: 100%; border: none; border-radius: 0; box-shadow: none;");
                 }
                 
-                product[i].appendChild(img);
+                div.append(img);
+                product[i].appendChild(div);
             }
             else {
                 buttonproduct.style.padding="16px 10px 16px 10px";
