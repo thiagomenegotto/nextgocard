@@ -240,6 +240,29 @@ window.onload = function () {
                 buttonproduct.style.width="100%";
             }
         }
+        
+        if (i == 11) {
+            var widget_heading = document.createElement('div');
+            var h2 = document.createElement('h2');
+            var countdown = document.createElement('div');
+            
+            
+            for (t=0; t<4; t++) {
+                var countdown_item = document.createElement('div');
+                var digits = document.createElement('span');
+                var label = document.createElement('span');
+                
+                countdown_item.append(digits);
+                countdown_item.append(label);
+                
+                countdown.append(countdown_item);
+            }
+            
+            widget_heading.append(h2);
+            widget_heading.append(countdown);
+            
+            products.insertBefore(widget_heading, product[i]);
+        }
     }
     
     
