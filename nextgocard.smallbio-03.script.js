@@ -256,7 +256,7 @@ window.onload = function () {
     
     banner.style.padding="0";
     
-    for(i=1;i<imgbanner.length;i++) {
+    for(i=0;i<imgbanner.length;i++) {
         imgbanner[i].style.marginTop="60px";
     }
     
