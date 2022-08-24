@@ -286,18 +286,22 @@ window.onload = function () {
                 if (t == 0) {
                     label.innerText="Dias";
                     countdown_item.setAttribute("style","margin-right: calc(39px/2); background-color: #00E4FF00; flex-basis: 0; flex-grow: 1; padding: 20px 0; text-align: center; color: #fff;");
+                    digits.setAttribute("id","countdown_days");
                 }
                 else if (t == 1) {
                     label.innerText="Hrs";
                     countdown_item.setAttribute("style","margin-right: calc(39px/2); margin-left: calc(39px/2); background-color: #00E4FF00; flex-basis: 0; flex-grow: 1; padding: 20px 0; text-align: center; color: #fff;");
+                    digits.setAttribute("id","countdown_hours");
                 }
                 else if (t == 2) {
                     label.innerText="Min";
                     countdown_item.setAttribute("style","margin-right: calc(39px/2); margin-left: calc(39px/2); background-color: #00E4FF00; flex-basis: 0; flex-grow: 1; padding: 20px 0; text-align: center; color: #fff;");
+                    digits.setAttribute("id","countdown_mins");
                 }
                 else {
                     label.innerText="Seg";
                     countdown_item.setAttribute("style","margin-left: calc(39px/2); background-color: #00E4FF00; flex-basis: 0; flex-grow: 1; padding: 20px 0; text-align: center; color: #fff;");
+                    digits.setAttribute("id","countdown_seconds");
                 }
 
                 countdown_item.append(digits);
@@ -364,6 +368,38 @@ window.onload = function () {
     } */
 
 // ***** END FOOTER ***** 
+    
+    const timeTarget = "29 Aug 2022";
+    
+    const daysEl = document.getElementById("countdown_days");
+    const hoursEl = document.getElementById("countdown_hours");
+    const minsEl = document.getElementById("countdown_mins");
+    const secondsEl = document.getElementById("countdown_seconds");
+    
+    function countdown() {
+        const timeTargetDate = new Date(timeTarget);
+        const currentDate = new Date();
+        
+        const totalSeconds = (timeTargetDate - currentDate)/1000;
+        
+        const days = Math.floor(totalSeconds / 3600 / 24);
+        const hours = Math.floor(totalSeconds / 3600) % 24;
+        const mins = Math.floor(totalSeconds / 60) % 60;
+        const seconds = Math.floor(totalSeconds) % 60;
+        
+        daysEl.innerText = days;
+        hoursEl.innerText = hours;
+        minsEl.innerText = mins;
+        secondsEl.innerText = seconds;
+    }
+    
+    function formatTime(time) {
+        return time < 10 ? `0${time}` : time; 
+    }
+    
+    countdown();
+    
+    setInterval(countdown, 1000);
     
 // **** CHECK WINDOW SIZE ****
     
