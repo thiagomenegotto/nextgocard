@@ -211,7 +211,7 @@ window.onload = function () {
                 
                 var img = document.createElement('img');
 
-                img.src = 'https://thiagomenegotto.github.io/nextgocard/uploads/2022/08/formas-pagamento.svg';
+                img.src = 'https://thiagomenegotto.github.io/nextgocard/uploads/2022/08/Formas-pagamento.svg';
                 
                 if (i !== 1) {
                     buttonproduct.style.width="auto";
@@ -234,43 +234,6 @@ window.onload = function () {
                 buttonproduct.style.width="100%";
             }
         }
-        
-        /*if () {
-            buttonproduct = product[i].querySelector('a');
-            
-            if (i == 1) {
-                
-            }
-            else if (i == 2) {
-                product[i].style.padding="80px 0 80px 0";
-                
-            }
-            else if(i > 5 && i < 11) {
-                
-            }
-            else {
-                product[i].style.padding="80px 20px 80px 20px";
-
-                details.style.display="none";
-                
-                if (buttonproduct !== null) {
-                    buttonproduct.style.width="73,5%";
-                    buttonproduct.style.marginTop="60px";
-                }
-            }
-            
-            if(buttonproduct !== null) {
-
-                buttonproduct.style.fontFamily="Gilroy Font";
-                buttonproduct.style.fontSize="16px";
-                buttonproduct.style.fontWeight="700";
-                buttonproduct.style.backgroundColor="transparent";
-                buttonproduct.style.backgroundImage="linear-gradient(130deg, #05BFCF 0%, #7230EA 100%)";
-                buttonproduct.style.borderRadius="6px 6px 6px 6px";
-                buttonproduct.style.padding="16px 70px 16px 70px";
-                buttonproduct.style.marginBottom="20px";
-            }
-        }*/
     }
     
     
