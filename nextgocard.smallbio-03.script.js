@@ -247,18 +247,18 @@ window.onload = function () {
     
 // ***** BANNER *****
     
-    /* var banner = document.querySelector('.banner');
+    var banner = document.querySelector('.banner');
     var imgbanner = banner.querySelectorAll('img');
     
-    var cardNext = products.nextElementSibling;
+    //var cardNext = products.nextElementSibling;
     
-    cardNext.style.minHeight="0";
+    //cardNext.style.minHeight="0";
     
-    //banner.style.padding="0";
+    banner.style.padding="0";
     
     for(i=1;i<imgbanner.length;i++) {
-        imgbanner[i].style.marginTop="80px";
-    } */
+        imgbanner[i].style.marginTop="60px";
+    }
     
 // ***** END BANNER *****
 
