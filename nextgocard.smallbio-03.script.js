@@ -149,13 +149,6 @@ window.onload = function () {
             
             else if (i == 1) {
                 product[i].style.padding="80px 20px 80px 20px";
-                
-                buttonproduct.style.width="100%";
-                buttonproduct.style.marginTop="50px";
-                
-                if (image !== null) {
-                    image.setAttribute('style', 'margin: 40px 0 20px 0 !important');
-                }
             }
             
             else if (i == 3 || i == 5 || i == 11) {
@@ -186,7 +179,6 @@ window.onload = function () {
                 if (image !== null) {
                     image.setAttribute('style', 'margin: 0 0 20px 0 !important');
                 }
-                
             }
         }
         
@@ -199,6 +191,49 @@ window.onload = function () {
             }
         }
         
+        if(buttonproduct !== null) {
+
+            buttonproduct.style.fontFamily="Gilroy Font";
+            buttonproduct.style.fontSize="16px";
+            buttonproduct.style.fontWeight="700";
+            buttonproduct.style.backgroundColor="transparent";
+            buttonproduct.style.backgroundImage="linear-gradient(130deg, #05BFCF 0%, #7230EA 100%)";
+            buttonproduct.style.borderRadius="6px 6px 6px 6px";
+            
+            if (i == 1 || i == 3 || i == 4) {
+                
+                buttonproduct.style.padding="16px 70px 16px 70px";
+                buttonproduct.style.marginBottom="20px";
+                
+                if (image !== null) {
+                    image.setAttribute('style', 'margin: 40px 0 20px 0 !important');
+                }
+                
+                var img = document.createElement('img');
+
+                img.src = 'https://thiagomenegotto.github.io/nextgocard/uploads/2022/08/formas-pagamento.svg';
+                
+                if (i !== 1) {
+                    buttonproduct.style.width="auto";
+                    buttonproduct.style.marginTop="60px";
+                    
+                    img.setAttribute("style", "vertical-align: middle; display: inline-block; width: 324px; height: auto; max-width: 100%; border: none; border-radius: 0; box-shadow: none;");
+                    
+                }                
+                else {
+                    buttonproduct.style.width="100%";
+                    buttonproduct.style.marginTop="50px";
+                    
+                    img.setAttribute("style", "vertical-align: middle; display: inline-block; width: 69%; height: auto; max-width: 100%; border: none; border-radius: 0; box-shadow: none;");
+                }
+                
+                product[i].appendChild(img);
+            }
+            else {
+                buttonproduct.style.padding="16px 10px 16px 10px";
+                buttonproduct.style.width="100%";
+            }
+        }
         
         /*if () {
             buttonproduct = product[i].querySelector('a');
