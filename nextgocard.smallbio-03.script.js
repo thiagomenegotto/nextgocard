@@ -174,7 +174,8 @@ window.onload = function () {
             
             else if (i == 6 || i == 7 || i == 8 || i == 9 || i == 10) {
                 product[i].style.padding="35px 20px 0 20px";
-                product[i].style.marginBottom="20px";
+                //product[i].style.marginBottom="20px";
+                inner.style.padding="10px";
                 
                 details.style.display="none";
                 
