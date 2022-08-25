@@ -359,11 +359,11 @@ window.onload = function () {
     
     section.setAttribute("style","border-style: solid; border-width: 1px 0px 0px 0px; border-color: #fff; transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s; padding: 20px 0px 50px 0px;");
     widget_wrap.setAttribute("style","padding: 10px; display: flex; width: 100%; flex-wrap: wrap; align-content: flex-start;");
-    widget_container1.setAttribute("style","margin: 0 20px 0 20px; text-align: center; color: #fff; font-family: Gilroy Font; font-size: 16px; font-weight: 400;");
+    widget_container1.setAttribute("style","margin: 0 20px 0 20px; text-align: center; color: #fff; font-family: Gilroy Font; font-size: 16px; font-weight: 400; line-height: 1.5;");
     p1.setAttribute("style","margin-bottom: 0; margin-top: 0;");
     span.setAttribute("style","color: #0ABAD1");
     
-    widget_container2.setAttribute("style","margin: 8px 0 0 0; text-align: center; color: #fff; font-family: Gilroy Font; font-size: 16px; font-weight: 400;");
+    widget_container2.setAttribute("style","margin: 8px 0 0 0; text-align: center; color: #fff; font-family: Gilroy Font; font-size: 12px; font-weight: 400; line-height: 1.5;");
     p2.setAttribute("style","margin-bottom: 0; margin-top: 0;");
     
     widget_container3.setAttribute("style","text-align: center; width: 100%; margin: 0; padding: 12px 0 0 0;");
