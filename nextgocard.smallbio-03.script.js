@@ -388,7 +388,7 @@ window.onload = function () {
     widget_wrap.append(widget_container2);
     widget_wrap.append(widget_container3);
     section.append(widget_wrap);
-    products.append(section);
+    card.append(section);
     
     /*footera.onmouseover = function() 
     {
