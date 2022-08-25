@@ -341,22 +341,56 @@ window.onload = function () {
 // ***** END BANNER *****
 
 // ***** FOOTER ***** 
-    /*
+    
     var footer = document.querySelector('.footer-text-box');
-    //var footerp = footer.querySelector('p');
-    var footera = footer.querySelector('a');
-    var footeracolor = footera.style.color;
+    footer.style.display = "none";
     
-    footer.setAttribute('style', 'width: auto');
-    footer.setAttribute('style', 'max-width: 233px');
-    footer.setAttribute('style', 'margin-top: 80px');
-    footer.setAttribute('style', 'margin-bottom: 10px');
-    footer.setAttribute('style', 'padding: 0');
-    footer.setAttribute('style', 'position: relative');
+    var section = document.createElement('section');
+    var widget_wrap = document.createElement('div');
+    var widget_container1 = document.createElement('div');
+    var p1 = document.createElement('p');
+    var span = document.createElement('span');
+    var widget_container2 = document.createElement('div');
+    var p2 = document.createElement('p');
+    var widget_container3 = document.createElement('div');
+    var a = document.createElement('a');
+    var img = document.createElement('img');
     
-    footer.setAttribute('style', 'font-weight: 700');
-    //footera.style.fontWeight="700";
-    footera.onmouseover = function() 
+    
+    section.setAttribute("style","border-style: solid; border-width: 1px 0px 0px 0px; border-color: #fff; transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s; padding: 20px 0px 50px 0px;");
+    widget_wrap.setAttribute("style","padding: 10px; display: flex; width: 100%; flex-wrap: wrap; align-content: flex-start;");
+    widget_container1.setAttribute("style","margin: 0 20px 0 20px; text-align: center; color: #fff; font-family: Gilroy Font; font-size: 16px; font-weight: 400;");
+    p1.setAttribute("style","margin-bottom: 0; margin-top: 0;");
+    span.setAttribute("style","color: #0ABAD1");
+    
+    widget_container2.setAttribute("style","margin: 8px 0 0 0; text-align: center; color: #fff; font-family: Gilroy Font; font-size: 16px; font-weight: 400;");
+    p2.setAttribute("style","margin-bottom: 0; margin-top: 0;");
+    
+    widget_container3.setAttribute("style","text-align: center; width: 100%; margin: 0; padding: 12px 0 0 0;");
+    a.setAttribute("style","display: inline-block; font-family: Gilroy Font; box-shadow: none; text-decoration: none; background-color: transparent; color: #c36;");
+    img.setAttribute("style","width: 100%; vertical-align: middle; display: inline-block; height: auto; max-width: 100%; border: none; border-radius: 0; box-shadow: none;");
+    
+    p1.innerText = "Dúvidas? Envie um e-mail para";
+    span.innerText = "suporte@tellasaderio.com.br";
+    p2.innerText = "© Perfil Profissional – 2022. Todos os direitos reservados. Stella Sadério.";
+    a.setAttribute("href","https://www.uol.com.br/");
+    img.src = 'https://thiagomenegotto.github.io/nextgocard/uploads/2022/08/thiago.svg';
+    
+    p1.append(span);
+    widget_container1.append(p1);
+    
+    widget_container2.append(p2);
+    
+    a.append(img);
+    widget_container3.append(a);
+    
+    widget_wrap.append(widget_container1);
+    widget_wrap.append(widget_container2);
+    widget_wrap.append(widget_container3);
+    section.append(widget_wrap);
+    products.append(section);
+    
+    /*footera.onmouseover = function() 
     {
         footera.setAttribute('style', 'color: white');
     }
