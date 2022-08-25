@@ -370,7 +370,7 @@ window.onload = function () {
     a.setAttribute("style","display: inline-block; font-family: Gilroy Font; box-shadow: none; text-decoration: none; background-color: transparent; color: #c36;");
     img.setAttribute("style","width: 100%; vertical-align: middle; display: inline-block; height: auto; max-width: 100%; border: none; border-radius: 0; box-shadow: none;");
     
-    p1.innerText = "Dúvidas? Envie um e-mail para";
+    p1.innerText = "Dúvidas? Envie um e-mail para ";
     span.innerText = "suporte@tellasaderio.com.br";
     p2.innerText = "© Perfil Profissional – 2022. Todos os direitos reservados. Stella Sadério.";
     a.setAttribute("href","https://www.uol.com.br/");
