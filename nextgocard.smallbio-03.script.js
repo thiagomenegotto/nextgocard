@@ -144,18 +144,13 @@ window.onload = function () {
 
                 img.src = 'https://thiagomenegotto.github.io/nextgocard/uploads/2022/08/Mockup-h2-2.png';
                 img.setAttribute("style", "margin: 10px 0 40px 0");
-                product[i].appendChild(img);
+                
+                div.append(img);
+                product[i].appendChild(div);
             }
             
             else if (i == 1) {
                 product[i].style.padding="80px 20px 80px 20px";
-                
-                buttonproduct.style.width="100%";
-                buttonproduct.style.marginTop="50px";
-                
-                if (image !== null) {
-                    image.setAttribute('style', 'margin: 40px 0 20px 0 !important');
-                }
             }
             
             else if (i == 3 || i == 5 || i == 11) {
@@ -180,13 +175,13 @@ window.onload = function () {
                 details.style.display="none";
                 
                 buttonproduct.style.width="100%";
-                buttonproduct.style.marginTop="0px";
+                buttonproduct.style.maxWidth="365px";
+                buttonproduct.style.margin="0 0 0 10px";
                 buttonproduct.style.padding="16px 10px 16px 10px";
                 
                 if (image !== null) {
                     image.setAttribute('style', 'margin: 0 0 20px 0 !important');
                 }
-                
             }
         }
         
@@ -199,43 +194,130 @@ window.onload = function () {
             }
         }
         
-        
-        /*if () {
-            buttonproduct = product[i].querySelector('a');
-            
-            if (i == 1) {
-                
-            }
-            else if (i == 2) {
-                product[i].style.padding="80px 0 80px 0";
-                
-            }
-            else if(i > 5 && i < 11) {
-                
-            }
-            else {
-                product[i].style.padding="80px 20px 80px 20px";
+        if(buttonproduct !== null) {
 
-                details.style.display="none";
-                
-                if (buttonproduct !== null) {
-                    buttonproduct.style.width="73,5%";
-                    buttonproduct.style.marginTop="60px";
-                }
-            }
+            buttonproduct.style.fontFamily="Gilroy Font";
+            buttonproduct.style.fontSize="16px";
+            buttonproduct.style.fontWeight="700";
+            buttonproduct.style.backgroundColor="transparent";
+            buttonproduct.style.backgroundImage="linear-gradient(130deg, #05BFCF 0%, #7230EA 100%)";
+            buttonproduct.style.borderRadius="6px 6px 6px 6px";
             
-            if(buttonproduct !== null) {
-
-                buttonproduct.style.fontFamily="Gilroy Font";
-                buttonproduct.style.fontSize="16px";
-                buttonproduct.style.fontWeight="700";
-                buttonproduct.style.backgroundColor="transparent";
-                buttonproduct.style.backgroundImage="linear-gradient(130deg, #05BFCF 0%, #7230EA 100%)";
-                buttonproduct.style.borderRadius="6px 6px 6px 6px";
+            if (i == 1 || i == 3 || i == 4) {
+                
                 buttonproduct.style.padding="16px 70px 16px 70px";
                 buttonproduct.style.marginBottom="20px";
+                
+                if (image !== null) {
+                    image.setAttribute('style', 'margin: 40px 0 20px 0 !important');
+                }
+                
+                var div = document.createElement('div');
+                var img = document.createElement('img');
+
+                div.setAttribute("style", "text-align: center");
+                img.src = 'https://thiagomenegotto.github.io/nextgocard/uploads/2022/08/Formas-pagamento.svg';
+                
+                if (i !== 1) {
+                    buttonproduct.style.width="auto";
+                    buttonproduct.style.marginTop="60px";
+                    
+                    img.setAttribute("style", "vertical-align: middle; display: inline-block; width: 324px; height: auto; max-width: 100%; border: none; border-radius: 0; box-shadow: none;");
+                    
+                }                
+                else {
+                    buttonproduct.style.width="100%";
+                    buttonproduct.style.marginTop="50px";
+                    
+                    img.setAttribute("style", "vertical-align: middle; display: inline-block; width: 69%; height: auto; max-width: 100%; border: none; border-radius: 0; box-shadow: none;");
+                }
+                
+                div.append(img);
+                product[i].appendChild(div);
             }
-        }*/
+            else {
+                buttonproduct.style.padding="16px 10px 16px 10px";
+                buttonproduct.style.width="100%";
+            }
+        }
+        
+        if (i == 11) {
+            var section = document.createElement('section');
+            var countdown_container = document.createElement('div');
+            var countdown_heading = document.createElement('div');
+            var h2 = document.createElement('h2');
+            var widget_countdown = document.createElement('div');
+            var countdown_wrapper = document.createElement('div');
+            
+            section.setAttribute("class","widget_countdown");
+            section.setAttribute("style","padding: 80px 20px 0 20px");
+            
+            countdown_container.setAttribute("class","countdown_container");
+            countdown_container.setAttribute("style","padding: 0; display: flex; width: 100%; flex-wrap: wrap; align-content: flex-start;");
+            
+            countdown_heading.setAttribute("class","widget_heading");
+            countdown_heading.setAttribute("style","text-align: center; margin-bottom: 20px; width: 100%; margin: 0; padding: 0;");
+            
+            h2.setAttribute("class","element_heading");
+            h2.setAttribute("style","color: #FFF; font-family: Gilroy Font; font-size: 26px; font-weight: 700; margin: 0; padding: 0; line-height: 1");
+            h2.innerText="PROMOÇÃO POR TEMPO LIMITADO";
+            
+            widget_countdown.setAttribute("class","widget_countdown");
+            widget_countdown.setAttribute("style","margin-bottom: 0; width: 100%;");
+            
+            countdown_wrapper.setAttribute("class","countdown_wrapper");
+            countdown_wrapper.setAttribute("style","max-width: 18%; display: flex; justify-content: center; margin-right: auto; margin-left: auto; flex-direction: row;");
+            
+            for (t=0; t<4; t++) {
+                var countdown_item = document.createElement('div');
+                var digits = document.createElement('span');
+                var label = document.createElement('span');
+                
+                countdown_item.setAttribute("class","countdown_item");
+                
+                digits.setAttribute("class","countdown_digits");
+                digits.setAttribute("style","font-family: Gilroy Font; font-size: 30px; font-weight: 200; line-height: 1; display: block; text-align: center; color: #fff;");
+                
+                label.setAttribute("class","countdown_label");
+                label.setAttribute("style","font-family: Gilroy Font; font-size: 17px; font-weight: 300; line-height: 1; display: block; text-align: center; color: #fff;");
+                
+                digits.innerText="00";
+                
+                if (t == 0) {
+                    label.innerText="Dias";
+                    countdown_item.setAttribute("style","margin-right: calc(39px/2); background-color: #00E4FF00; flex-basis: 0; flex-grow: 1; padding: 20px 0; text-align: center; color: #fff;");
+                    digits.setAttribute("id","countdown_days");
+                }
+                else if (t == 1) {
+                    label.innerText="Hrs";
+                    countdown_item.setAttribute("style","margin-right: calc(39px/2); margin-left: calc(39px/2); background-color: #00E4FF00; flex-basis: 0; flex-grow: 1; padding: 20px 0; text-align: center; color: #fff;");
+                    digits.setAttribute("id","countdown_hours");
+                }
+                else if (t == 2) {
+                    label.innerText="Min";
+                    countdown_item.setAttribute("style","margin-right: calc(39px/2); margin-left: calc(39px/2); background-color: #00E4FF00; flex-basis: 0; flex-grow: 1; padding: 20px 0; text-align: center; color: #fff;");
+                    digits.setAttribute("id","countdown_mins");
+                }
+                else {
+                    label.innerText="Seg";
+                    countdown_item.setAttribute("style","margin-left: calc(39px/2); background-color: #00E4FF00; flex-basis: 0; flex-grow: 1; padding: 20px 0; text-align: center; color: #fff;");
+                    digits.setAttribute("id","countdown_seconds");
+                }
+
+                countdown_item.append(digits);
+                countdown_item.append(label);
+                
+                countdown_wrapper.append(countdown_item);
+            }
+            
+            countdown_heading.append(h2);
+            widget_countdown.append(countdown_wrapper);
+            countdown_container.append(countdown_heading);
+            countdown_container.append(widget_countdown);
+            section.append(countdown_container);
+            
+            products.insertBefore(section, product[i]);
+        }
     }
     
     
@@ -243,18 +325,18 @@ window.onload = function () {
     
 // ***** BANNER *****
     
-    /* var banner = document.querySelector('.banner');
+    var banner = document.querySelector('.banner');
     var imgbanner = banner.querySelectorAll('img');
     
-    var cardNext = products.nextElementSibling;
+    //var cardNext = products.nextElementSibling;
     
-    cardNext.style.minHeight="0";
+    //cardNext.style.minHeight="0";
     
-    //banner.style.padding="0";
+    banner.style.padding="0";
     
-    for(i=1;i<imgbanner.length;i++) {
-        imgbanner[i].style.marginTop="80px";
-    } */
+    for(i=0;i<imgbanner.length;i++) {
+        imgbanner[i].style.marginTop="60px";
+    }
     
 // ***** END BANNER *****
 
@@ -286,6 +368,38 @@ window.onload = function () {
     } */
 
 // ***** END FOOTER ***** 
+    
+    const timeTarget = "29 Aug 2022";
+    
+    const daysEl = document.getElementById("countdown_days");
+    const hoursEl = document.getElementById("countdown_hours");
+    const minsEl = document.getElementById("countdown_mins");
+    const secondsEl = document.getElementById("countdown_seconds");
+    
+    function countdown() {
+        const timeTargetDate = new Date(timeTarget);
+        const currentDate = new Date();
+        
+        const totalSeconds = (timeTargetDate - currentDate)/1000;
+        
+        const days = Math.floor(totalSeconds / 3600 / 24);
+        const hours = Math.floor(totalSeconds / 3600) % 24;
+        const mins = Math.floor(totalSeconds / 60) % 60;
+        const seconds = Math.floor(totalSeconds) % 60;
+        
+        daysEl.innerText = formatTime(days);
+        hoursEl.innerText = formatTime(hours);
+        minsEl.innerText = formatTime(mins);
+        secondsEl.innerText = formatTime(seconds);
+    }
+    
+    function formatTime(time) {
+        return time < 10 ? `0${time}` : time; 
+    }
+    
+    countdown();
+    
+    setInterval(countdown, 1000);
     
 // **** CHECK WINDOW SIZE ****
     
