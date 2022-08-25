@@ -363,7 +363,7 @@ window.onload = function () {
     p1.setAttribute("style","margin-bottom: 0; margin-top: 0;");
     span.setAttribute("style","color: #0ABAD1");
     
-    widget_container2.setAttribute("style","margin: 8px 0 0 0; text-align: center; color: #fff; font-family: Gilroy Font; font-size: 12px; font-weight: 400; line-height: 1.5;");
+    widget_container2.setAttribute("style","margin: 8px 0 0 0; width: 100%; text-align: center; color: #fff; font-family: Gilroy Font; font-size: 12px; font-weight: 400; line-height: 1.5;");
     p2.setAttribute("style","margin-bottom: 0; margin-top: 0;");
     
     widget_container3.setAttribute("style","text-align: center; width: 100%; margin: 0; padding: 12px 0 0 0;");
