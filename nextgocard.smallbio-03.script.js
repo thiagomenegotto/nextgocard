@@ -30,18 +30,21 @@ window.onload = function () {
 
     profile.querySelector('.profile_img').style.marginTop="20px";
     profile.querySelector('.profile_img').style.marginBottom="20px";
+    profile.querySelector('.profile_img').style.padding="0";
     
     profile.querySelector('.profile_h2').style.fontFamily="Gilroy Font";
     profile.querySelector('.profile_h2').style.fontWeight="700";
     profile.querySelector('.profile_h2').style.fontSize="28px";
     profile.querySelector('.profile_h2').style.lineHeight="1";
     profile.querySelector('.profile_h2').style.paddingTop="5px";
+    profile.querySelector('.profile_h2').style.paddingBottom="0";
     profile.querySelector('.profile_h2').style.marginBottom="20px";
     
     profile.querySelector('.profile_p').style.fontFamily="Gilroy Font";
     profile.querySelector('.profile_p').style.fontWeight="700";
     profile.querySelector('.profile_p').style.fontSize="18px";
     profile.querySelector('.profile_p').style.lineHeight="1.3em";
+    profile.querySelector('.profile_p').style.padding="0";
 
     
 // ***** END PROFILE, PHOTO AND LEAD *****
