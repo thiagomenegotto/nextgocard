@@ -65,6 +65,7 @@ window.onload = function () {
         buttonextralarge[i].style.width="100%";
         buttonextralarge[i].style.height="60px";
         buttonextralarge[i].style.backgroundPosition="left";
+        buttonextralarge[i].style.margin="0 0 20px";
     }
     
 // ***** END BUTTON LARGE AND EXTRALARGE *****
@@ -75,7 +76,7 @@ window.onload = function () {
     var product = document.querySelectorAll('.product');
     var buttonproduct;
     
-    products.style.padding="0";
+    products.style.padding="50px 0 0";
     products.style.margin="0";
     products.style.backgroundImage="url('https://thiagomenegotto.github.io/nextgocard/uploads/2022/08/Fundo-v2.jpg')";
     products.style.backgroundPosition="top center";   
@@ -152,7 +153,7 @@ window.onload = function () {
                 inner.style.padding="10px";
                 
                 if (image !== null) {
-                    image.setAttribute('style', 'margin-top: 18px !important');
+                    image.setAttribute('style', 'margin-top: 23px !important');
                 }
 
                 var div = document.createElement('div');
