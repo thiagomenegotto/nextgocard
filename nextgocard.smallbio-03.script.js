@@ -17,7 +17,8 @@ window.onload = function () {
     var photo = document.querySelector('.photo');
     
     //card.style.padding="0";
-    card.setAttribute("style","padding: 0; background-size: auto;");
+    card.style.padding = "0"; 
+    card.style.backgroundSize = "auto";
     
     onlyLarge.style.margin="0";
     hideLarge.style.margin="0";
