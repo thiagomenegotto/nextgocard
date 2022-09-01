@@ -16,7 +16,9 @@ window.onload = function () {
     var profile = document.querySelector('.profile'); 
     var photo = document.querySelector('.photo');
     
-    card.style.padding="0";
+    //card.style.padding="0";
+    card.setAttribute("style","padding: 0; background-size: auto;");
+    
     onlyLarge.style.margin="0";
     hideLarge.style.margin="0";
     
@@ -25,10 +27,15 @@ window.onload = function () {
     
     photo.style.display="none";
 
+    profile.querySelector('.profile_img').style.marginTop="20px";
+    profile.querySelector('.profile_img').style.marginBottom="20px";
+    
     profile.querySelector('.profile_h2').style.fontFamily="Gilroy Font";
     profile.querySelector('.profile_h2').style.fontWeight="700";
     profile.querySelector('.profile_h2').style.fontSize="28px";
     profile.querySelector('.profile_h2').style.lineHeight="1";
+    profile.querySelector('.profile_h2').style.paddingTop="5px";
+    profile.querySelector('.profile_h2').style.marginBottom="20px";
     
     profile.querySelector('.profile_p').style.fontFamily="Gilroy Font";
     profile.querySelector('.profile_p').style.fontWeight="700";
@@ -45,12 +52,14 @@ window.onload = function () {
     var buttons = document.querySelector('.buttons.row.buttons-left');
     //var buttonlarge = document.querySelectorAll('.large');
     
-    buttons.style.padding="0px 20px 150px 20px";
+    buttons.setAttribute("style","padding: 0 20px 150px 20px; margin-top: 50px;");
+    //buttons.style.padding="0px 20px 150px 20px";
     
     for(i=0;i<buttonextralarge.length;i++) {
         //buttonextralarge[i].style.backgroundSize='contain';
         buttonextralarge[i].style.padding="0";
         buttonextralarge[i].style.width="100%";
+        buttonextralarge[i].style.height="60px";
         buttonextralarge[i].style.backgroundPosition="left";
     }
     
@@ -132,11 +141,14 @@ window.onload = function () {
             
         if (i !== 2) {           
             if (i == 0) {
-                details.style.marginTop="-80px";
-                product[i].style.padding="0 20px 40px 20px";
+                details.style.marginTop="-121px";
+                details.style.marginBottom="20px";
+                product[i].style.margin="-57px 0 0 0";
+                product[i].style.padding="50px 20px 40px 20px";
+                inner.style.padding="10px";
                 
                 if (image !== null) {
-                    image.setAttribute('style', 'margin-top: 80px !important');
+                    image.setAttribute('style', 'margin-top: 18px !important');
                 }
 
                 var div = document.createElement('div');
