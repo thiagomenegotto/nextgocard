@@ -200,11 +200,11 @@ window.onload = function () {
                 icon_box_content1.setAttribute("style","display: block; flex-grow: 1; text-align: left; flex-direction: row;");
                 
                 icon_box_title1.setAttribute("class","icon-box-title");
-                icon_box_title1.setAttribute("style","color: #FFFFFF; margin-top: 0; padding-top: 11px; margin-bottom: 1rem; text-align: left; font-family: Gilroy Font; font-size: 1em; font-weight: 400; line-height: 1px;");
+                icon_box_title1.setAttribute("style","color: #00E4FF; margin-top: 0; padding-top: 11px; margin-bottom: 1rem; text-align: left; font-family: Gilroy Font; font-size: 1.25em; font-weight: 700; line-height: 1px;");
                 icon_box_title1.innerText="Ganhar TEMPO";
                 
                 icon_box_description1.setAttribute("class","icon-box-description");
-                icon_box_description1.setAttribute("style","color: #00E4FF; margin: 0; text-align: left; font-family: Gilroy Font; font-size: 1.25em; font-weight: 700;");
+                icon_box_description1.setAttribute("style","color: #FFFFFF; margin: 0; text-align: left; font-family: Gilroy Font; font-size: 1em; font-weight: 400;");
                 icon_box_description1.innerText="Todos os templates são feitos para facilitar a sua produção de conteúdo e otimizar o seu tempo sem deixar de garantir a qualidade das suas artes. Você irá fazer muito mais post em muito menos tempo!";
 
                 svg1.append(path1);
