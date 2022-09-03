@@ -156,14 +156,78 @@ window.onload = function () {
                     image.setAttribute('style', 'margin-top: 23px !important');
                 }
 
-                var div = document.createElement('div');
-                var img = document.createElement('img');
-
-                img.src = 'https://thiagomenegotto.github.io/nextgocard/uploads/2022/08/Mockup-h2-2.png';
-                img.setAttribute("style", "margin: 10px 0 40px 0");
+                var section = document.createElement('section');
+                var container_wrapper = document.createElement('div');
+                var element1 = document.createElement('div');
+                var icon_box_wrapper1 = document.createElement('div');
+                var icon_box_icon1 = document.createElement('div');
+                var icon_element_animation1 = document.createElement('span');
+                var svg1 = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+                var path1 = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                var icon_box_content1 = document.createElement('div');
+                var icon_box_title1 = document.createElement('h3');
+                var icon_box_description1 = document.createElement('p');
                 
-                div.append(img);
-                product[i].appendChild(div);
+                container_wrapper.setAttribute("class","container-wrapper");
+                container_wrapper.setAttribute("style","background-color: #E6E6E60D; padding: 50px 20px; border-radius: 10px; border-style: solid; border-width: 1px; transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s; margin: 0px; display: flex; width: 100%; flex-wrap: wrap; align-content: flex-start;");
+                
+                element1.setAttribute("class","element");
+                element1.setAttribute("style","width:100%; margin-bottom: 20px;");
+                
+                icon_box_wrapper1.setAttribute("class","element-icon-box-wrapper");
+                icon_box_wrapper1.setAttribute("style","text-align: left; display: flex; flex-direction: row;");
+                
+                icon_box_icon1.setAttribute("class","element-icon-box-icon");
+                icon_box_icon1.setAttribute("style","display: block; flex: unset; margin-right: 15px; margin-left: 0; margin-bottom: unset; text-align: left; flex-direction: row;");
+                
+                icon_element_animation1.setAttribute("class","icon-element-animation");
+                icon_element_animation1.setAttribute("style","font-size: 24px; display: inline-block; line-height: 1; transition: all .3s; text-align: center; flex-direction: row;");
+                
+                svg1.setAttribute("fill", "none");
+                svg1.setAttribute("viewBox", "0 0 25 25");
+                svg1.setAttribute("style", "width: 1em; height: 1em; position: relative; display: block;");
+
+                path1.setAttribute(
+                    "d",
+                    "M3.86652 4.75013C2.0473 6.78195 1.02877 9.40585 1.0007 12.1329C0.931556 18.3644 6.01925 23.4884 12.2507 23.5001C18.4734 23.5119 23.5007 18.471 23.5007 12.2501C23.5007 6.12474 18.6052 1.14017 12.5144 1.00013C12.4801 0.99903 12.4459 1.00484 12.4139 1.01722C12.382 1.02961 12.3528 1.0483 12.3282 1.0722C12.3036 1.09609 12.284 1.1247 12.2707 1.15631C12.2574 1.18792 12.2506 1.22189 12.2507 1.25619V6.15638"
+                );
+                path1.setAttribute("stroke", "#00F0FF");
+                path1.setAttribute('stroke-width', '1.875');
+                path1.setAttribute('stroke-linecap', 'round');
+                path1.setAttribute('stroke-linejoin', 'round');
+                
+                icon_box_content1.setAttribute("class","icon-box-content");
+                icon_box_content1.setAttribute("style","display: block; flex-grow: 1; text-align: left; flex-direction: row;");
+                
+                icon_box_title1.setAttribute("class","icon-box-title");
+                icon_box_title1.setAttribute("style","color: #FFFFFF; margin-top: 0; padding-top: 11px; margin-bottom: 1rem; text-align: left; font-family: Gilroy Font; font-size: 1em; font-weight: 400; line-height: 1px;");
+                icon_box_title1.innerText="Ganhar TEMPO";
+                
+                icon_box_description1.setAttribute("class","icon-box-description");
+                icon_box_description1.setAttribute("style","color: #00E4FF; margin: 0; text-align: left; font-family: Gilroy Font; font-size: 1.25em; font-weight: 700;");
+                icon_box_description1.innerText="Todos os templates são feitos para facilitar a sua produção de conteúdo e otimizar o seu tempo sem deixar de garantir a qualidade das suas artes. Você irá fazer muito mais post em muito menos tempo!";
+
+                svg1.append(path1);
+                icon_element_animation1.append(svg1);
+                icon_box_icon1.append(icon_element_animation1);
+                
+                icon_box_content1.append(icon_box_title1);
+                icon_box_content1.append(icon_box_description1);
+                
+                icon_box_wrapper1.append(icon_box_icon1);
+                icon_box_wrapper1.append(icon_box_content1);
+                
+                element1.append(icon_box_content1);
+                
+                container_wrapper.append(element1);
+                section.append(container_wrapper);
+                
+                //var img = document.createElement('img');
+
+                //img.src = 'https://thiagomenegotto.github.io/nextgocard/uploads/2022/08/Mockup-h2-2.png';
+                //img.setAttribute("style", "margin: 10px 0 40px 0");
+               
+                product[i].appendChild(section);
             }
             
             else if (i == 1) {
@@ -266,23 +330,23 @@ window.onload = function () {
             var widget_countdown = document.createElement('div');
             var countdown_wrapper = document.createElement('div');
             
-            section.setAttribute("class","widget_countdown");
+            section.setAttribute("class","widget-countdown");
             section.setAttribute("style","padding: 80px 20px 0 20px");
             
-            countdown_container.setAttribute("class","countdown_container");
+            countdown_container.setAttribute("class","countdown-container");
             countdown_container.setAttribute("style","padding: 0; display: flex; width: 100%; flex-wrap: wrap; align-content: flex-start;");
             
-            countdown_heading.setAttribute("class","widget_heading");
+            countdown_heading.setAttribute("class","widget-heading");
             countdown_heading.setAttribute("style","text-align: center; margin-bottom: 20px; width: 100%; margin: 0; padding: 0;");
             
-            h2.setAttribute("class","element_heading");
+            h2.setAttribute("class","element-heading");
             h2.setAttribute("style","color: #FFF; font-family: Gilroy Font; font-size: 26px; font-weight: 700; margin: 0; padding: 0; line-height: 1");
             h2.innerText="PROMOÇÃO POR TEMPO LIMITADO";
             
-            widget_countdown.setAttribute("class","widget_countdown");
+            widget_countdown.setAttribute("class","widget-countdown");
             widget_countdown.setAttribute("style","margin-bottom: 0; width: 100%;");
             
-            countdown_wrapper.setAttribute("class","countdown_wrapper");
+            countdown_wrapper.setAttribute("class","countdown-wrapper");
             countdown_wrapper.setAttribute("style","max-width: 18%; display: flex; justify-content: center; margin-right: auto; margin-left: auto; flex-direction: row;");
             
             for (t=0; t<4; t++) {
@@ -290,12 +354,12 @@ window.onload = function () {
                 var digits = document.createElement('span');
                 var label = document.createElement('span');
                 
-                countdown_item.setAttribute("class","countdown_item");
+                countdown_item.setAttribute("class","countdown-item");
                 
-                digits.setAttribute("class","countdown_digits");
+                digits.setAttribute("class","countdown-digits");
                 digits.setAttribute("style","font-family: Gilroy Font; font-size: 30px; font-weight: 200; line-height: 1; display: block; text-align: center; color: #fff;");
                 
-                label.setAttribute("class","countdown_label");
+                label.setAttribute("class","countdown-label");
                 label.setAttribute("style","font-family: Gilroy Font; font-size: 17px; font-weight: 300; line-height: 1; display: block; text-align: center; color: #fff;");
                 
                 digits.innerText="00";
