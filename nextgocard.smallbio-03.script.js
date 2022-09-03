@@ -208,7 +208,7 @@ window.onload = function () {
                 icon_box_description1.innerText="Todos os templates são feitos para facilitar a sua produção de conteúdo e otimizar o seu tempo sem deixar de garantir a qualidade das suas artes. Você irá fazer muito mais post em muito menos tempo!";
 
                 svg1.append(path1);
-                icon_element_animation1.append(svg1);
+                //icon_element_animation1.append(svg1);
                 icon_box_icon1.append(icon_element_animation1);
                 
                 icon_box_content1.append(icon_box_title1);
