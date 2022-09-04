@@ -100,8 +100,7 @@ window.onload = function () {
                 
         icon_box_title.setAttribute("class","icon-box-title");
         icon_box_title.setAttribute("style","color: #00E4FF; margin-top: 0; padding-top: 11px; margin-bottom: 1rem; text-align: left; font-family: Gilroy Font; font-size: 1.25em; font-weight: 700; line-height: 1px;");
-                
-                
+                       
         icon_box_description.setAttribute("class","icon-box-description");
         icon_box_description.setAttribute("style","color: #FFFFFF; margin: 0; text-align: left; font-family: Gilroy Font; font-size: 1em; font-weight: 400;");
 
@@ -219,7 +218,6 @@ window.onload = function () {
         var inner = product[i].querySelector('.product-inner');
         buttonproduct = product[i].querySelector('a');
        
-        
         //product[i].style.padding="0";
         product[i].style.margin="0";
         product[i].style.backgroundColor="transparent";
@@ -291,7 +289,7 @@ window.onload = function () {
                 var container_wrapper = document.createElement('div');
                 
                 container_wrapper.setAttribute("class","container-wrapper");
-                container_wrapper.setAttribute("style","background-color: #E6E6E60D; padding: 50px 20px; border-radius: 10px; border-style: solid; border-width: 1px; transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s; margin: 0px; display: flex; width: 100%; flex-wrap: wrap; align-content: flex-start;");
+                container_wrapper.setAttribute("style","background-color: #E6E6E60D; padding: 50px 20px; border-radius: 15px; border-style: solid; border-width: 1px; transition: background: linear-gradient(to top, #0ABAD1, #5C4EE5); background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s; margin: 0px; display: flex; width: 100%; flex-wrap: wrap; align-content: flex-start;");
                                              
                 container_wrapper.append(element_icon(0));
                 container_wrapper.append(element_icon(1));
