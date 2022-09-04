@@ -286,10 +286,14 @@ window.onload = function () {
 
                 var icon = 3;
                 var section = document.createElement('section');
+                var element_column = document.createElement('div');
                 var container_wrapper = document.createElement('div');
                 
+                element_column.setAttribute("class","element-column");
+                element_column.setAttribute("style","margin: 5px; backdrop-filter: blur(8px); width: 100%");
+                
                 container_wrapper.setAttribute("class","container-wrapper");
-                container_wrapper.setAttribute("style","background-color: #E6E6E60D; padding: 50px 20px; border-radius: 15px; border-style: solid; border-width: 1px; transition: background: linear-gradient(to top, #0ABAD1, #5C4EE5); background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s; backdrop-filter: blur(8px); margin: 5px; display: flex; width: 100%; flex-wrap: wrap; align-content: flex-start;");
+                container_wrapper.setAttribute("style","background-color: #E6E6E60D; padding: 50px 20px; border-radius: 15px; border-style: solid; border-width: 1px; background: linear-gradient(to top, #0ABAD1, #5C4EE5); transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s; margin: 0; display: flex; width: 100%; flex-wrap: wrap; align-content: flex-start;");
                                              
                 container_wrapper.append(element_icon(0));
                 container_wrapper.append(element_icon(1));
