@@ -287,7 +287,7 @@ window.onload = function () {
                 var icon = 3;
                 var section = document.createElement('section');
                 var element_column = document.createElement('div');
-                var before = document.createElemet(':before');
+                var before = document.createElemet('before');
                 var container_wrapper = document.createElement('div');
                 
                 element_column.setAttribute("class","element-column");
