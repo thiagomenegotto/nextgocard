@@ -300,7 +300,8 @@ window.onload = function () {
                 container_wrapper.append(element_icon(1));
                 container_wrapper.append(element_icon(2));
                 
-                section.append(container_wrapper);
+                element_column.append(container_wrapper);
+                section.append(element_column);
                 
                 //var img = document.createElement('img');
 
