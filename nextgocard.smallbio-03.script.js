@@ -299,7 +299,6 @@ window.onload = function () {
                 container_wrapper.append(element_icon(1));
                 container_wrapper.append(element_icon(2));
                 
-                element_column.append(before);
                 element_column.append(container_wrapper);
                 section.append(element_column);
                 
