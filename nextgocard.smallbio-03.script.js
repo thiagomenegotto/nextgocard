@@ -290,10 +290,10 @@ window.onload = function () {
                 var container_wrapper = document.createElement('div');
                 
                 element_column.setAttribute("class","element-column");
-                element_column.setAttribute("style","border-radius: 15px; background-image: linear-gradient(to top, #0ABAD1, #5C4EE5); padding: 1px; margin: 5px; backdrop-filter: blur(8px); width: 100%; display: flex; position: relative;");
+                element_column.setAttribute("style","border-radius: 15px; border: solid 1px transparent; background-image: linear-gradient(to top, #0ABAD1, #5C4EE5); padding: 2px; margin: 5px; display: flex; position: relative;");
                                 
                 container_wrapper.setAttribute("class","container-wrapper");
-                container_wrapper.setAttribute("style","background-color: #E6E6E60D; padding: 50px 20px; transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s; margin: 0; display: flex; position: relative; width: 100%; flex-wrap: wrap; align-content: flex-start;");
+                container_wrapper.setAttribute("style","background-color: #000; padding: 50px 20px; transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s; margin: 0; backdrop-filter: blur(4px); display: flex; position: relative; width: 100%; flex-wrap: wrap; align-content: flex-start;");
                                              
                 container_wrapper.append(element_icon(0));
                 container_wrapper.append(element_icon(1));
