@@ -360,9 +360,14 @@ window.onload = function () {
             buttonproduct.style.fontFamily="Gilroy Font";
             buttonproduct.style.fontSize="16px";
             buttonproduct.style.fontWeight="700";
+            buttonproduct.style.lineHeight="1";
             buttonproduct.style.backgroundColor="transparent";
             buttonproduct.style.backgroundImage="linear-gradient(130deg, #05BFCF 0%, #7230EA 100%)";
             buttonproduct.style.borderRadius="6px 6px 6px 6px";
+            buttonproduct.style.marginLeft="auto";
+            buttonproduct.style.marginRightt="auto";
+            buttonproduct.style.maxWidth="394px";
+            buttonproduct.style.width="auto";
             
             if (i == 1 || i == 3 || i == 4) {
                 
