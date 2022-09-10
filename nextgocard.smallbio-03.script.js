@@ -349,7 +349,13 @@ window.onload = function () {
         else {
             product[i].style.padding="80px 0 80px 0";
             product[i].style.backgroundImage = "linear-gradient(180deg, #59BFCA 0%, #7330DE 100%)";
-                
+            
+            var section = document.createElement('section');
+            var container_wrapper = document.createElement('div');
+            var element = document.createElement('div');
+            
+            
+            
             if (image !== null) {
                 image.setAttribute('style', 'margin: 20px 0 0 0 !important');
             }
