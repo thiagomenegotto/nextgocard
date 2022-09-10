@@ -365,7 +365,7 @@ window.onload = function () {
             buttonproduct.style.backgroundImage="linear-gradient(130deg, #05BFCF 0%, #7230EA 100%)";
             buttonproduct.style.borderRadius="6px 6px 6px 6px";
             buttonproduct.style.marginLeft="auto";
-            buttonproduct.style.marginRightt="auto";
+            buttonproduct.style.marginRight="auto";
             buttonproduct.style.maxWidth="394px";
             buttonproduct.style.width="auto";
             
