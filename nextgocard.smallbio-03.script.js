@@ -335,7 +335,7 @@ window.onload = function () {
                 
                 details.style.display="none";
                 
-                buttonproduct.style.width="100%";
+                buttonproduct.style.width="auto";
                 //buttonproduct.style.maxWidth="365px";
                 buttonproduct.style.margin="0 0 0 10px";
                 buttonproduct.style.padding="16px 10px 16px 10px";
@@ -405,7 +405,8 @@ window.onload = function () {
             }
             else {
                 buttonproduct.style.padding="16px 10px 16px 10px";
-                buttonproduct.style.width="100%";
+                buttonproduct.style.width="auto";
+                buttonproduct.style.fontWeight="500";
             }
         }
         
