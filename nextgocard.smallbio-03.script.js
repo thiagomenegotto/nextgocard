@@ -590,10 +590,18 @@ window.onload = function () {
         const mins = Math.floor(totalSeconds / 60) % 60;
         const seconds = Math.floor(totalSeconds) % 60;
         
-        daysEl.innerText = formatTime(days);
-        hoursEl.innerText = formatTime(hours);
-        minsEl.innerText = formatTime(mins);
-        secondsEl.innerText = formatTime(seconds);
+        if (days >= 0) {
+            daysEl.innerText = formatTime(days);
+            hoursEl.innerText = formatTime(hours);
+            minsEl.innerText = formatTime(mins);
+            secondsEl.innerText = formatTime(seconds);
+        }
+        else {
+            daysEl.innerText = "00";
+            hoursEl.innerText = "00";
+            minsEl.innerText = "00";
+            secondsEl.innerText = "00";
+        }
     }
     
     function formatTime(time) {
