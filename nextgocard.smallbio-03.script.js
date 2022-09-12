@@ -349,13 +349,7 @@ window.onload = function () {
         else {
             product[i].style.padding="80px 0 80px 0";
             product[i].style.backgroundImage = "linear-gradient(180deg, #59BFCA 0%, #7330DE 100%)";
-            
-            var section = document.createElement('section');
-            var container_wrapper = document.createElement('div');
-            var element = document.createElement('div');
-            
-            
-            
+                  
             if (image !== null) {
                 image.setAttribute('style', 'margin: 20px 0 0 0 !important');
             }
@@ -372,13 +366,13 @@ window.onload = function () {
             buttonproduct.style.borderRadius="6px 6px 6px 6px";
             buttonproduct.style.marginLeft="auto";
             buttonproduct.style.marginRight="auto";
-            buttonproduct.style.maxWidth="394px";
             buttonproduct.style.width="auto";
             
             if (i == 1 || i == 3 || i == 4) {
                 
                 buttonproduct.style.padding="16px 70px 16px 70px";
                 buttonproduct.style.marginBottom="20px";
+                buttonproduct.style.maxWidth="394px";
                 
                 if (image !== null) {
                     image.setAttribute('style', 'margin: 40px 0 20px 0 !important');
@@ -392,7 +386,9 @@ window.onload = function () {
                 
                 if (i !== 1) {
                     buttonproduct.style.width="auto";
+                    buttonproduct.style.fontSize="18px";
                     buttonproduct.style.marginTop="60px";
+                    buttonproduct.style.maxWidth="283px";
                     
                     img.setAttribute("style", "vertical-align: middle; display: inline-block; width: 324px; height: auto; max-width: 100%; border: none; border-radius: 0; box-shadow: none;");
                     
